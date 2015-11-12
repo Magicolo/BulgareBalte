@@ -46,6 +46,10 @@ public class Player : PMonoBehaviour
 
 	void UpdateMotion()
 	{
+		if (inputDirection.sqrMagnitude == 0f)
+			return;
+
 		CachedRigidbody.AddForce(inputDirection * Stats.MovementSpeed);
+		CachedRigidbody.MoveRotation(inputDirection.Angle());
 	}
 }
