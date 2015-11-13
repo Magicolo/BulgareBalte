@@ -12,6 +12,7 @@ public class CharacterStats : IPoolable, ICopyable<CharacterStats>
 
 	public float Health = 10f;
 	public float MovementSpeed = 50f;
+	public float AimSpeed = 3f;
 	public float AttackSpeed = 1f;
 	public float Damage;
 	public DamageSources DamageSource;
@@ -23,6 +24,7 @@ public class CharacterStats : IPoolable, ICopyable<CharacterStats>
 	{
 		Health = reference.Health;
 		MovementSpeed = reference.MovementSpeed;
+		AimSpeed = reference.AimSpeed;
 		AttackSpeed = reference.AttackSpeed;
 		Damage = reference.Damage;
 		DamageSource = reference.DamageSource;

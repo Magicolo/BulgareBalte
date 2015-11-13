@@ -1,13 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer))]
+[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer)), Copy]
 public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 {
+	[DoNotCopy]
 	public ParticleEffect Particles;
 
 	public bool IsFiring { get; private set; }
@@ -81,6 +82,8 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 	public void Copy(LaserWeapon reference)
 	{
 		base.Copy(reference);
+
+		IsFiring = reference.IsFiring;
 	}
 
 	public override WeaponBase Clone()

@@ -81,7 +81,7 @@ public class Player : CharacterBase
 		if (inputAimDirection.sqrMagnitude <= 0f)
 			return;
 
-		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime);
+		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime * CurrentStats.AimSpeed);
 	}
 
 	public override void Kill()
