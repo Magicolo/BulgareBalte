@@ -29,12 +29,6 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
 	}
 
-	protected void Awake()
-	{
-		CurrentStats = CharacterStats.Pool.CreateCopy(Stats);
-		CurrentEquipment = CharacterEquipment.Pool.CreateCopy(CharacterEquipment.Default);
-	}
-
 	protected virtual void LateUpdate()
 	{
 		UpdateStatus();
@@ -44,7 +38,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 	{
 		UpdateColor();
 
-		if (CurrentStats.Health <= 0f)
+		if (ShouldDie())
 			Kill();
 	}
 
@@ -52,6 +46,11 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 	{
 		currentColor = Color.Lerp(currentColor, NormalColor, CachedTime.DeltaTime * 3f);
 		Renderer.color = currentColor;
+	}
+
+	protected virtual bool ShouldDie()
+	{
+		return CurrentStats.Health <= 0;
 	}
 
 	public virtual void EquipWeapon(WeaponBase weaponPrefab)
@@ -79,8 +78,16 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 		base.OnCreate();
 
 		currentColor = NormalColor;
-		CurrentStats.Copy(Stats);
-		CurrentEquipment.Copy(CharacterEquipment.Default);
+		CurrentStats = CharacterStats.Pool.CreateCopy(Stats);
+		CurrentEquipment = CharacterEquipment.Pool.CreateCopy(CharacterEquipment.Default);
+	}
+
+	public override void OnRecycle()
+	{
+		base.OnRecycle();
+
+		CharacterStats.Pool.Recycle(CurrentStats);
+		CharacterEquipment.Pool.Recycle(CurrentEquipment);
 	}
 
 	public void Copy(CharacterBase reference)

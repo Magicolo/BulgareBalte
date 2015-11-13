@@ -12,6 +12,7 @@ public class LaserRaycaster2D : Raycaster2DBase
 	public int Bounces = 10;
 
 	public int BounceCount { get; private set; }
+	public Vector3 EndDirection { get; private set; }
 	public Vector3 EndPosition { get; private set; }
 
 	public override bool Cast()
@@ -49,6 +50,8 @@ public class LaserRaycaster2D : Raycaster2DBase
 			}
 		}
 		while (BounceCount < Bounces && reflector != null);
+
+		EndDirection = direction;
 
 		return Hits.Count > 0;
 	}

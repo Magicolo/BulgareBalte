@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,6 +22,8 @@ public abstract class BulletWeapon : WeaponBase, ICopyable<BulletWeapon>
 
 	public void Copy(BulletWeapon reference)
 	{
+		base.Copy(reference);
 
+		BulletPrefab = reference.BulletPrefab;
 	}
 }

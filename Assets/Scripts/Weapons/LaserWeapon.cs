@@ -1,13 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer))]
+[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer)), Copy]
 public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 {
+	[DoNotCopy]
 	public ParticleEffect Particles;
 
 	public bool IsFiring { get; private set; }
@@ -32,12 +33,12 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 	void UpdateLaser()
 	{
 		CachedLineRenderer.enabled = IsFiring;
-		CachedRaycaster.enabled = IsFiring;
 		Particles.CachedGameObject.SetActive(IsFiring);
 
 		if (!IsFiring)
 			return;
 
+		CachedRaycaster.Cast();
 		UpdateLine();
 
 		if (CachedRaycaster.Hits.Count > 0)
@@ -71,6 +72,7 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 
 		CachedLineRenderer.SetPosition(CachedRaycaster.BounceCount + 1, endPosition);
 		Particles.CachedTransform.position = endPosition;
+		Particles.CachedTransform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
 	}
 
 	public override void Fire()
@@ -81,6 +83,8 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 	public void Copy(LaserWeapon reference)
 	{
 		base.Copy(reference);
+
+		IsFiring = reference.IsFiring;
 	}
 
 	public override WeaponBase Clone()
