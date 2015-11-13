@@ -1,37 +1,37 @@
 fileFormatVersion: 2
 guid: fcfadc7c1de4df14b9f350cd3c1cbbf0
-timeCreated: 1447433909
+timeCreated: 1447436326
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: TestArts_0
-    21300002: TestArts_1
-    21300004: TestArts_2
-    21300006: TestArts_3
-    21300008: TestArts_4
-    21300010: TestArts_5
-    21300012: TestArts_6
+    21300000: Enemis1
+    21300002: Enemis2
+    21300004: Enemis3
+    21300006: Enemis4
+    21300008: Player
+    21300010: Bullet1
+    21300012: Bullet Slim
     21300014: TestArts_7
-    21300016: TestArts_8
-    21300018: TestArts_9
-    21300020: TestArts_10
+    21300016: Tile
+    21300018: Tile2
+    21300020: EndWallReflective
     21300022: TestArts_11
-    21300024: TestArts_12
-    21300026: TestArts_13
-    21300028: TestArts_14
-    21300030: TestArts_15
-    21300032: TestArts_16
-    21300034: TestArts_17
-    21300036: TestArts_18
-    21300038: TestArts_19
-    21300040: TestArts_20
-    21300042: TestArts_21
-    21300044: TestArts_22
-    21300046: TestArts_23
-    21300048: TestArts_24
-    21300050: TestArts_25
-    21300052: TestArts_26
-    21300054: TestArts_27
+    21300024: CornerWallReflective
+    21300026: CornerWall
+    21300028: StraightWall
+    21300030: EndtWall
+    21300032: Spike1
+    21300034: Spike2
+    21300036: Spike3
+    21300038: Spike4
+    21300040: Spike5
+    21300042: SideSpike1
+    21300044: SideSpike2
+    21300046: SideSpike3
+    21300048: SideSpike4
+    21300050: SideSpike5
+    21300052: Pillar
+    21300054: PillarReflective
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -78,7 +78,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: TestArts_0
+    - name: Enemis1
       rect:
         serializedVersion: 2
         x: 0
@@ -86,9 +86,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_1
+    - name: Enemis2
       rect:
         serializedVersion: 2
         x: 32
@@ -96,9 +96,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_2
+    - name: Enemis3
       rect:
         serializedVersion: 2
         x: 64
@@ -106,9 +106,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_3
+    - name: Enemis4
       rect:
         serializedVersion: 2
         x: 96
@@ -116,9 +116,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_4
+    - name: Player
       rect:
         serializedVersion: 2
         x: 128
@@ -126,9 +126,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_5
+    - name: Bullet1
       rect:
         serializedVersion: 2
         x: 160
@@ -136,9 +136,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_6
+    - name: Bullet Slim
       rect:
         serializedVersion: 2
         x: 192
@@ -146,7 +146,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TestArts_7
       rect:
@@ -156,9 +156,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_8
+    - name: Tile
       rect:
         serializedVersion: 2
         x: 0
@@ -166,9 +166,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_9
+    - name: Tile2
       rect:
         serializedVersion: 2
         x: 32
@@ -176,9 +176,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_10
+    - name: EndWallReflective
       rect:
         serializedVersion: 2
         x: 64
@@ -186,7 +186,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TestArts_11
       rect:
@@ -196,9 +196,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_12
+    - name: CornerWallReflective
       rect:
         serializedVersion: 2
         x: 128
@@ -206,9 +206,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_13
+    - name: CornerWall
       rect:
         serializedVersion: 2
         x: 160
@@ -216,9 +216,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_14
+    - name: StraightWall
       rect:
         serializedVersion: 2
         x: 192
@@ -226,9 +226,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_15
+    - name: EndtWall
       rect:
         serializedVersion: 2
         x: 224
@@ -236,9 +236,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_16
+    - name: Spike1
       rect:
         serializedVersion: 2
         x: 0
@@ -246,9 +246,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_17
+    - name: Spike2
       rect:
         serializedVersion: 2
         x: 32
@@ -256,9 +256,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_18
+    - name: Spike3
       rect:
         serializedVersion: 2
         x: 64
@@ -266,9 +266,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_19
+    - name: Spike4
       rect:
         serializedVersion: 2
         x: 96
@@ -276,9 +276,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_20
+    - name: Spike5
       rect:
         serializedVersion: 2
         x: 128
@@ -286,9 +286,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_21
+    - name: SideSpike1
       rect:
         serializedVersion: 2
         x: 160
@@ -296,9 +296,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_22
+    - name: SideSpike2
       rect:
         serializedVersion: 2
         x: 192
@@ -306,9 +306,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_23
+    - name: SideSpike3
       rect:
         serializedVersion: 2
         x: 224
@@ -316,9 +316,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_24
+    - name: SideSpike4
       rect:
         serializedVersion: 2
         x: 0
@@ -326,9 +326,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_25
+    - name: SideSpike5
       rect:
         serializedVersion: 2
         x: 32
@@ -336,9 +336,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_26
+    - name: Pillar
       rect:
         serializedVersion: 2
         x: 64
@@ -346,9 +346,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestArts_27
+    - name: PillarReflective
       rect:
         serializedVersion: 2
         x: 96
@@ -356,7 +356,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
