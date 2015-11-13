@@ -33,12 +33,12 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 	void UpdateLaser()
 	{
 		CachedLineRenderer.enabled = IsFiring;
-		CachedRaycaster.enabled = IsFiring;
 		Particles.CachedGameObject.SetActive(IsFiring);
 
 		if (!IsFiring)
 			return;
 
+		CachedRaycaster.Cast();
 		UpdateLine();
 
 		if (CachedRaycaster.Hits.Count > 0)
@@ -72,6 +72,7 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 
 		CachedLineRenderer.SetPosition(CachedRaycaster.BounceCount + 1, endPosition);
 		Particles.CachedTransform.position = endPosition;
+		Particles.CachedTransform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
 	}
 
 	public override void Fire()

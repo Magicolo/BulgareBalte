@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +10,10 @@ public class Enemy : CharacterBase, ICopyable<Enemy>
 {
 	public override void Kill()
 	{
+		Pools.BehaviourPool.Recycle(this);
 
+		if (!IsInPool)
+			CachedGameObject.Destroy();
 	}
 
 	public override bool CanBeDamagedBy(DamageSources damageSource, DamageTypes damageType)
@@ -20,6 +23,7 @@ public class Enemy : CharacterBase, ICopyable<Enemy>
 
 	public void Copy(Enemy reference)
 	{
-		throw new NotImplementedException();
+		base.Copy(reference);
+
 	}
 }

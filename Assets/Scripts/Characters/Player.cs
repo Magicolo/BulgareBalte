@@ -7,6 +7,8 @@ using Pseudo;
 
 public class Player : CharacterBase
 {
+	public static readonly List<Player> Players = new List<Player>();
+
 	public InputManager.Players Input;
 	public WeaponBase StartWeapon;
 
@@ -21,15 +23,29 @@ public class Player : CharacterBase
 	readonly CachedValue<Rigidbody2D> cachedRigidbody2D;
 	public Rigidbody2D CachedRigidbody2D { get { return cachedRigidbody2D; } }
 
+	public static Player GetClosest(Vector3 position)
+	{
+		Player closest = null;
+		float closestDistance = float.MaxValue;
+
+		for (int i = 0; i < Players.Count; i++)
+		{
+			Player player = Players[i];
+			float distance = (player.CachedTransform.position - position).sqrMagnitude;
+
+			if (distance < closestDistance)
+			{
+				closest = player;
+				closestDistance = distance;
+			}
+		}
+
+		return closest;
+	}
+
 	public Player()
 	{
 		cachedRigidbody2D = new CachedValue<Rigidbody2D>(GetComponent<Rigidbody2D>);
-	}
-
-	void Start()
-	{
-		if (StartWeapon != null)
-			EquipWeapon(StartWeapon);
 	}
 
 	void Update()
@@ -82,6 +98,23 @@ public class Player : CharacterBase
 			return;
 
 		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime * CurrentStats.AimSpeed);
+	}
+
+	public override void OnCreate()
+	{
+		base.OnCreate();
+
+		Players.Add(this);
+
+		if (StartWeapon != null)
+			EquipWeapon(StartWeapon);
+	}
+
+	public override void OnRecycle()
+	{
+		base.OnRecycle();
+
+		Players.Remove(this);
 	}
 
 	public override void Kill()
