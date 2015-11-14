@@ -15,6 +15,7 @@ public class zTest : PMonoBehaviour
 	public zTest2 Reference;
 
 	Dummy dummy;
+	MethodInfo emptyMethod;
 	ReflectionPool<zTest2> reflectionPool;
 	BehaviourPool<zTest2> behaviourPool;
 	const int iterations = 1000;
@@ -23,9 +24,9 @@ public class zTest : PMonoBehaviour
 	public bool test;
 	public void Test()
 	{
-		FieldInfo field = GetType().GetField("test", ReflectionExtensions.AllFlags);
-		PDebug.LogTest("Get", () => field.GetValue(this), 1000000);
-		PDebug.LogTest("Set", () => field.SetValue(this, false), 1000000);
+		//FieldInfo field = GetType().GetField("test", ReflectionExtensions.AllFlags);
+		//PDebug.LogTest("Get", () => field.GetValue(this), 1000000);
+		//PDebug.LogTest("Set", () => field.SetValue(this, false), 1000000);
 
 		//MethodInfo method = GetType().GetMethod("Empty", ReflectionExtensions.AllFlags);
 		//PDebug.LogTest("Reflection invoke", () => method.Invoke(this, null), 1000);
@@ -42,6 +43,7 @@ public class zTest : PMonoBehaviour
 	{
 		behaviourPool = new BehaviourPool<zTest2>(Reference);
 		reflectionPool = new ReflectionPool<zTest2>(Reference);
+		emptyMethod = GetType().GetMethod("Empty", ReflectionExtensions.AllFlags);
 	}
 
 	void Update()
@@ -51,8 +53,8 @@ public class zTest : PMonoBehaviour
 			for (int i = 0; i < iterations; i++)
 			{
 				ReflectionTest();
-				//BehaviourPoolTest();
-				//UnityTest();
+				BehaviourPoolTest();
+				UnityTest();
 			}
 		}
 	}
@@ -83,41 +85,51 @@ public class ReflectionPool<T> where T : PMonoBehaviour
 	readonly T reference;
 	readonly Queue<T> pool = new Queue<T>();
 	readonly Queue<T> toInitialize = new Queue<T>();
-	readonly FieldInfo[] fields;
-	readonly object[] defaultValues;
+
+	FieldInfo[] fields;
+	object[] defaultValues;
+	bool initialized;
 
 	public ReflectionPool(T reference)
 	{
 		this.reference = reference;
 
+		new Thread(Initialize).Start();
+	}
+
+	~ReflectionPool()
+	{
+		PDebug.Log("DESTRUCT");
+	}
+
+	void Initialize()
+	{
 		fields = reference.GetType().GetFields();
 		defaultValues = new object[fields.Length];
 
 		for (int i = 0; i < fields.Length; i++)
 			defaultValues[i] = fields[i].GetValue(reference);
 
-		Thread initializeThread = new Thread(InitializeLoop);
-		initializeThread.Start();
-	}
-
-	void InitializeLoop()
-	{
 		while (true)
 		{
-			if (toInitialize.Count > 0)
-			{
-				lock (toInitialize)
-				{
-					T item = toInitialize.Dequeue();
-
-					for (int i = 0; i < fields.Length; i++)
-						fields[i].SetValue(item, defaultValues[i]);
-
-					lock (pool) { pool.Enqueue(item); }
-				}
-			}
-
+			Update();
 			Thread.Sleep(10);
+		}
+	}
+
+	void Update()
+	{
+		if (toInitialize.Count > 0)
+		{
+			lock (toInitialize)
+			{
+				T item = toInitialize.Dequeue();
+
+				for (int i = 0; i < fields.Length; i++)
+					fields[i].SetValue(item, defaultValues[i]);
+
+				lock (pool) { pool.Enqueue(item); }
+			}
 		}
 	}
 
