@@ -10,10 +10,13 @@ public class Explosiman : Enemy, ICopyable<Explosiman>
 {
 	public float LifeTime = 5f;
 	public float CheckInterval = 1f;
+	[DoNotCopy]
+	public Explosion Explosion;
 
 	Player target;
 	float lifeCounter;
 	float nextPlayerCheckTime;
+	bool willExplode;
 
 	readonly CachedValue<Rigidbody2D> cachedRigidbody;
 	public Rigidbody2D CachedRigidbody { get { return cachedRigidbody; } }
@@ -53,14 +56,20 @@ public class Explosiman : Enemy, ICopyable<Explosiman>
 
 	protected override bool ShouldDie()
 	{
-		return base.ShouldDie() || lifeCounter <= 0f;
+		return base.ShouldDie() || lifeCounter <= 0f || willExplode;
 	}
 
 	public override void Kill()
 	{
-		ParticleManager.Instance.Create("Explosion1", CachedTransform.position);
+		ParticleManager.Instance.Create(Explosion, CachedTransform.position - new Vector3(0f, 0f, 0.2f), null);
 
 		base.Kill();
+	}
+
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.GetComponentInParent<Player>() != null)
+			willExplode = true;
 	}
 
 	public override void OnCreate()
@@ -79,6 +88,7 @@ public class Explosiman : Enemy, ICopyable<Explosiman>
 		target = reference.target;
 		lifeCounter = reference.lifeCounter;
 		nextPlayerCheckTime = reference.nextPlayerCheckTime;
+		willExplode = reference.willExplode;
 	}
 
 	public override CharacterBase Clone()

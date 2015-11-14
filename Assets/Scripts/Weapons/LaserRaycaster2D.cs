@@ -15,7 +15,7 @@ public class LaserRaycaster2D : Raycaster2DBase
 	public Vector3 EndDirection { get; private set; }
 	public Vector3 EndPosition { get; private set; }
 
-	public override bool Cast()
+	protected override void UpdateCast()
 	{
 		Hits.Clear();
 		Vector3 position = CachedTransform.position;
@@ -52,8 +52,6 @@ public class LaserRaycaster2D : Raycaster2DBase
 		while (BounceCount < Bounces && reflector != null);
 
 		EndDirection = direction;
-
-		return Hits.Count > 0;
 	}
 
 	void DrawLine(Vector3 startPosition, Vector3 endPosition)
