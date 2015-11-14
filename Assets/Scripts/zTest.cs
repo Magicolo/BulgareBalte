@@ -88,18 +88,12 @@ public class ReflectionPool<T> where T : PMonoBehaviour
 
 	FieldInfo[] fields;
 	object[] defaultValues;
-	bool initialized;
 
 	public ReflectionPool(T reference)
 	{
 		this.reference = reference;
 
 		new Thread(Initialize).Start();
-	}
-
-	~ReflectionPool()
-	{
-		PDebug.Log("DESTRUCT");
 	}
 
 	void Initialize()
@@ -121,15 +115,14 @@ public class ReflectionPool<T> where T : PMonoBehaviour
 	{
 		if (toInitialize.Count > 0)
 		{
-			lock (toInitialize)
-			{
-				T item = toInitialize.Dequeue();
+			T item;
 
-				for (int i = 0; i < fields.Length; i++)
-					fields[i].SetValue(item, defaultValues[i]);
+			lock (toInitialize) { item = toInitialize.Dequeue(); }
 
-				lock (pool) { pool.Enqueue(item); }
-			}
+			for (int i = 0; i < fields.Length; i++)
+				fields[i].SetValue(item, defaultValues[i]);
+
+			lock (pool) { pool.Enqueue(item); }
 		}
 	}
 
@@ -138,7 +131,7 @@ public class ReflectionPool<T> where T : PMonoBehaviour
 		T item;
 
 		if (pool.Count > 0)
-			item = pool.Dequeue();
+			lock (pool) { item = pool.Dequeue(); }
 		else
 			item = UnityEngine.Object.Instantiate(reference);
 
@@ -153,6 +146,6 @@ public class ReflectionPool<T> where T : PMonoBehaviour
 			return;
 
 		item.CachedGameObject.SetActive(false);
-		toInitialize.Enqueue(item);
+		lock (toInitialize) { toInitialize.Enqueue(item); }
 	}
 }
