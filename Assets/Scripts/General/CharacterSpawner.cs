@@ -10,7 +10,7 @@ public class CharacterSpawner : SpawnerBase<CharacterBase>
 {
 	[Min]
 	public float SpawnInterval;
-	public CharacterBase Prefab;
+	public CharacterBase ToSpawn;
 
 	float nextSpawnTime;
 
@@ -24,7 +24,7 @@ public class CharacterSpawner : SpawnerBase<CharacterBase>
 
 	public override CharacterBase Spawn()
 	{
-		CharacterBase character = Prefab.Clone();
+		CharacterBase character = PoolManager.Create(ToSpawn);
 		character.CachedTransform.position = CachedTransform.position;
 
 		nextSpawnTime = CachedTime.Time + SpawnInterval;

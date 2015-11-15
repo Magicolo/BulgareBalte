@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public abstract class BulletWeapon : WeaponBase, ICopyable<BulletWeapon>
+public abstract class BulletWeapon : WeaponBase
 {
 	public BulletBase BulletPrefab;
 
@@ -17,13 +17,10 @@ public abstract class BulletWeapon : WeaponBase, ICopyable<BulletWeapon>
 
 	public virtual BulletBase CreateBullet()
 	{
-		return Pools.BehaviourPool.CreateCopy(BulletPrefab, CachedTransform.position, CachedTransform);
-	}
+		BulletBase bullet = PoolManager.Create(BulletPrefab);
+		bullet.CachedTransform.parent = CachedTransform;
+		bullet.CachedTransform.position = CachedTransform.position;
 
-	public void Copy(BulletWeapon reference)
-	{
-		base.Copy(reference);
-
-		BulletPrefab = reference.BulletPrefab;
+		return bullet;
 	}
 }

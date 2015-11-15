@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer)), Copy]
-public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
+[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer))]
+public class LaserWeapon : WeaponBase
 {
 	[DoNotCopy]
 	public ParticleEffect Particles;
@@ -78,17 +78,5 @@ public class LaserWeapon : WeaponBase, ICopyable<LaserWeapon>
 	public override void Fire()
 	{
 		IsFiring = true;
-	}
-
-	public void Copy(LaserWeapon reference)
-	{
-		base.Copy(reference);
-
-		IsFiring = reference.IsFiring;
-	}
-
-	public override WeaponBase Clone()
-	{
-		return Pools.BehaviourPool.CreateCopy(this);
 	}
 }

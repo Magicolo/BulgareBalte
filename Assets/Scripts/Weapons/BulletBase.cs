@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Copy]
-public class BulletBase : PMonoBehaviour, ICopyable<BulletBase>, IClonable<BulletBase>
+public class BulletBase : PMonoBehaviour
 {
 	public float LifeTime = 1f;
 
@@ -29,7 +28,7 @@ public class BulletBase : PMonoBehaviour, ICopyable<BulletBase>, IClonable<Bulle
 
 	public void Kill()
 	{
-		Pools.BehaviourPool.Recycle(this);
+		PoolManager.Recycle(this);
 	}
 
 	public override void OnCreate()
@@ -44,10 +43,5 @@ public class BulletBase : PMonoBehaviour, ICopyable<BulletBase>, IClonable<Bulle
 		LifeTime = reference.LifeTime;
 		lifeCounter = reference.lifeCounter;
 		Owner = reference.Owner;
-	}
-
-	public BulletBase Clone()
-	{
-		return Pools.BehaviourPool.CreateCopy(this);
 	}
 }

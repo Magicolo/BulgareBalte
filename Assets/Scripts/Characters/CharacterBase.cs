@@ -5,19 +5,22 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent)), Copy]
-public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<CharacterBase>, IClonable<CharacterBase>
+[RequireComponent(typeof(TimeComponent))]
+public abstract class CharacterBase : PMonoBehaviour, IDamageable
 {
-	[CopyTo]
+	[InitializeContent]
 	public CharacterStats Stats;
 	public Transform WeaponRoot;
-	[DoNotCopy]
+	[DoNotInitialize]
 	public SpriteRenderer Renderer;
 	public Color NormalColor = Color.white;
 	public Color DamagedColor = Color.red;
 
-	public CharacterStats CurrentStats { get; protected set; }
-	public CharacterEquipment CurrentEquipment { get; protected set; }
+	public CharacterStats CurrentStats { get { return currentStats; } }
+	public CharacterEquipment CurrentEquipment { get { return currentEquipment; } }
+
+	protected readonly CharacterStats currentStats = new CharacterStats();
+	protected readonly CharacterEquipment currentEquipment = new CharacterEquipment();
 
 	Color currentColor;
 
@@ -50,12 +53,12 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 
 	protected virtual bool ShouldDie()
 	{
-		return CurrentStats.Health <= 0;
+		return currentStats.Health <= 0;
 	}
 
 	public virtual void EquipWeapon(WeaponBase weaponPrefab)
 	{
-		WeaponBase weapon = weaponPrefab.Clone();
+		WeaponBase weapon = PoolManager.Create(weaponPrefab);
 		weapon.CachedTransform.parent = WeaponRoot;
 		weapon.CachedTransform.Copy(weaponPrefab.CachedTransform);
 		weapon.Owner = this;
@@ -69,7 +72,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 
 	public virtual void Damage(DamageData data)
 	{
-		CurrentStats.Health -= data.Damage;
+		currentStats.Health -= data.Damage;
 		currentColor = DamagedColor;
 	}
 
@@ -78,31 +81,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable, ICopyable<Cha
 		base.OnCreate();
 
 		currentColor = NormalColor;
-		CurrentStats = CharacterStats.Pool.CreateCopy(Stats);
-		CurrentEquipment = CharacterEquipment.Pool.CreateCopy(CharacterEquipment.Default);
-	}
-
-	public override void OnRecycle()
-	{
-		base.OnRecycle();
-
-		CharacterStats.Pool.Recycle(CurrentStats);
-		CharacterEquipment.Pool.Recycle(CurrentEquipment);
-	}
-
-	public void Copy(CharacterBase reference)
-	{
-		CopyUtility.CopyTo(reference.Stats, ref Stats);
-		WeaponRoot = reference.WeaponRoot;
-		NormalColor = reference.NormalColor;
-		DamagedColor = reference.DamagedColor;
-		currentColor = reference.currentColor;
-		CurrentStats = reference.CurrentStats;
-		CurrentEquipment = reference.CurrentEquipment;
-	}
-
-	public virtual CharacterBase Clone()
-	{
-		return Pools.BehaviourPool.CreateCopy(this);
+		currentStats.Copy(Stats);
+		currentEquipment.Copy(CharacterEquipment.Default);
 	}
 }

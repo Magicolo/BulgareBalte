@@ -5,12 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(Rigidbody2D)), Copy]
-public class Explosiman : Enemy, ICopyable<Explosiman>
+[RequireComponent(typeof(Rigidbody2D))]
+public class Explosiman : Enemy
 {
 	public float LifeTime = 5f;
 	public float CheckInterval = 1f;
-	[DoNotCopy]
+	[DoNotInitialize]
 	public Explosion Explosion;
 
 	Player target;
@@ -51,7 +51,7 @@ public class Explosiman : Enemy, ICopyable<Explosiman>
 			return;
 
 		Vector3 direction = (target.CachedTransform.position - CachedTransform.position).normalized;
-		CachedRigidbody.AddForce(direction * CurrentStats.MovementSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
+		CachedRigidbody.AddForce(direction * currentStats.MovementSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
 	}
 
 	protected override bool ShouldDie()
@@ -61,7 +61,7 @@ public class Explosiman : Enemy, ICopyable<Explosiman>
 
 	public override void Kill()
 	{
-		ParticleManager.Instance.Create(Explosion, CachedTransform.position - new Vector3(0f, 0f, 0.2f), null);
+		ParticleManager.Instance.Create(Explosion, CachedTransform.position - new Vector3(0f, 0f, 0.2f));
 
 		base.Kill();
 	}
@@ -77,22 +77,5 @@ public class Explosiman : Enemy, ICopyable<Explosiman>
 		base.OnCreate();
 
 		lifeCounter = LifeTime;
-	}
-
-	public void Copy(Explosiman reference)
-	{
-		base.Copy(reference);
-
-		LifeTime = reference.LifeTime;
-		CheckInterval = reference.CheckInterval;
-		target = reference.target;
-		lifeCounter = reference.lifeCounter;
-		nextPlayerCheckTime = reference.nextPlayerCheckTime;
-		willExplode = reference.willExplode;
-	}
-
-	public override CharacterBase Clone()
-	{
-		return Pools.BehaviourPool.CreateCopy(this);
 	}
 }

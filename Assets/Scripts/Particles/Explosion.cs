@@ -6,11 +6,11 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(CircleZone))]
-public class Explosion : ParticleEffect, ICopyable<Explosion>
+public class Explosion : ParticleEffect
 {
 	public float Damage = 5f;
 	public DamageSources DamageSource;
-	[DoNotCopy]
+	[DoNotInitialize]
 	public CircleZone DamageZone;
 
 	bool hasCausedDamage;
@@ -38,14 +38,5 @@ public class Explosion : ParticleEffect, ICopyable<Explosion>
 		}
 
 		hasCausedDamage = true;
-	}
-
-	public void Copy(Explosion reference)
-	{
-		base.Copy(reference);
-
-		Damage = reference.Damage;
-		DamageSource = reference.DamageSource;
-		hasCausedDamage = reference.hasCausedDamage;
 	}
 }

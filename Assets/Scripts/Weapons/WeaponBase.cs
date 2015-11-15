@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Copy]
-public abstract class WeaponBase : PMonoBehaviour, ICopyable<WeaponBase>, IClonable<WeaponBase>
+public abstract class WeaponBase : PMonoBehaviour
 {
 	public DamageTypes DamageType;
 	[Min]
@@ -16,17 +15,4 @@ public abstract class WeaponBase : PMonoBehaviour, ICopyable<WeaponBase>, IClona
 	public CharacterBase Owner { get; set; }
 
 	public abstract void Fire();
-
-	public void Copy(WeaponBase reference)
-	{
-		DamageType = reference.DamageType;
-		AttackSpeedModifier = reference.AttackSpeedModifier;
-		DamageModifier = reference.DamageModifier;
-		Owner = reference.Owner;
-	}
-
-	public virtual WeaponBase Clone()
-	{
-		return Pools.BehaviourPool.CreateCopy(this);
-	}
 }

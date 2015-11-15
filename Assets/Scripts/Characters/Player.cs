@@ -48,6 +48,11 @@ public class Player : CharacterBase
 		cachedRigidbody2D = new CachedValue<Rigidbody2D>(GetComponent<Rigidbody2D>);
 	}
 
+	void Awake()
+	{
+		OnCreate();
+	}
+
 	void Update()
 	{
 		UpdateInput();
@@ -89,7 +94,7 @@ public class Player : CharacterBase
 		if (inputMotionDirection.sqrMagnitude <= 0f)
 			return;
 
-		CachedRigidbody2D.AddForce(inputMotionDirection * CurrentStats.MovementSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
+		CachedRigidbody2D.AddForce(inputMotionDirection * currentStats.MovementSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
 	}
 
 	void UpdateAim()
@@ -97,7 +102,7 @@ public class Player : CharacterBase
 		if (inputAimDirection.sqrMagnitude <= 0f)
 			return;
 
-		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime * CurrentStats.AimSpeed);
+		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime * currentStats.AimSpeed);
 	}
 
 	public override void OnCreate()
