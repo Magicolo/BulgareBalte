@@ -82,10 +82,10 @@ public class Player : CharacterBase
 
 	void UpdateWeapon()
 	{
-		if (IsFiring && CachedTime.Time > nextAttackTime && CurrentEquipment.Weapon != null)
+		if (IsFiring && CachedTime.Time > nextAttackTime && currentEquipment.Weapon != null)
 		{
-			CurrentEquipment.Weapon.Fire();
-			nextAttackTime = CachedTime.Time + 1f / (Stats.AttackSpeed * CurrentEquipment.Weapon.AttackSpeedModifier);
+			currentEquipment.Weapon.Fire();
+			nextAttackTime = CachedTime.Time + 1f / (currentStats.AttackSpeed * currentEquipment.Weapon.AttackSpeedModifier);
 		}
 	}
 
@@ -102,7 +102,7 @@ public class Player : CharacterBase
 		if (inputAimDirection.sqrMagnitude <= 0f)
 			return;
 
-		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime * currentStats.AimSpeed);
+		CachedRigidbody2D.RotateTowards(inputAimDirection.Angle(), CachedTime.DeltaTime * currentStats.RotationSpeed);
 	}
 
 	public override void OnCreate()
@@ -120,6 +120,7 @@ public class Player : CharacterBase
 		base.OnRecycle();
 
 		Players.Remove(this);
+		UnequipWeapon();
 	}
 
 	public override void Kill()

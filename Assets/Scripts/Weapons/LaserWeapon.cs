@@ -8,7 +8,7 @@ using Pseudo;
 [RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer))]
 public class LaserWeapon : WeaponBase
 {
-	[DoNotCopy]
+	[DoNotInitialize]
 	public ParticleEffect Particles;
 
 	public bool IsFiring { get; private set; }

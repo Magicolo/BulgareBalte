@@ -6,52 +6,21 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Explosiman : Enemy
+public class Explosiman : SeekerEnemy
 {
 	public float LifeTime = 5f;
-	public float CheckInterval = 1f;
-	[DoNotInitialize]
+	[InitializeContent]
 	public Explosion Explosion;
 
-	Player target;
 	float lifeCounter;
-	float nextPlayerCheckTime;
 	bool willExplode;
+	float randomAmplitude;
+	float randomFrequency;
+	float randomOffset;
 
-	readonly CachedValue<Rigidbody2D> cachedRigidbody;
-	public Rigidbody2D CachedRigidbody { get { return cachedRigidbody; } }
-
-	public Explosiman()
+	protected override float GetAngle()
 	{
-		cachedRigidbody = new CachedValue<Rigidbody2D>(GetComponent<Rigidbody2D>);
-	}
-
-	void Update()
-	{
-		UpdateTarget();
-	}
-
-	void FixedUpdate()
-	{
-		UpdateMotion();
-	}
-
-	void UpdateTarget()
-	{
-		if (target == null || CachedTime.Time > nextPlayerCheckTime)
-		{
-			target = Player.GetClosest(CachedTransform.position);
-			nextPlayerCheckTime = CachedTime.Time + CheckInterval;
-		}
-	}
-
-	void UpdateMotion()
-	{
-		if (target == null)
-			return;
-
-		Vector3 direction = (target.CachedTransform.position - CachedTransform.position).normalized;
-		CachedRigidbody.AddForce(direction * currentStats.MovementSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
+		return base.GetAngle() + randomAmplitude * Mathf.Sin(CachedTime.Time * randomFrequency + randomOffset);
 	}
 
 	protected override bool ShouldDie()
@@ -77,5 +46,8 @@ public class Explosiman : Enemy
 		base.OnCreate();
 
 		lifeCounter = LifeTime;
+		randomAmplitude = PRandom.Range(25f, 100f);
+		randomFrequency = PRandom.Range(1f, 5f);
+		randomOffset = PRandom.Range(0f, 1000f);
 	}
 }

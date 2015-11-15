@@ -10,6 +10,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 {
 	[InitializeContent]
 	public CharacterStats Stats;
+	[DoNotInitialize]
 	public Transform WeaponRoot;
 	[DoNotInitialize]
 	public SpriteRenderer Renderer;
@@ -58,12 +59,20 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 
 	public virtual void EquipWeapon(WeaponBase weaponPrefab)
 	{
+		UnequipWeapon();
+
 		WeaponBase weapon = PoolManager.Create(weaponPrefab);
 		weapon.CachedTransform.parent = WeaponRoot;
 		weapon.CachedTransform.Copy(weaponPrefab.CachedTransform);
 		weapon.Owner = this;
 
-		CurrentEquipment.Weapon = weapon;
+		currentEquipment.Weapon = weapon;
+	}
+
+	public virtual void UnequipWeapon()
+	{
+		PoolManager.Recycle(currentEquipment.Weapon);
+		currentEquipment.Weapon = null;
 	}
 
 	public abstract void Kill();
@@ -80,6 +89,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 	{
 		base.OnCreate();
 
+		CachedTime.OnCreate();
 		currentColor = NormalColor;
 		currentStats.Copy(Stats);
 		currentEquipment.Copy(CharacterEquipment.Default);

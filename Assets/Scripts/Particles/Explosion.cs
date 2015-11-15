@@ -10,7 +10,7 @@ public class Explosion : ParticleEffect
 {
 	public float Damage = 5f;
 	public DamageSources DamageSource;
-	[DoNotInitialize]
+	[InitializeContent]
 	public CircleZone DamageZone;
 
 	bool hasCausedDamage;
