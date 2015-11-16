@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public abstract class SpawnerBase<T> : PMonoBehaviour where T : UnityEngine.Object
+public abstract class SpawnerBase : PMonoBehaviour
 {
 	protected virtual void Update()
 	{
@@ -13,6 +13,6 @@ public abstract class SpawnerBase<T> : PMonoBehaviour where T : UnityEngine.Obje
 			Spawn();
 	}
 
-	public abstract T Spawn();
+	public abstract void Spawn();
 	protected abstract bool ShouldSpawn();
 }

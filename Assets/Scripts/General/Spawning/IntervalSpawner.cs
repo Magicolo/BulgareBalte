@@ -6,30 +6,27 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(TimeComponent))]
-public class CharacterSpawner : SpawnerBase<CharacterBase>
+public class IntervalSpawner : SpawnerBase
 {
 	[Min]
 	public float SpawnInterval;
-	public CharacterBase ToSpawn;
+	public PMonoBehaviour ToSpawn;
 
 	float nextSpawnTime;
 
 	readonly CachedValue<TimeComponent> cachedTime;
 	public TimeComponent CachedTime { get { return cachedTime; } }
 
-	public CharacterSpawner()
+	public IntervalSpawner()
 	{
 		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
 	}
 
-	public override CharacterBase Spawn()
+	public override void Spawn()
 	{
-		CharacterBase character = PoolManager.Create(ToSpawn);
-		character.CachedTransform.position = CachedTransform.position;
-
+		PMonoBehaviour spawn = PoolManager.Create(ToSpawn);
+		spawn.CachedTransform.position = CachedTransform.position;
 		nextSpawnTime = CachedTime.Time + SpawnInterval;
-
-		return character;
 	}
 
 	protected override bool ShouldSpawn()

@@ -13,6 +13,8 @@ public class LaserWeapon : WeaponBase
 
 	public bool IsFiring { get; private set; }
 
+	DamageData damage;
+
 	readonly CachedValue<LaserRaycaster2D> cachedRaycaster;
 	public LaserRaycaster2D CachedRaycaster { get { return cachedRaycaster; } }
 
@@ -48,8 +50,8 @@ public class LaserWeapon : WeaponBase
 
 			if (damageable != null)
 			{
-				if (damageable.CanBeDamagedBy(Owner.CurrentStats.DamageSource, DamageType))
-					damageable.Damage(new DamageData(Owner.CurrentStats.Damage * DamageModifier, Owner.CurrentStats.DamageSource, DamageType, CachedRaycaster.EndPosition));
+				if (damageable.CanBeDamagedBy(damage))
+					damageable.Damage(damage);
 			}
 		}
 
@@ -75,8 +77,11 @@ public class LaserWeapon : WeaponBase
 		Particles.CachedTransform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
 	}
 
-	public override void Fire()
+	public override void Fire(DamageData damage)
 	{
+		damage.Damage *= DamageModifier;
+		damage.Type = DamageType;
+		this.damage = damage;
 		IsFiring = true;
 	}
 }

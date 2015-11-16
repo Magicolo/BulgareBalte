@@ -7,12 +7,9 @@ using Pseudo;
 
 public abstract class WeaponBase : PMonoBehaviour
 {
-	public DamageTypes DamageType;
-	[Min]
-	public float AttackSpeedModifier = 3f;
 	public float DamageModifier = 1f;
+	public float AttackSpeedModifier = 1f;
+	public DamageTypes DamageType;
 
-	public CharacterBase Owner { get; set; }
-
-	public abstract void Fire();
+	public abstract void Fire(DamageData damage);
 }
