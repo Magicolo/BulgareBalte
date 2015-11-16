@@ -5,15 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
+[RequireComponent(typeof(TimeComponent), typeof(Rigidbody2D))]
 public abstract class CharacterBase : PMonoBehaviour, IDamageable
 {
 	[InitializeContent]
 	public CharacterStats Stats;
-	[DoNotInitialize]
-	public Transform WeaponRoot;
+	[InitializeContent]
+	public MotionBase Motion;
+
 	[DoNotInitialize]
 	public SpriteRenderer Renderer;
+	[DoNotInitialize]
+	public Transform WeaponRoot;
+
 	public Color NormalColor = Color.white;
 	public Color DamagedColor = Color.red;
 
@@ -22,15 +26,18 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 
 	protected readonly CharacterStats currentStats = new CharacterStats();
 	protected readonly CharacterEquipment currentEquipment = new CharacterEquipment();
-
-	Color currentColor;
+	protected Color currentColor;
 
 	readonly CachedValue<TimeComponent> cachedTime;
 	public TimeComponent CachedTime { get { return cachedTime; } }
 
+	readonly CachedValue<Rigidbody2D> cachedRigidbody;
+	public Rigidbody2D CachedRigidbody { get { return cachedRigidbody; } }
+
 	protected CharacterBase()
 	{
 		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedRigidbody = new CachedValue<Rigidbody2D>(GetComponent<Rigidbody2D>);
 	}
 
 	protected virtual void LateUpdate()
@@ -61,10 +68,12 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 	{
 		UnequipWeapon();
 
+		if (weaponPrefab == null)
+			return;
+
 		WeaponBase weapon = PoolManager.Create(weaponPrefab);
 		weapon.CachedTransform.parent = WeaponRoot;
 		weapon.CachedTransform.Copy(weaponPrefab.CachedTransform);
-		weapon.Owner = this;
 
 		currentEquipment.Weapon = weapon;
 	}
@@ -77,11 +86,11 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 
 	public abstract void Kill();
 
-	public abstract bool CanBeDamagedBy(DamageSources damageSource, DamageTypes damageType);
+	public abstract bool CanBeDamagedBy(DamageData damage);
 
-	public virtual void Damage(DamageData data)
+	public virtual void Damage(DamageData damage)
 	{
-		currentStats.Health -= data.Damage;
+		currentStats.Health -= damage.Damage;
 		currentColor = DamagedColor;
 	}
 
@@ -89,9 +98,19 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 	{
 		base.OnCreate();
 
+		Motion.OnCreate();
 		CachedTime.OnCreate();
+
 		currentColor = NormalColor;
 		currentStats.Copy(Stats);
 		currentEquipment.Copy(CharacterEquipment.Default);
+	}
+
+	public override void OnRecycle()
+	{
+		base.OnRecycle();
+
+		Motion.OnRecycle();
+		CachedTime.OnRecycle();
 	}
 }

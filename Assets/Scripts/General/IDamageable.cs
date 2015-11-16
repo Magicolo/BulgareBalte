@@ -15,12 +15,12 @@ public enum DamageTypes
 {
 	None,
 	Laser,
-	Bullet,
-	Explosion
+	Plasma,
+	Fire
 }
 
 public interface IDamageable
 {
-	bool CanBeDamagedBy(DamageSources damageSource, DamageTypes damageType);
-	void Damage(DamageData data);
+	bool CanBeDamagedBy(DamageData damage);
+	void Damage(DamageData damage);
 }

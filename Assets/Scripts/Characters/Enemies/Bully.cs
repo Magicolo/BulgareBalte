@@ -5,14 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(Rigidbody2D))]
-public class LazyWinston : Enemy
+public class Bully : Enemy
 {
 	public float FireDuration = 1f;
 	public WeaponBase StartWeapon;
 
 	float nextAttackTime;
-	float stopAttackTime;
 
 	protected virtual void Update()
 	{
@@ -24,12 +22,10 @@ public class LazyWinston : Enemy
 		if (currentEquipment.Weapon == null)
 			return;
 
-		if (CachedTime.Time < stopAttackTime)
-			currentEquipment.Weapon.Fire(new DamageData(currentStats.Damage, currentStats.DamageSource));
-		else if (CachedTime.Time > nextAttackTime)
+		if (CachedTime.Time > nextAttackTime)
 		{
-			stopAttackTime = CachedTime.Time + FireDuration;
-			nextAttackTime = stopAttackTime + 1f / currentStats.AttackSpeed;
+			currentEquipment.Weapon.Fire(new DamageData(CurrentStats.Damage, CurrentStats.DamageSource));
+			nextAttackTime = CachedTime.Time + 1f / currentStats.AttackSpeed;
 		}
 	}
 

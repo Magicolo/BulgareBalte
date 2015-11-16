@@ -12,7 +12,7 @@ public class Enemy : CharacterBase
 		PoolManager.Recycle(this);
 	}
 
-	public override bool CanBeDamagedBy(DamageSources damageSource, DamageTypes damageType)
+	public override bool CanBeDamagedBy(DamageData damage)
 	{
 		return true;
 	}

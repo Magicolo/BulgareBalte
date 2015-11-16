@@ -22,11 +22,13 @@ public class LaserRaycaster2D : Raycaster2DBase
 		Vector3 direction = CachedTransform.rotation * Vector3.right;
 		BounceCount = 0;
 		IReflector reflector;
+		bool startInCollider = Physics2D.queriesStartInColliders;
 
 		do
 		{
 			reflector = null;
 			RaycastHit2D hit = Physics2D.Raycast(position, direction, Distance, Mask);
+			Physics2D.queriesStartInColliders = false;
 
 			if (hit.collider == null)
 			{
@@ -51,6 +53,7 @@ public class LaserRaycaster2D : Raycaster2DBase
 		}
 		while (BounceCount < Bounces && reflector != null);
 
+		Physics2D.queriesStartInColliders = startInCollider;
 		EndDirection = direction;
 	}
 

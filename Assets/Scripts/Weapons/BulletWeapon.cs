@@ -5,20 +5,23 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public abstract class BulletWeapon : WeaponBase
+public class BulletWeapon : WeaponBase
 {
-	public BulletBase BulletPrefab;
+	public Bullet BulletPrefab;
 
-	public override void Fire()
+	public override void Fire(DamageData damage)
 	{
-		BulletBase bullet = CreateBullet();
-		bullet.Owner = this;
+		damage.Damage *= DamageModifier;
+
+		Bullet bullet = CreateBullet();
+		bullet.Initialize(damage);
+		bullet.CachedTransform.position = CachedTransform.position;
+		bullet.CachedTransform.eulerAngles = CachedTransform.eulerAngles;
 	}
 
-	public virtual BulletBase CreateBullet()
+	public virtual Bullet CreateBullet()
 	{
-		BulletBase bullet = PoolManager.Create(BulletPrefab);
-		bullet.CachedTransform.parent = CachedTransform;
+		Bullet bullet = PoolManager.Create(BulletPrefab);
 		bullet.CachedTransform.position = CachedTransform.position;
 
 		return bullet;

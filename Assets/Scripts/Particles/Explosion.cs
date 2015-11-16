@@ -5,15 +5,20 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(CircleZone))]
 public class Explosion : ParticleEffect
 {
-	public float Damage = 5f;
-	public DamageSources DamageSource;
 	[InitializeContent]
 	public CircleZone DamageZone;
+	public DamageTypes DamageType;
 
+	DamageData damage;
 	bool hasCausedDamage;
+
+	public virtual void Initialize(DamageData damage)
+	{
+		damage.Type = DamageType;
+		this.damage = damage;
+	}
 
 	protected override void Update()
 	{
@@ -34,7 +39,7 @@ public class Explosion : ParticleEffect
 			IDamageable damageable = hits[i].GetComponentInParent<IDamageable>();
 
 			if (damageable != null)
-				damageable.Damage(new DamageData(Damage, DamageSource, DamageTypes.Explosion, CachedTransform.position));
+				damageable.Damage(damage);
 		}
 
 		hasCausedDamage = true;
