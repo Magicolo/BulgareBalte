@@ -36,6 +36,7 @@ public class Explosiman : Enemy
         base.OnCreate();
 
         Animator.SetTrigger("Spawn");
+        Debug.Log("Boby");
     }
 
     void OnTriggerEnter2D(Collider2D collision)
