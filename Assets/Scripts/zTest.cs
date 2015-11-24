@@ -4,17 +4,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
-using System.Reflection;
-using System.Threading;
-using System.Runtime.InteropServices;
-using System.ComponentModel;
-using Pseudo.Internal;
 
+[Serializable]
 public class zTest : PMonoBehaviour
 {
+	public DynamicValue Dyn;
+
 	[Button]
 	public bool test;
-	public void Test()
+	void Test()
 	{
 
 	}

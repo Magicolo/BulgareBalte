@@ -72,8 +72,8 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 			return;
 
 		WeaponBase weapon = PoolManager.Create(weaponPrefab);
-		weapon.CachedTransform.parent = WeaponRoot;
-		weapon.CachedTransform.Copy(weaponPrefab.CachedTransform);
+		weapon.Transform.parent = WeaponRoot;
+		weapon.Transform.Copy(weaponPrefab.Transform);
 
 		currentEquipment.Weapon = weapon;
 	}

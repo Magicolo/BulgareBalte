@@ -41,7 +41,7 @@ public class Bullet : PMonoBehaviour
 	{
 		if (KillEffect != null)
 		{
-			Explosion explosion = ParticleManager.Instance.Create(KillEffect, CachedTransform.position);
+			Explosion explosion = ParticleManager.Instance.Create(KillEffect, Transform.position);
 			explosion.Initialize(damage);
 		}
 

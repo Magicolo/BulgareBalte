@@ -13,15 +13,15 @@ public class SeekerMotion : MotionBase
 
 	protected override bool ShouldMove()
 	{
-		return Target != null && Mathf.Abs(Vector2.Distance(CachedTransform.position, Target.position) - StopDistance) > Threshold;
+		return Target != null && Mathf.Abs(Vector2.Distance(Transform.position, Target.position) - StopDistance) > Threshold;
 	}
 
 	protected override Vector2 GetDirection()
 	{
-		if (Vector2.Distance(CachedTransform.position, Target.position) > StopDistance)
-			return CachedTransform.right;
+		if (Vector2.Distance(Transform.position, Target.position) > StopDistance)
+			return Transform.right;
 		else
-			return -CachedTransform.right;
+			return -Transform.right;
 	}
 
 	protected override bool ShouldRotate()
@@ -31,7 +31,7 @@ public class SeekerMotion : MotionBase
 
 	protected override float GetAngle()
 	{
-		Vector2 direction = (Target.position - CachedTransform.position).normalized;
+		Vector2 direction = (Target.position - Transform.position).normalized;
 
 		return direction.Angle();
 	}

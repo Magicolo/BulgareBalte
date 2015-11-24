@@ -18,8 +18,8 @@ public class LaserRaycaster2D : Raycaster2DBase
 	protected override void UpdateCast()
 	{
 		Hits.Clear();
-		Vector3 position = CachedTransform.position;
-		Vector3 direction = CachedTransform.rotation * Vector3.right;
+		Vector3 position = Transform.position;
+		Vector3 direction = Transform.rotation * Vector3.right;
 		BounceCount = 0;
 		IReflector reflector;
 		bool startInCollider = Physics2D.queriesStartInColliders;

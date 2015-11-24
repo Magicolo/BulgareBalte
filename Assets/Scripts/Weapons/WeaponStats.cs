@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +16,8 @@ public class WeaponStats : ICopyable<WeaponStats>
 
 	public void Copy(WeaponStats reference)
 	{
-		throw new NotImplementedException();
+		Damage = reference.Damage;
+		AttackSpeed = reference.AttackSpeed;
+		DamageType = reference.DamageType;
 	}
 }

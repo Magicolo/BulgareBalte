@@ -22,7 +22,7 @@ public class UIHealthBar : UIBar
 	{
 		base.Update();
 
-		CachedTransform.position = character.CachedTransform.position;
+		Transform.position = character.Transform.position;
 		Show = TimeManager.UI.Time > lastValueChangeTime + HideDelay;
 
 		float value = character.CurrentStats.Health / character.Stats.Health;

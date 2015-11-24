@@ -35,7 +35,7 @@ public class LaserWeapon : WeaponBase
 	void UpdateLaser()
 	{
 		CachedLineRenderer.enabled = IsFiring;
-		Particles.CachedGameObject.SetActive(IsFiring);
+		Particles.GameObject.SetActive(IsFiring);
 
 		if (!IsFiring)
 			return;
@@ -61,10 +61,10 @@ public class LaserWeapon : WeaponBase
 	void UpdateLine()
 	{
 		CachedLineRenderer.SetVertexCount(CachedRaycaster.BounceCount + 2);
-		CachedLineRenderer.SetPosition(0, CachedTransform.position);
+		CachedLineRenderer.SetPosition(0, Transform.position);
 
 		Vector3 endPosition = CachedRaycaster.EndPosition;
-		endPosition.z = CachedTransform.position.z;
+		endPosition.z = Transform.position.z;
 
 		for (int i = 0; i < CachedRaycaster.BounceCount; i++)
 		{
@@ -73,8 +73,8 @@ public class LaserWeapon : WeaponBase
 		}
 
 		CachedLineRenderer.SetPosition(CachedRaycaster.BounceCount + 1, endPosition);
-		Particles.CachedTransform.position = endPosition;
-		Particles.CachedTransform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
+		Particles.Transform.position = endPosition;
+		Particles.Transform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
 	}
 
 	public override void Fire(DamageData damage)

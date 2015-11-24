@@ -30,8 +30,8 @@ public class EnemySeekerMotion : SeekerMotion
 
 	protected virtual Transform GetTarget()
 	{
-		Player player = Player.GetClosest(CachedTransform.position);
+		Player player = Player.GetClosest(Transform.position);
 
-		return player == null ? null : player.CachedTransform;
+		return player == null ? null : player.Transform;
 	}
 }

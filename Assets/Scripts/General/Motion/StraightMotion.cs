@@ -14,7 +14,7 @@ public class StraightMotion : MotionBase
 
 	protected override Vector2 GetDirection()
 	{
-		return CachedTransform.right;
+		return Transform.right;
 	}
 
 	protected override bool ShouldRotate()
@@ -24,6 +24,6 @@ public class StraightMotion : MotionBase
 
 	protected override float GetAngle()
 	{
-		return CachedTransform.eulerAngles.z;
+		return Transform.eulerAngles.z;
 	}
 }

@@ -15,14 +15,14 @@ public class BulletWeapon : WeaponBase
 
 		Bullet bullet = CreateBullet();
 		bullet.Initialize(damage);
-		bullet.CachedTransform.position = CachedTransform.position;
-		bullet.CachedTransform.eulerAngles = CachedTransform.eulerAngles;
+		bullet.Transform.position = Transform.position;
+		bullet.Transform.eulerAngles = Transform.eulerAngles;
 	}
 
 	public virtual Bullet CreateBullet()
 	{
 		Bullet bullet = PoolManager.Create(BulletPrefab);
-		bullet.CachedTransform.position = CachedTransform.position;
+		bullet.Transform.position = Transform.position;
 
 		return bullet;
 	}

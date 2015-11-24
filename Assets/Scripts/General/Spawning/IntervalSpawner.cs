@@ -25,7 +25,7 @@ public class IntervalSpawner : SpawnerBase
 	public override void Spawn()
 	{
 		PMonoBehaviour spawn = PoolManager.Create(ToSpawn);
-		spawn.CachedTransform.position = CachedTransform.position;
+		spawn.Transform.position = Transform.position;
 		nextSpawnTime = CachedTime.Time + SpawnInterval;
 	}
 

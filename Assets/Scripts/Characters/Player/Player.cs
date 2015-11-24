@@ -24,7 +24,7 @@ public class Player : CharacterBase
 		for (int i = 0; i < Players.Count; i++)
 		{
 			Player player = Players[i];
-			float distance = (player.CachedTransform.position - position).sqrMagnitude;
+			float distance = (player.Transform.position - position).sqrMagnitude;
 
 			if (distance < closestDistance)
 			{
