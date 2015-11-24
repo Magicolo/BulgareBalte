@@ -9,6 +9,7 @@ using Pseudo;
 public class zTest : PMonoBehaviour
 {
 	public DynamicValue Dyn;
+	public AudioOption Option;
 
 	[Button]
 	public bool test;
