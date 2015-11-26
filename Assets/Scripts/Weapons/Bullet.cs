@@ -45,7 +45,7 @@ public class Bullet : PMonoBehaviour
 			explosion.Initialize(damage);
 		}
 
-		PoolManager.Recycle(this);
+		PrefabPoolManager.Recycle(this);
 	}
 
 	public override void OnCreate()

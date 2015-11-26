@@ -9,7 +9,7 @@ public class Enemy : CharacterBase
 {
 	public override void Kill()
 	{
-		PoolManager.Recycle(this);
+		PrefabPoolManager.Recycle(this);
 	}
 
 	public override bool CanBeDamagedBy(DamageData damage)

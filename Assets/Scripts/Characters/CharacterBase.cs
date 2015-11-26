@@ -71,7 +71,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 		if (weaponPrefab == null)
 			return;
 
-		WeaponBase weapon = PoolManager.Create(weaponPrefab);
+		WeaponBase weapon = PrefabPoolManager.Create(weaponPrefab);
 		weapon.Transform.parent = WeaponRoot;
 		weapon.Transform.Copy(weaponPrefab.Transform);
 
@@ -80,7 +80,7 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 
 	public virtual void UnequipWeapon()
 	{
-		PoolManager.Recycle(currentEquipment.Weapon);
+		PrefabPoolManager.Recycle(currentEquipment.Weapon);
 		currentEquipment.Weapon = null;
 	}
 

@@ -21,7 +21,7 @@ public class BulletWeapon : WeaponBase
 
 	public virtual Bullet CreateBullet()
 	{
-		Bullet bullet = PoolManager.Create(BulletPrefab);
+		Bullet bullet = PrefabPoolManager.Create(BulletPrefab);
 		bullet.Transform.position = Transform.position;
 
 		return bullet;
