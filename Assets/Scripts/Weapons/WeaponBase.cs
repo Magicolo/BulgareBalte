@@ -11,5 +11,12 @@ public abstract class WeaponBase : PMonoBehaviour
 	public float AttackSpeedModifier = 1f;
 	public DamageTypes DamageType;
 
-	public abstract void Fire(DamageData damage);
+	protected DamageData damage;
+
+	public virtual void Attack(DamageData damage)
+	{
+		damage.Damage *= DamageModifier;
+		damage.Type = DamageType;
+		this.damage = damage;
+	}
 }

@@ -28,7 +28,7 @@ public abstract class MotionBase : PMonoBehaviour
 		UpdateMotion();
 	}
 
-	public virtual void UpdateMotion()
+	protected virtual void UpdateMotion()
 	{
 		if (ShouldMove())
 			CachedRigidbody.AddForce(GetDirection() * MoveSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
@@ -38,7 +38,7 @@ public abstract class MotionBase : PMonoBehaviour
 	}
 
 	protected abstract bool ShouldMove();
-	protected abstract Vector2 GetDirection();
 	protected abstract bool ShouldRotate();
+	protected abstract Vector2 GetDirection();
 	protected abstract float GetAngle();
 }

@@ -9,7 +9,7 @@ public class BulletWeapon : WeaponBase
 {
 	public Bullet BulletPrefab;
 
-	public override void Fire(DamageData damage)
+	public override void Attack(DamageData damage)
 	{
 		damage.Damage *= DamageModifier;
 

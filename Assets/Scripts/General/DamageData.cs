@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public struct DamageData
+public class DamageData
 {
 	public float Damage;
 	public DamageSources Source;
 	public DamageTypes Type;
 
-	public DamageData(float damage, DamageSources source = DamageSources.None, DamageTypes type = DamageTypes.None)
+	public void Initialize(float damage, DamageSources source = DamageSources.None, DamageTypes type = DamageTypes.None)
 	{
 		Damage = damage;
 		Source = source;

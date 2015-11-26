@@ -56,7 +56,9 @@ public class Player : CharacterBase
 	{
 		if (IsFiring && CachedTime.Time > nextAttackTime && currentEquipment.Weapon != null)
 		{
-			currentEquipment.Weapon.Fire(new DamageData(currentStats.Damage, currentStats.DamageSource));
+			var damage = TypePoolManager.Create<DamageData>();
+			damage.Initialize(currentStats.Damage, currentStats.DamageSource);
+			currentEquipment.Weapon.Attack(damage);
 			nextAttackTime = CachedTime.Time + 1f / (currentStats.AttackSpeed * currentEquipment.Weapon.AttackSpeedModifier);
 		}
 	}

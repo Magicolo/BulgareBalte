@@ -11,7 +11,7 @@ public class EnemySeekerMotion : SeekerMotion
 
 	protected float nextPlayerCheckTime;
 
-	public override void UpdateMotion()
+	protected override void UpdateMotion()
 	{
 		UpdateTarget();
 		base.UpdateMotion();

@@ -25,7 +25,11 @@ public class LazyWinston : Enemy
 			return;
 
 		if (CachedTime.Time < stopAttackTime)
-			currentEquipment.Weapon.Fire(new DamageData(currentStats.Damage, currentStats.DamageSource));
+		{
+			var damage = TypePoolManager.Create<DamageData>();
+			damage.Initialize(currentStats.Damage, currentStats.DamageSource);
+			currentEquipment.Weapon.Attack(damage);
+		}
 		else if (CachedTime.Time > nextAttackTime)
 		{
 			stopAttackTime = CachedTime.Time + FireDuration;

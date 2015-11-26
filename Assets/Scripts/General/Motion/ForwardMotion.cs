@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class StraightMotion : MotionBase
+public class ForwardMotion : MotionBase
 {
 	protected override bool ShouldMove()
 	{

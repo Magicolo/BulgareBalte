@@ -11,9 +11,7 @@ public class LaserWeapon : WeaponBase
 	[DoNotInitialize]
 	public ParticleEffect Particles;
 
-	public bool IsFiring { get; private set; }
-
-	DamageData damage;
+	public bool IsAttacking { get; private set; }
 
 	readonly CachedValue<LaserRaycaster2D> cachedRaycaster;
 	public LaserRaycaster2D CachedRaycaster { get { return cachedRaycaster; } }
@@ -34,10 +32,10 @@ public class LaserWeapon : WeaponBase
 
 	void UpdateLaser()
 	{
-		CachedLineRenderer.enabled = IsFiring;
-		Particles.GameObject.SetActive(IsFiring);
+		CachedLineRenderer.enabled = IsAttacking;
+		Particles.GameObject.SetActive(IsAttacking);
 
-		if (!IsFiring)
+		if (!IsAttacking)
 			return;
 
 		CachedRaycaster.Cast();
@@ -45,8 +43,8 @@ public class LaserWeapon : WeaponBase
 
 		if (CachedRaycaster.Hits.Count > 0)
 		{
-			RaycastHit2D hit = CachedRaycaster.Hits.Last();
-			IDamageable damageable = hit.collider.GetComponentInParent<IDamageable>();
+			var hit = CachedRaycaster.Hits.Last();
+			var damageable = hit.collider.GetComponentInParent<IDamageable>();
 
 			if (damageable != null)
 			{
@@ -55,7 +53,7 @@ public class LaserWeapon : WeaponBase
 			}
 		}
 
-		IsFiring = false;
+		IsAttacking = false;
 	}
 
 	void UpdateLine()
@@ -63,12 +61,12 @@ public class LaserWeapon : WeaponBase
 		CachedLineRenderer.SetVertexCount(CachedRaycaster.BounceCount + 2);
 		CachedLineRenderer.SetPosition(0, Transform.position);
 
-		Vector3 endPosition = CachedRaycaster.EndPosition;
+		var endPosition = CachedRaycaster.EndPosition;
 		endPosition.z = Transform.position.z;
 
 		for (int i = 0; i < CachedRaycaster.BounceCount; i++)
 		{
-			RaycastHit2D hit = CachedRaycaster.Hits[i];
+			var hit = CachedRaycaster.Hits[i];
 			CachedLineRenderer.SetPosition(i + 1, hit.point);
 		}
 
@@ -77,11 +75,10 @@ public class LaserWeapon : WeaponBase
 		Particles.Transform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
 	}
 
-	public override void Fire(DamageData damage)
+	public override void Attack(DamageData damage)
 	{
-		damage.Damage *= DamageModifier;
-		damage.Type = DamageType;
-		this.damage = damage;
-		IsFiring = true;
+		base.Attack(damage);
+
+		IsAttacking = true;
 	}
 }

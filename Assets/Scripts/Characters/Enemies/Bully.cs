@@ -24,7 +24,9 @@ public class Bully : Enemy
 
 		if (CachedTime.Time > nextAttackTime)
 		{
-			currentEquipment.Weapon.Fire(new DamageData(CurrentStats.Damage, CurrentStats.DamageSource));
+			var damage = TypePoolManager.Create<DamageData>();
+			damage.Initialize(CurrentStats.Damage, CurrentStats.DamageSource);
+			currentEquipment.Weapon.Attack(damage);
 			nextAttackTime = CachedTime.Time + 1f / currentStats.AttackSpeed;
 		}
 	}
