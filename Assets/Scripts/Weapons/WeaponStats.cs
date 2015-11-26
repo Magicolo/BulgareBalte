@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Copy]
 public class WeaponStats : ICopyable<WeaponStats>
 {
 	[Min]

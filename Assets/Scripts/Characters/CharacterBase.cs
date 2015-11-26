@@ -98,19 +98,8 @@ public abstract class CharacterBase : PMonoBehaviour, IDamageable
 	{
 		base.OnCreate();
 
-		Motion.OnCreate();
-		CachedTime.OnCreate();
-
 		currentColor = NormalColor;
 		currentStats.Copy(Stats);
 		currentEquipment.Copy(CharacterEquipment.Default);
-	}
-
-	public override void OnRecycle()
-	{
-		base.OnRecycle();
-
-		Motion.OnRecycle();
-		CachedTime.OnRecycle();
 	}
 }

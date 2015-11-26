@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Serializable, Copy]
+[Serializable]
 public class CharacterEquipment : ICopyable<CharacterEquipment>
 {
 	public static readonly CharacterEquipment Default = new CharacterEquipment();

@@ -22,7 +22,7 @@ public class BurstAttack : AttackBase
 		if (burstCounter >= BurstAmount)
 		{
 			burstCounter = 0;
-			nextAttackTime = CachedTime.Time + (1f / AttackSpeed);
+			nextAttackTime = CachedTime.Time + 1f / (AttackSpeed * Weapon.AttackSpeedModifier);
 		}
 		else
 			nextAttackTime = CachedTime.Time + BurstInterval;

@@ -4,16 +4,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
+using System.Threading;
+using Pseudo.Internal;
 
 [Serializable]
 public class zTest : PMonoBehaviour
 {
-	public DynamicValue Dyn;
-	public AudioOption Option;
-
 	[Button]
 	public bool test;
 	void Test()
 	{
+		PDebug.Log(EntityUtility.GetTotalComponentCount());
 	}
 }
