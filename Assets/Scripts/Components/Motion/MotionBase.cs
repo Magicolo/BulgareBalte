@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(TimeComponent), typeof(Rigidbody2D))]
-public abstract class MotionBase : PMonoBehaviour
+public abstract class MotionBase : PComponent
 {
 	public float MoveSpeed = 10f;
 	public float RotateSpeed = 3f;

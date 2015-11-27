@@ -27,7 +27,7 @@ public class LaserRaycaster2D : Raycaster2DBase
 		do
 		{
 			reflector = null;
-			RaycastHit2D hit = Physics2D.Raycast(position, direction, Distance, Mask);
+			var hit = Physics2D.Raycast(position, direction, Distance, Mask);
 			Physics2D.queriesStartInColliders = false;
 
 			if (hit.collider == null)
@@ -38,7 +38,7 @@ public class LaserRaycaster2D : Raycaster2DBase
 			else
 			{
 				DrawLine(position, hit.point);
-				reflector = hit.collider.GetComponentInParent<IReflector>();
+				reflector = hit.rigidbody == null ? null : hit.rigidbody.GetComponentInParent<IReflector>();
 				EndPosition = hit.point;
 
 				if (reflector != null)

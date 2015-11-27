@@ -9,17 +9,11 @@ public class Explosion : ParticleEffect
 {
 	[InitializeContent]
 	public CircleZone DamageZone;
-	public DamageTypes DamageType;
+	public DamageData Damage;
 
-	DamageData damage;
 	bool hasCausedDamage;
-
-	public virtual void Initialize(DamageData damage)
-	{
-		damage.Type = DamageType;
-		this.damage = damage;
-	}
-
+	Collider2D[] hits = new Collider2D[64];
+	
 	protected override void Update()
 	{
 		base.Update();
@@ -27,21 +21,27 @@ public class Explosion : ParticleEffect
 		UpdateDamage();
 	}
 
-	void UpdateDamage()
+	protected virtual void UpdateDamage()
 	{
 		if (hasCausedDamage)
 			return;
 
-		Collider2D[] hits = Physics2D.OverlapCircleAll(DamageZone.WorldCircle.Position, DamageZone.WorldCircle.Radius);
+		Physics2D.OverlapCircleNonAlloc(DamageZone.WorldCircle.Position, DamageZone.WorldCircle.Radius, hits);
 
 		for (int i = 0; i < hits.Length; i++)
 		{
-			IDamageable damageable = hits[i].GetComponentInParent<IDamageable>();
+			var hit = hits[i];
+
+			if (hit == null)
+				return;
+
+			var damageable = hit.attachedRigidbody == null ? null : hit.attachedRigidbody.GetComponentInParent<IDamageable>();
 
 			if (damageable != null)
-				damageable.Damage(damage);
+				damageable.Damage(Damage);
 		}
 
+		hits.Clear();
 		hasCausedDamage = true;
 	}
 }

@@ -18,7 +18,7 @@ public class InputMotion : MotionBase
 		base.UpdateMotion();
 	}
 
-	void UpdateInput()
+	protected virtual void UpdateInput()
 	{
 		inputMotion.x = InputManager.Instance.GetAxis(Input, "MoveX");
 		inputMotion.y = InputManager.Instance.GetAxis(Input, "MoveY");

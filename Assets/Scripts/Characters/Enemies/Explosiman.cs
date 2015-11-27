@@ -28,7 +28,7 @@ public class Explosiman : Enemy
 		Explosion explosion = ParticleManager.Instance.Create(Explosion, Transform.position - new Vector3(0f, 0f, 0.2f));
 		var damage = TypePoolManager.Create<DamageData>();
 		damage.Initialize(currentStats.Damage, currentStats.DamageSource);
-		explosion.Initialize(damage);
+		//explosion.Initialize(damage);
 
 		base.Kill();
 	}

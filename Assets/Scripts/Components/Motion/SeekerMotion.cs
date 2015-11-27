@@ -7,18 +7,18 @@ using Pseudo;
 
 public class SeekerMotion : MotionBase
 {
-	public Transform Target;
+	public PEntity Target;
 	public float Threshold = 0.5f;
 	public float StopDistance = 1f;
 
 	protected override bool ShouldMove()
 	{
-		return Target != null && Mathf.Abs(Vector2.Distance(Transform.position, Target.position) - StopDistance) > Threshold;
+		return Target != null && Mathf.Abs(Vector2.Distance(Transform.position, Target.Transform.position) - StopDistance) > Threshold;
 	}
 
 	protected override Vector2 GetDirection()
 	{
-		if (Vector2.Distance(Transform.position, Target.position) > StopDistance)
+		if (Vector2.Distance(Transform.position, Target.Transform.position) > StopDistance)
 			return Transform.right;
 		else
 			return -Transform.right;
@@ -31,7 +31,7 @@ public class SeekerMotion : MotionBase
 
 	protected override float GetAngle()
 	{
-		Vector2 direction = (Target.position - Transform.position).normalized;
+		Vector2 direction = (Target.Transform.position - Transform.position).normalized;
 
 		return direction.Angle();
 	}

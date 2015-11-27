@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public abstract class WeaponBase : PMonoBehaviour
+public abstract class WeaponBase : PComponent
 {
 	public float DamageModifier = 1f;
 	public float AttackSpeedModifier = 1f;
@@ -17,6 +17,15 @@ public abstract class WeaponBase : PMonoBehaviour
 	{
 		damage.Damage *= DamageModifier;
 		damage.Type = DamageType;
+
+		TypePoolManager.Recycle(damage);
 		this.damage = damage;
+	}
+
+	public override void OnRecycle()
+	{
+		base.OnRecycle();
+
+		TypePoolManager.Recycle(damage);
 	}
 }

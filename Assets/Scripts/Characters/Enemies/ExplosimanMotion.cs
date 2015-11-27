@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class ExplosimanMotion : EnemySeekerMotion
+public class ExplosimanMotion : GroupSeekerMotion
 {
 	float randomAmplitude;
 	float randomFrequency;

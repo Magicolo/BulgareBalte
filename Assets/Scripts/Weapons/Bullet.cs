@@ -13,7 +13,7 @@ public class Bullet : PMonoBehaviour
 	[InitializeContent]
 	public MotionBase Motion;
 	[DoNotInitialize]
-	public Explosion KillEffect;
+	public ParticleEffect Explosion;
 
 	protected float lifeCounter;
 	protected DamageData damage;
@@ -39,11 +39,8 @@ public class Bullet : PMonoBehaviour
 
 	public virtual void Kill()
 	{
-		if (KillEffect != null)
-		{
-			Explosion explosion = ParticleManager.Instance.Create(KillEffect, Transform.position);
-			explosion.Initialize(damage);
-		}
+		if (Explosion != null)
+			ParticleManager.Instance.Create(Explosion, Transform.position);
 
 		PrefabPoolManager.Recycle(this);
 	}

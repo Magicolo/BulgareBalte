@@ -44,7 +44,7 @@ public class LaserWeapon : WeaponBase
 		if (CachedRaycaster.Hits.Count > 0)
 		{
 			var hit = CachedRaycaster.Hits.Last();
-			var damageable = hit.collider.GetComponentInParent<IDamageable>();
+			var damageable = hit.rigidbody == null ? null : hit.rigidbody.GetComponent<IDamageable>();
 
 			if (damageable != null)
 			{

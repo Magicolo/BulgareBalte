@@ -10,7 +10,7 @@ public class IntervalSpawner : SpawnerBase
 {
 	[Min]
 	public float SpawnInterval;
-	public PMonoBehaviour ToSpawn;
+	public PEntity ToSpawn;
 
 	float nextSpawnTime;
 

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public abstract class SpawnerBase : PMonoBehaviour
+public abstract class SpawnerBase : PComponent
 {
 	protected virtual void Update()
 	{

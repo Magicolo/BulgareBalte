@@ -5,9 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class EnemySeekerMotion : SeekerMotion
+public class GroupSeekerMotion : SeekerMotion
 {
 	public float CheckForTargetInterval = 1f;
+	public EntityGroup.Groups TargetGroup;
 
 	protected float nextPlayerCheckTime;
 
@@ -28,10 +29,8 @@ public class EnemySeekerMotion : SeekerMotion
 			Target = null;
 	}
 
-	protected virtual Transform GetTarget()
+	protected virtual PEntity GetTarget()
 	{
-		Player player = Player.GetClosest(Transform.position);
-
-		return player == null ? null : player.Transform;
+		return EntityGroup.GetClosestEntity(TargetGroup, Transform.position);
 	}
 }

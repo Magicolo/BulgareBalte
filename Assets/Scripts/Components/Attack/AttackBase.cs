@@ -6,12 +6,12 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(TimeComponent))]
-public abstract class AttackBase : PMonoBehaviour
+public abstract class AttackBase : PComponent
 {
+	public WeaponBase Weapon;
 	public float AttackSpeed = 1f;
 	public float Damage = 1f;
 	public DamageSources DamageSource;
-	public WeaponBase Weapon;
 
 	protected float lastAttackTime;
 
