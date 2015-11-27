@@ -25,9 +25,9 @@ public class Explosiman : Enemy
 	{
 		Animator.SetTrigger("Explose");
 		//TODO faire un delay pour qu'on voit l'animation .
-		Explosion explosion = ParticleManager.Instance.Create(Explosion, Transform.position - new Vector3(0f, 0f, 0.2f));
-		var damage = TypePoolManager.Create<DamageData>();
-		damage.Initialize(currentStats.Damage, currentStats.DamageSource);
+		//Explosion explosion = ParticleManager.Instance.Create(Explosion, Transform.position - new Vector3(0f, 0f, 0.2f));
+		//var damage = TypePoolManager.Create<DamageData>();
+		//damage.Initialize(currentStats.Damage, currentStats.DamageSource);
 		//explosion.Initialize(damage);
 
 		base.Kill();

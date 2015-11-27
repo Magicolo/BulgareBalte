@@ -7,10 +7,11 @@ using Pseudo;
 
 public class EntityGroup : PComponent
 {
-	static readonly Dictionary<int, List<PEntity>> groups = new Dictionary<int, List<PEntity>>();
+	static readonly List<PEntity>[] groups;
 
 	public enum Groups
 	{
+		None,
 		Player,
 		Enemy,
 		Building,
@@ -18,19 +19,19 @@ public class EntityGroup : PComponent
 	}
 
 	[SerializeField]
-	Groups group = Groups.Enemy;
+	Groups group;
+
+	static EntityGroup()
+	{
+		groups = new List<PEntity>[Enum.GetValues(typeof(Groups)).Length];
+
+		for (int i = 0; i < groups.Length; i++)
+			groups[i] = new List<PEntity>();
+	}
 
 	public static List<PEntity> GetEntities(Groups group)
 	{
-		List<PEntity> entities;
-
-		if (!groups.TryGetValue((int)group, out entities))
-		{
-			entities = new List<PEntity>();
-			groups[(int)group] = entities;
-		}
-
-		return entities;
+		return groups[(int)group];
 	}
 
 	public static PEntity GetClosestEntity(Groups group, Vector3 position)
@@ -54,24 +55,34 @@ public class EntityGroup : PComponent
 		return closest;
 	}
 
+	public static void AddToGroup(Groups group, PEntity entity)
+	{
+		GetEntities(group).Add(entity);
+	}
+
+	public static void RemoveFromGroup(Groups group, PEntity entity)
+	{
+		GetEntities(group).Remove(entity);
+	}
+
 	public void SetGroup(Groups group)
 	{
-		GetEntities(this.group).Remove(Entity);
+		RemoveFromGroup(group, Entity);
 		this.group = group;
-		GetEntities(this.group).Add(Entity);
+		AddToGroup(group, Entity);
 	}
 
 	public override void OnCreate()
 	{
 		base.OnCreate();
 
-		GetEntities(group).Add(Entity);
+		AddToGroup(group, Entity);
 	}
 
 	public override void OnRecycle()
 	{
 		base.OnRecycle();
 
-		GetEntities(group).Remove(Entity);
+		RemoveFromGroup(group, Entity);
 	}
 }
