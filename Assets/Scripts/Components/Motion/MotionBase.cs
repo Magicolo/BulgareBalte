@@ -11,6 +11,8 @@ public abstract class MotionBase : PComponent
 	public float MoveSpeed = 10f;
 	public float RotateSpeed = 3f;
 
+	List<MotionModifier> modifiers = new List<MotionModifier>();
+
 	readonly CachedValue<TimeComponent> cachedTime;
 	public TimeComponent CachedTime { get { return cachedTime; } }
 
@@ -31,14 +33,58 @@ public abstract class MotionBase : PComponent
 	protected virtual void UpdateMotion()
 	{
 		if (ShouldMove())
-			CachedRigidbody.AddForce(GetDirection() * MoveSpeed * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
+			CachedRigidbody.AddForce(GetDirection() * GetMoveSpeed() * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
 
 		if (ShouldRotate())
-			CachedRigidbody.RotateTowards(GetAngle(), RotateSpeed * CachedTime.FixedDeltaTime);
+			CachedRigidbody.RotateTowards(GetAngle(), GetRotateSpeed() * CachedTime.FixedDeltaTime);
+	}
+
+	protected virtual float GetMoveSpeed()
+	{
+		float speed = MoveSpeed;
+
+		for (int i = 0; i < modifiers.Count; i++)
+			speed *= modifiers[i].MoveSpeedModifier;
+
+		return speed;
+	}
+
+	protected virtual float GetRotateSpeed()
+	{
+		float speed = RotateSpeed;
+
+		for (int i = 0; i < modifiers.Count; i++)
+			speed *= modifiers[i].RotateSpeedModifier;
+
+		return speed;
+	}
+
+	protected virtual Vector2 GetDirection()
+	{
+		Vector2 direction = Vector2.zero;
+		for (int i = 0; i < modifiers.Count; i++)
+			direction = direction.Mult(modifiers[i].GetDirectionModifier());
+
+		return direction;
+
+	}
+
+	protected virtual float GetAngle()
+	{
+		float angle = 0f;
+		for (int i = 0; i < modifiers.Count; i++)
+			angle += modifiers[i].GetAngleModifier();
+
+		return angle;
+	}
+
+	public override void OnCreate()
+	{
+		base.OnCreate();
+
+		modifiers = Entity.GetComponents<MotionModifier>();
 	}
 
 	protected abstract bool ShouldMove();
 	protected abstract bool ShouldRotate();
-	protected abstract Vector2 GetDirection();
-	protected abstract float GetAngle();
 }

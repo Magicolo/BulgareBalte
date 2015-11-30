@@ -7,27 +7,19 @@ using Pseudo;
 using System.Threading;
 using Pseudo.Internal;
 using Pseudo.Internal.Pool;
+using Pseudo.Internal.Entity;
 
 [Serializable]
 public class zTest : PMonoBehaviour
 {
-	public PEntity[] Entities;
+	public PEntity Entity;
+	public EntityMatch Match;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-
-	}
-
-	void Update()
-	{
-
-	}
-
-	void PoolTest()
-	{
-		for (int i = 0; i < Entities.Length; i++)
-			PrefabPoolManager.Recycle(PrefabPoolManager.Create(Entities[i]));
+		var matcher = new EntityAllGroupMatcher();
+		PDebug.Log(matcher.Matches(Entity.Group, Match.Group));
 	}
 }

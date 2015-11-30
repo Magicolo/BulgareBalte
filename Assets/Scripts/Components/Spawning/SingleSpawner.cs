@@ -14,7 +14,7 @@ public class SingleSpawner : SpawnerBase
 	public override void Spawn()
 	{
 		var spawn = PrefabPoolManager.Create(ToSpawn);
-		spawn.Transform.position = Transform.position;
+		spawn.CachedTransform.position = CachedTransform.position;
 		hasSpawned = true;
 	}
 

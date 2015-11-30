@@ -29,23 +29,23 @@ public class InputMotion : MotionBase
 		inputRotation = inputRotation.ClampMagnitude(0f, 1f);
 	}
 
+	protected override Vector2 GetDirection()
+	{
+		return base.GetDirection() + inputMotion;
+	}
+
+	protected override float GetAngle()
+	{
+		return base.GetAngle() + inputRotation.Angle();
+	}
+
 	protected override bool ShouldMove()
 	{
 		return inputMotion.sqrMagnitude > 0f;
 	}
 
-	protected override Vector2 GetDirection()
-	{
-		return inputMotion;
-	}
-
 	protected override bool ShouldRotate()
 	{
 		return inputRotation.sqrMagnitude > 0f;
-	}
-
-	protected override float GetAngle()
-	{
-		return inputRotation.Angle();
 	}
 }

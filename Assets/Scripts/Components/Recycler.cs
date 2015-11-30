@@ -7,13 +7,50 @@ using Pseudo;
 
 public class Recycler : PComponent
 {
+	[Flags]
+	public enum RecycleMessages
+	{
+		OnDamaged = 1,
+		OnDamage = 2,
+		OnDie = 4,
+		OnCollide = 8
+	}
+
+	public RecycleMessages RecycleMessage
+	{
+		get { return (RecycleMessages)recycleMessage; }
+		set { recycleMessage = (int)value; }
+	}
+
+	[SerializeField, Flag(typeof(RecycleMessages))]
+	int recycleMessage;
+
 	public void Recycle()
 	{
 		PrefabPoolManager.Recycle(Entity);
 	}
 
+	protected virtual void OnDamaged(DamageData damage)
+	{
+		if ((RecycleMessage & RecycleMessages.OnDamaged) != 0)
+			Recycle();
+	}
+
+	protected virtual void OnDamage(IDamageable damageable)
+	{
+		if ((RecycleMessage & RecycleMessages.OnDamage) != 0)
+			Recycle();
+	}
+
 	protected virtual void OnDie()
 	{
-		Recycle();
+		if ((RecycleMessage & RecycleMessages.OnDie) != 0)
+			Recycle();
+	}
+
+	protected virtual void OnCollide(Collider2D collision)
+	{
+		if ((RecycleMessage & RecycleMessages.OnCollide) != 0)
+			Recycle();
 	}
 }

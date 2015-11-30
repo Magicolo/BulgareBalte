@@ -18,6 +18,6 @@ public class TextureTiler : PMonoBehaviour
 
 	void Update()
 	{
-		CachedRenderer.sharedMaterial.mainTextureScale = Transform.localScale;
+		CachedRenderer.sharedMaterial.mainTextureScale = CachedTransform.localScale;
 	}
 }

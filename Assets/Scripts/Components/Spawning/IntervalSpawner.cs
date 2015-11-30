@@ -9,7 +9,7 @@ using Pseudo;
 public class IntervalSpawner : SpawnerBase
 {
 	[Min]
-	public float SpawnInterval;
+	public float Interval = 1f;
 	public PEntity ToSpawn;
 
 	float nextSpawnTime;
@@ -25,8 +25,8 @@ public class IntervalSpawner : SpawnerBase
 	public override void Spawn()
 	{
 		PMonoBehaviour spawn = PrefabPoolManager.Create(ToSpawn);
-		spawn.Transform.position = Transform.position;
-		nextSpawnTime = CachedTime.Time + SpawnInterval;
+		spawn.CachedTransform.position = CachedTransform.position;
+		nextSpawnTime = CachedTime.Time + Interval;
 	}
 
 	protected override bool ShouldSpawn()

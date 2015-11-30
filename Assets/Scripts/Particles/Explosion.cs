@@ -13,7 +13,7 @@ public class Explosion : ParticleEffect
 
 	bool hasCausedDamage;
 	Collider2D[] hits = new Collider2D[64];
-	
+
 	protected override void Update()
 	{
 		base.Update();
@@ -35,7 +35,7 @@ public class Explosion : ParticleEffect
 			if (hit == null)
 				return;
 
-			var damageable = hit.attachedRigidbody == null ? null : hit.attachedRigidbody.GetComponentInParent<IDamageable>();
+			var damageable = hit.GetComponentInParent<IDamageable>();
 
 			if (damageable != null)
 				damageable.Damage(Damage);

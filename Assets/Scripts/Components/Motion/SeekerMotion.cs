@@ -11,28 +11,30 @@ public class SeekerMotion : MotionBase
 	public float Threshold = 0.5f;
 	public float StopDistance = 1f;
 
-	protected override bool ShouldMove()
-	{
-		return Target != null && Mathf.Abs(Vector2.Distance(Transform.position, Target.Transform.position) - StopDistance) > Threshold;
-	}
-
 	protected override Vector2 GetDirection()
 	{
-		if (Vector2.Distance(Transform.position, Target.Transform.position) > StopDistance)
-			return Transform.right;
+		Vector2 direction = base.GetDirection();
+
+		if (Vector2.Distance(CachedTransform.position, Target.CachedTransform.position) > StopDistance)
+			direction += CachedTransform.right.ToVector2();
 		else
-			return -Transform.right;
+			direction -= CachedTransform.right.ToVector2();
+
+		return direction;
+	}
+
+	protected override float GetAngle()
+	{
+		return base.GetAngle() + (Target.CachedTransform.position - CachedTransform.position).ToVector2().Angle();
+	}
+
+	protected override bool ShouldMove()
+	{
+		return Target != null && Mathf.Abs(Vector2.Distance(CachedTransform.position, Target.CachedTransform.position) - StopDistance) > Threshold;
 	}
 
 	protected override bool ShouldRotate()
 	{
 		return Target != null;
-	}
-
-	protected override float GetAngle()
-	{
-		Vector2 direction = (Target.Transform.position - Transform.position).normalized;
-
-		return direction.Angle();
 	}
 }

@@ -7,23 +7,23 @@ using Pseudo;
 
 public class ForwardMotion : MotionBase
 {
+	protected override Vector2 GetDirection()
+	{
+		return base.GetDirection() + CachedTransform.right.ToVector2();
+	}
+
+	protected override float GetAngle()
+	{
+		return base.GetAngle() + CachedTransform.eulerAngles.z;
+	}
+
 	protected override bool ShouldMove()
 	{
 		return true;
 	}
 
-	protected override Vector2 GetDirection()
-	{
-		return Transform.right;
-	}
-
 	protected override bool ShouldRotate()
 	{
 		return true;
-	}
-
-	protected override float GetAngle()
-	{
-		return Transform.eulerAngles.z;
 	}
 }

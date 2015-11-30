@@ -6,13 +6,13 @@ using System.Linq;
 using Pseudo;
 
 [Serializable]
-public class DamageData
+public struct DamageData
 {
 	public float Damage;
 	public DamageSources Source;
 	public DamageTypes Type;
 
-	public void Initialize(float damage, DamageSources source = DamageSources.None, DamageTypes type = DamageTypes.None)
+	public DamageData(float damage, DamageSources source = DamageSources.None, DamageTypes type = DamageTypes.None)
 	{
 		Damage = damage;
 		Source = source;

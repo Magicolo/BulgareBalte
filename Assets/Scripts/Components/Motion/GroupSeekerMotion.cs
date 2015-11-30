@@ -8,7 +8,7 @@ using Pseudo;
 public class GroupSeekerMotion : SeekerMotion
 {
 	public float CheckForTargetInterval = 1f;
-	public EntityGroup.Groups TargetGroup;
+	public EntityMatch TargetGroup;
 
 	protected float nextPlayerCheckTime;
 
@@ -31,6 +31,6 @@ public class GroupSeekerMotion : SeekerMotion
 
 	protected virtual PEntity GetTarget()
 	{
-		return EntityGroup.GetClosestEntity(TargetGroup, Transform.position);
+		return EntityManager.GetEntities(TargetGroup).GetClosest(CachedTransform.position);
 	}
 }
