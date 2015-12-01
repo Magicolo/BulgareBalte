@@ -22,7 +22,7 @@ public class Recycler : PComponent
 		set { recycleMessage = (int)value; }
 	}
 
-	[SerializeField, Flag(typeof(RecycleMessages))]
+	[SerializeField, EnumFlags(typeof(RecycleMessages))]
 	int recycleMessage;
 
 	public void Recycle()
