@@ -13,7 +13,7 @@ public class GroupProximityDetonator : PComponent
 
 	protected virtual void Update()
 	{
-		var entities = EntityManager.GetEntities(Group);
+		var entities = EntityManager.GetEntityGroup(Group).GetEntities();
 
 		for (int i = 0; i < entities.Count; i++)
 		{

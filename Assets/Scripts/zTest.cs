@@ -5,21 +5,26 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 using System.Threading;
-using Pseudo.Internal;
 using Pseudo.Internal.Pool;
 using Pseudo.Internal.Entity;
+using System.Collections.Specialized;
 
 [Serializable]
 public class zTest : PMonoBehaviour
 {
-	public PEntity Entity;
-	public EntityMatch Match;
+	public EntityMatch M;
+
+	public readonly float b;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-		var matcher = new EntityAllGroupMatcher();
-		PDebug.Log(matcher.Matches(Entity.Group, Match.Group));
+		GetType().GetField("b").SetValue(this, PRandom.Range(3f, 23409f));
+		PDebug.Log(b);
+	}
+
+	void Update()
+	{
 	}
 }

@@ -10,7 +10,6 @@ public class LaserAttack : AttackBase
 {
 	public Color ActiveColor = Color.red;
 	public Color InactiveColor = new Color(0.5f, 0f, 0f, 0.25f);
-	[DoNotInitialize]
 	public ParticleEffect Particles;
 
 	bool isAttacking;

@@ -31,6 +31,6 @@ public class GroupSeekerMotion : SeekerMotion
 
 	protected virtual PEntity GetTarget()
 	{
-		return EntityManager.GetEntities(TargetGroup).GetClosest(CachedTransform.position);
+		return EntityManager.GetEntityGroup(TargetGroup).GetEntities().GetClosest(CachedTransform.position);
 	}
 }

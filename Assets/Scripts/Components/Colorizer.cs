@@ -8,7 +8,6 @@ using Pseudo;
 [RequireComponent(typeof(TimeComponent))]
 public class Colorizer : PComponent
 {
-	[DoNotInitialize]
 	public SpriteRenderer Renderer;
 	public float FadeSpeed = 5f;
 	public Color Normal = Color.white;
