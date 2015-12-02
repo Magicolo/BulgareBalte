@@ -36,7 +36,7 @@ public class Recycler : PComponent
 			Recycle();
 	}
 
-	protected virtual void OnDamage(IDamageable damageable)
+	protected virtual void OnDamage(Damageable damageable)
 	{
 		if ((RecycleMessage & RecycleMessages.OnDamage) != 0)
 			Recycle();

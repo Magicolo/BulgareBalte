@@ -35,7 +35,8 @@ public class Explosion : ParticleEffect
 			if (hit == null)
 				return;
 
-			var damageable = hit.GetComponentInParent<IDamageable>();
+			var entity = hit.GetEntity();
+			var damageable = entity == null ? null : entity.GetComponent<Damageable>();
 
 			if (damageable != null)
 				damageable.Damage(Damage);

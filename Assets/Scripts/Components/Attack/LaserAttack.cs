@@ -42,7 +42,8 @@ public class LaserAttack : AttackBase
 		if (CachedRaycaster.Hits.Count > 0)
 		{
 			var hit = CachedRaycaster.Hits.Last();
-			Damager.Damage(hit.collider.GetComponentInParent<IDamageable>());
+			var entity = hit.collider.GetEntity();
+			Damager.Damage(entity == null ? null : entity.GetComponent<Damageable>());
 		}
 	}
 

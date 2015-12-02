@@ -21,7 +21,8 @@ public class BulletDamager : ModifierDamager
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
-		var damageable = collision.GetComponentInParent<IDamageable>();
+		var entity = collision.GetEntity();
+		var damageable = entity == null ? null : entity.GetComponent<Damageable>();
 
 		if (damageable != null)
 			Damage(damageable);

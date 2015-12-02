@@ -7,7 +7,7 @@ using Pseudo;
 
 public abstract class DamagerBase : PComponent
 {
-	public virtual void Damage(IDamageable damageable)
+	public virtual void Damage(Damageable damageable)
 	{
 		if (damageable == null)
 			return;

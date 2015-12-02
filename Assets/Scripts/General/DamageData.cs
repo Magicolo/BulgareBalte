@@ -5,6 +5,21 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+public enum DamageSources
+{
+	None,
+	Player,
+	Enemy
+}
+
+public enum DamageTypes
+{
+	None,
+	Laser,
+	Plasma,
+	Fire
+}
+
 [Serializable]
 public struct DamageData
 {

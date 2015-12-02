@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class Damageable : PComponent, IDamageable
+public class Damageable : PComponent
 {
 	public virtual bool CanBeDamagedBy(DamageData damage)
 	{
