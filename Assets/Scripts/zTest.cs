@@ -11,16 +11,17 @@ using System.Collections.Specialized;
 using System.Reflection;
 using UnityEngine.Events;
 
-public class zTest : PMonoBehaviour
+public class zTest : PComponent
 {
 	const int iterations = 1000;
 
-	public PEntity Entity;
+	[InitializeContent]
+	public MonoBehaviour BreakEverything;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-		PrefabPoolManager.Create(Entity);
+		PrefabPoolManager.Create(BreakEverything);
 	}
 }
