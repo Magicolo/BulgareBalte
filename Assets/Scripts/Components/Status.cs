@@ -17,7 +17,7 @@ public class Status : PComponent
 		CurrentHealth -= damage.Damage;
 
 		if (CurrentHealth <= 0)
-			SendMessage("OnDie", SendMessageOptions.DontRequireReceiver);
+			Entity.SendMessage("OnDie");
 	}
 
 	public override void OnCreate()

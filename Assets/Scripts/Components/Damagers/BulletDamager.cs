@@ -27,7 +27,7 @@ public class BulletDamager : ModifierDamager
 		if (damageable != null)
 			Damage(damageable);
 		else
-			SendMessage("OnCollide", collision, SendMessageOptions.DontRequireReceiver);
+			Entity.SendMessage("OnCollide", collision);
 
 		if (HitEffect != null)
 			ParticleManager.Instance.Create(HitEffect, CachedTransform.position);

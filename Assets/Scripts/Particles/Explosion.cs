@@ -12,7 +12,7 @@ public class Explosion : ParticleEffect
 	public DamageData Damage;
 
 	bool hasCausedDamage;
-	Collider2D[] hits = new Collider2D[64];
+	readonly Collider2D[] hits = new Collider2D[16];
 
 	protected override void Update()
 	{

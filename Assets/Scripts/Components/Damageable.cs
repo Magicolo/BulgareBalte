@@ -15,6 +15,6 @@ public class Damageable : PComponent
 	public virtual void Damage(DamageData damage)
 	{
 		if (CanBeDamagedBy(damage))
-			SendMessage("OnDamaged", damage, SendMessageOptions.DontRequireReceiver);
+			Entity.SendMessage("OnDamaged", damage);
 	}
 }

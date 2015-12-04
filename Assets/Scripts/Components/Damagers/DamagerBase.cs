@@ -16,7 +16,7 @@ public abstract class DamagerBase : PComponent
 		if (damageable.CanBeDamagedBy(damage))
 		{
 			damageable.Damage(damage);
-			SendMessage("OnDamage", damageable, SendMessageOptions.DontRequireReceiver);
+			Entity.SendMessage("OnDamage", damageable);
 		}
 	}
 
