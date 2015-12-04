@@ -11,29 +11,26 @@ public class Explosion : ParticleEffect
 	public CircleZone DamageZone;
 	public DamageData Damage;
 
-	bool hasCausedDamage;
 	readonly Collider2D[] hits = new Collider2D[16];
+	bool hasDamaged;
 
-	protected override void Update()
+	protected virtual void Update()
 	{
-		base.Update();
-
 		UpdateDamage();
 	}
 
 	protected virtual void UpdateDamage()
 	{
-		if (hasCausedDamage)
+		if (hasDamaged)
 			return;
 
 		Physics2D.OverlapCircleNonAlloc(DamageZone.WorldCircle.Position, DamageZone.WorldCircle.Radius, hits);
-
 		for (int i = 0; i < hits.Length; i++)
 		{
 			var hit = hits[i];
 
 			if (hit == null)
-				return;
+				continue;
 
 			var entity = hit.GetEntity();
 			var damageable = entity == null ? null : entity.GetComponent<Damageable>();
@@ -43,6 +40,6 @@ public class Explosion : ParticleEffect
 		}
 
 		hits.Clear();
-		hasCausedDamage = true;
+		hasDamaged = true;
 	}
 }
