@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   group:
     flag1: 0
-    flag2: 0
+    flag2: 1
     flag3: 0
     flag4: 0
 --- !u!114 &11429024
@@ -1333,6 +1333,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Modifier
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: group.flag2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

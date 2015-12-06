@@ -89,8 +89,12 @@ MonoBehaviour:
   DamageZone: {fileID: 11420272}
   Damage:
     Damage: 5
-    Source: 2
-    Type: 3
+    sources:
+      flag1: 0
+      flag2: 0
+      flag3: 0
+      flag4: 2
+    Types: 4
 --- !u!198 &19852664
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1189,6 +1193,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Damage.Type
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Damage.Types
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Damage.sources.flag4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

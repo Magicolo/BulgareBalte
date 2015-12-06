@@ -7,12 +7,10 @@ using Pseudo;
 
 public class WeaponDamager : ModifierDamager
 {
-	public DamageTypes DamageType;
-
 	public override void SetDamageData(DamageData damage)
 	{
 		base.SetDamageData(damage);
 
-		this.damage.Type = DamageType;
+		this.damage.Types |= DamageTypes;
 	}
 }

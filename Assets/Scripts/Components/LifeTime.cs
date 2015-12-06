@@ -30,6 +30,6 @@ public class LifeTime : PComponent
 		counter += CachedTime.DeltaTime;
 
 		if (counter >= Duration)
-			Entity.SendMessage("OnDie");
+			Entity.SendMessage(EntityMessages.OnDie);
 	}
 }

@@ -15,8 +15,8 @@ public class BulletDamager : ModifierDamager
 	{
 		base.SetDamageData(damage);
 
-		this.damage.Source = damage.Source;
-		this.damage.Type = damage.Type;
+		this.damage.Sources = damage.Sources;
+		this.damage.Types = damage.Types;
 	}
 
 	void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +27,7 @@ public class BulletDamager : ModifierDamager
 		if (damageable != null)
 			Damage(damageable);
 		else
-			Entity.SendMessage("OnCollide", collision);
+			Entity.SendMessage(EntityMessages.OnCollide, collision);
 
 		if (HitEffect != null)
 			ParticleManager.Instance.Create(HitEffect, CachedTransform.position);

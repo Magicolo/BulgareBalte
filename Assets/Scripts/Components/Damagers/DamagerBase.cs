@@ -12,12 +12,8 @@ public abstract class DamagerBase : PComponent
 		if (damageable == null)
 			return;
 
-		var damage = GetDamageData();
-		if (damageable.CanBeDamagedBy(damage))
-		{
-			damageable.Damage(damage);
-			Entity.SendMessage("OnDamage", damageable);
-		}
+		if (damageable.Damage(GetDamageData()))
+			Entity.SendMessage(EntityMessages.OnDamage, damageable);
 	}
 
 	public abstract DamageData GetDamageData();

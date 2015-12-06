@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageAmount: 1
-  DamageSource: 2
 --- !u!114 &11427624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +203,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fef5ecefc2ccbc49989a21879ebd945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BySources:
+    flag1: 18446744073709551613
+    flag2: 18446744073709551615
+    flag3: 18446744073709551615
+    flag4: 18446744073709551615
+  ByTypes: 2147483647
 --- !u!114 &11468422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,7 +220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a7f6fbb9067ae4d91c155f81fc7d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recycleMessage: 4
+  recycleMessages:
+    flag1: 8
+    flag2: 0
+    flag3: 0
+    flag4: 0
 --- !u!114 &11468590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -348,6 +357,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: group.flag1
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: recycleMessages.flag1
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: BySources.flag1
+      value: 4294967293
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

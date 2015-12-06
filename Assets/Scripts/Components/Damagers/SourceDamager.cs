@@ -8,16 +8,14 @@ using Pseudo;
 public class SourceDamager : DamagerBase
 {
 	public float DamageAmount = 1f;
-	public DamageSources DamageSource;
 
 	public override DamageData GetDamageData()
 	{
-		return new DamageData(DamageAmount, DamageSource);
+		return new DamageData(DamageAmount, Entity.Group);
 	}
 
 	public override void SetDamageData(DamageData damage)
 	{
 		DamageAmount = damage.Damage;
-		DamageSource = damage.Source;
 	}
 }

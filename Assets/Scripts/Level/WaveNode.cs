@@ -9,7 +9,7 @@ using Pseudo;
 public class WaveNode
 {
 	public float Delay;
-	[Requires(typeof(SpawnerBase), CanBeNull = false)]
+	[EntityRequires(typeof(SpawnerBase), CanBeNull = false)]
 	public PEntity[] Spawners;
 
 	public void Spawn()

@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 497000}
   - 114: {fileID: 11419464}
   - 114: {fileID: 11446096}
-  - 114: {fileID: 11421434}
+  - 114: {fileID: 11419430}
   m_Layer: 0
   m_Name: PlasmaWeapon
   m_TagString: Untagged
@@ -30,6 +30,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11419430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db03bf45e9e741b4e9921737e41a0658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageModifier: 1
+  DamageTypes: 2
 --- !u!114 &11419464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -43,22 +56,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   group:
     flag1: 0
-    flag2: 0
+    flag2: 1
     flag3: 0
     flag4: 0
---- !u!114 &11421434
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6c5cf8136cf284e9be0f488a6be711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageModifier: 1
-  DamageType: 2
 --- !u!114 &11446096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd35c69a846d75e4cb65e38f140aba31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damager: {fileID: 11421434}
+  Damager: {fileID: 11419430}
   Bullet: {fileID: 11453522, guid: 296386efcff73db47a20e320e8c28e4f, type: 2}
 --- !u!1001 &100100000
 Prefab:
@@ -92,6 +92,18 @@ Prefab:
       value: 
       objectReference: {fileID: 11453522, guid: 296386efcff73db47a20e320e8c28e4f,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: DamageTypes
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: group.flag2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Damager
+      value: 
+      objectReference: {fileID: 11419430}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197568}

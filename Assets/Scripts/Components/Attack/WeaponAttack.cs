@@ -8,7 +8,7 @@ using Pseudo;
 [RequireComponent(typeof(TimeComponent))]
 public class WeaponAttack : AttackBase
 {
-	[Requires(typeof(DamagerBase), typeof(AttackBase))]
+	[EntityRequires(typeof(DamagerBase), typeof(AttackBase))]
 	public PEntity StartWeapon;
 	public Transform WeaponRoot;
 	public float AttackSpeed = 1f;

@@ -21,7 +21,7 @@ public class GroupProximityDetonator : PComponent
 
 			if (Vector2.Distance(entity.CachedTransform.position, CachedTransform.position) <= Radius)
 			{
-				Entity.SendMessage("OnDie");
+				Entity.SendMessage(EntityMessages.OnDie);
 				return;
 			}
 		}

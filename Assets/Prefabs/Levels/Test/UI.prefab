@@ -997,7 +997,7 @@ MonoBehaviour:
     flag1: 0
     flag2: 0
     flag3: 0
-    flag4: 0
+    flag4: 1
 --- !u!114 &11448690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1131,7 +1131,7 @@ MonoBehaviour:
     flag1: 0
     flag2: 0
     flag3: 0
-    flag4: 0
+    flag4: 1
 --- !u!114 &11459940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1308,7 +1308,7 @@ MonoBehaviour:
     flag1: 0
     flag2: 0
     flag3: 0
-    flag4: 0
+    flag4: 1
 --- !u!114 &11477436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1417,7 +1417,7 @@ MonoBehaviour:
     flag1: 0
     flag2: 0
     flag3: 0
-    flag4: 0
+    flag4: 1
 --- !u!114 &11487992
 MonoBehaviour:
   m_ObjectHideFlags: 1

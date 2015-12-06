@@ -13,15 +13,13 @@ using UnityEngine.Events;
 
 public class zTest : PComponent
 {
-	const int iterations = 1000;
-
-	[InitializeContent]
-	public MonoBehaviour BreakEverything;
+	public DamageData Damage;
+	public Damageable Damageable;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-		PrefabPoolManager.Create(BreakEverything);
+		PDebug.Log(Damageable.CanBeDamagedBy(Damage));
 	}
 }

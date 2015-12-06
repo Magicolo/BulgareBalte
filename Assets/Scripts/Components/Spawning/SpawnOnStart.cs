@@ -11,6 +11,6 @@ public class SpawnOnStart : PComponent
 	{
 		base.Start();
 
-		Entity.SendMessage("Spawn");
+		Entity.SendMessage(EntityMessages.Spawn);
 	}
 }
