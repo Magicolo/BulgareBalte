@@ -30,13 +30,13 @@ public class Recycler : PComponent
 		PrefabPoolManager.Recycle(Entity);
 	}
 
-	protected virtual void OnDamaged(DamageData damage)
+	protected virtual void OnDamaged()
 	{
 		if ((RecycleMessage & RecycleMessages.OnDamaged) != 0)
 			Recycle();
 	}
 
-	protected virtual void OnDamage(Damageable damageable)
+	protected virtual void OnDamage()
 	{
 		if ((RecycleMessage & RecycleMessages.OnDamage) != 0)
 			Recycle();
@@ -48,7 +48,7 @@ public class Recycler : PComponent
 			Recycle();
 	}
 
-	protected virtual void OnCollide(Collider2D collision)
+	protected virtual void OnCollide()
 	{
 		if ((RecycleMessage & RecycleMessages.OnCollide) != 0)
 			Recycle();
