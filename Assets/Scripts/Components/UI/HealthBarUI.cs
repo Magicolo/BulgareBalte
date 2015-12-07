@@ -19,10 +19,13 @@ public class HealthBarUI : PComponent
 	public float ChangeDelay = 1f;
 	public int PlayerIndex;
 
-	IEntityGroup playerGroup;
+	IEntityGroup playerGroup = EntityManager.GetEntityGroup(EntityGroups.Player).Filter(typeof(Status));
+	float currentAlpha;
 	float targetAlpha;
-	float healthValue;
-	float damageValue;
+	float currentHealthValue;
+	float targetHealthValue;
+	float currentDamageValue;
+	float targetDamageValue;
 	float delayCounter;
 
 	readonly CachedValue<CanvasGroup> cachedCanvasGroup;
@@ -33,26 +36,20 @@ public class HealthBarUI : PComponent
 		cachedCanvasGroup = new CachedValue<CanvasGroup>(GetComponent<CanvasGroup>);
 	}
 
-	void Awake()
-	{
-		playerGroup = EntityManager.GetEntityGroup(EntityGroups.Player).Filter(typeof(Status));
-		CachedCanvasGroup.alpha = 0f;
-	}
-
 	void Update()
 	{
 		if (playerGroup.Entities.Count > PlayerIndex)
 		{
 			var status = playerGroup.Entities[PlayerIndex].GetComponent<Status>();
 
-			if (healthValue != (healthValue = status.CurrentHealth / status.Health))
+			if (targetHealthValue != (targetHealthValue = status.CurrentHealth / status.Health))
 			{
 				targetAlpha = ActiveAlpha;
 				delayCounter = 0f;
 			}
 
 			if (delayCounter > ChangeDelay)
-				damageValue = healthValue;
+				targetDamageValue = targetHealthValue;
 
 			if (delayCounter > FadeDelay)
 				targetAlpha = InactiveAlpha;
@@ -61,8 +58,17 @@ public class HealthBarUI : PComponent
 			targetAlpha = 0f;
 
 		delayCounter += TimeManager.UI.DeltaTime;
-		HealthSlider.value = Mathf.Lerp(HealthSlider.value, healthValue, ChangeSpeed * 5f * TimeManager.UI.DeltaTime);
-		DamageSlider.value = Mathf.Lerp(DamageSlider.value, damageValue, ChangeSpeed * TimeManager.UI.DeltaTime);
-		CachedCanvasGroup.alpha = Mathf.Lerp(CachedCanvasGroup.alpha, targetAlpha, FadeSpeed * TimeManager.UI.DeltaTime);
+		currentHealthValue = Mathf.Lerp(currentHealthValue, targetHealthValue, ChangeSpeed * 5f * TimeManager.UI.DeltaTime);
+		currentDamageValue = Mathf.Lerp(currentDamageValue, targetDamageValue, ChangeSpeed * TimeManager.UI.DeltaTime);
+		currentAlpha = Mathf.Lerp(currentAlpha, targetAlpha, FadeSpeed * TimeManager.UI.DeltaTime);
+
+		if (Mathf.Abs(HealthSlider.value - currentHealthValue) > 0.0001f)
+			HealthSlider.value = currentHealthValue;
+
+		if (Mathf.Abs(DamageSlider.value - currentDamageValue) > 0.0001f)
+			DamageSlider.value = currentDamageValue;
+
+		if (Mathf.Abs(CachedCanvasGroup.alpha - currentAlpha) > 0.0001f)
+			CachedCanvasGroup.alpha = currentAlpha;
 	}
 }

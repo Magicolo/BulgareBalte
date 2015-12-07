@@ -9,6 +9,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class WaveCounterUI : PComponent
 {
+	int timeBeforeNextWave;
+
 	readonly CachedValue<Text> cachedText;
 	public Text CachedText { get { return cachedText.Value; } }
 
@@ -24,7 +26,9 @@ public class WaveCounterUI : PComponent
 		else
 		{
 			CachedText.enabled = true;
-			CachedText.text = "Wave " + (WaveManager.Instance.CurrentWaveIndex + 1) + " In " + Mathf.Ceil(WaveManager.Instance.TimeBeforeNextWave);
+
+			if (timeBeforeNextWave != (timeBeforeNextWave = Mathf.CeilToInt(WaveManager.Instance.TimeBeforeNextWave)))
+				CachedText.text = "Wave " + (WaveManager.Instance.CurrentWaveIndex + 1) + " In " + timeBeforeNextWave;
 		}
 	}
 }

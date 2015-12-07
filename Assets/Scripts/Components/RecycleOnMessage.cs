@@ -23,25 +23,25 @@ public class RecycleOnMessage : PComponent
 
 	protected virtual void OnDamaged()
 	{
-		if (RecycleMessages[EntityMessages.OnDamaged])
+		if (recycleMessages[(byte)EntityMessages.OnDamaged])
 			Recycle();
 	}
 
 	protected virtual void OnDamage()
 	{
-		if (RecycleMessages[EntityMessages.OnDamage])
+		if (recycleMessages[(byte)EntityMessages.OnDamage])
 			Recycle();
 	}
 
 	protected virtual void OnDie()
 	{
-		if (RecycleMessages[EntityMessages.OnDie])
+		if (recycleMessages[(byte)EntityMessages.OnDie])
 			Recycle();
 	}
 
 	protected virtual void OnCollide()
 	{
-		if (RecycleMessages[EntityMessages.OnCollide])
+		if (recycleMessages[(byte)EntityMessages.OnCollide])
 			Recycle();
 	}
 }
