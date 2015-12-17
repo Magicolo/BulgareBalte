@@ -14,7 +14,6 @@ using Pseudo.Internal;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System.Text;
-using Pseudo2;
 
 public class zTest : PMonoBehaviour
 {
