@@ -5,21 +5,23 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 using System.Threading;
-using Pseudo.Internal;
 using Pseudo.Internal.Pool;
 using Pseudo.Internal.Entity;
+using System.Collections.Specialized;
+using System.Reflection;
+using UnityEngine.Events;
+using Pseudo.Internal;
+using System.IO;
+using UnityEngine.SceneManagement;
+using System.Text;
+using Pseudo2;
 
-[Serializable]
 public class zTest : PMonoBehaviour
 {
-	public PEntity Entity;
-	public EntityMatch Match;
-
 	[Button]
 	public bool test;
 	void Test()
 	{
-		var matcher = new EntityAllGroupMatcher();
-		PDebug.Log(matcher.Matches(Entity.Group, Match.Group));
+
 	}
 }

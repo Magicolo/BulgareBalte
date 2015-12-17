@@ -8,6 +8,8 @@ using Pseudo;
 public class ModifierDamager : DamagerBase
 {
 	public float DamageModifier = 1f;
+	[EnumFlags]
+	public DamageTypes DamageTypes;
 
 	protected DamageData damage;
 
@@ -19,6 +21,8 @@ public class ModifierDamager : DamagerBase
 	public override void SetDamageData(DamageData damage)
 	{
 		damage.Damage *= DamageModifier;
+		damage.Sources |= Entity.Group;
+		damage.Types |= DamageTypes;
 		this.damage = damage;
 	}
 }

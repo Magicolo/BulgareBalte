@@ -7,17 +7,13 @@ using Pseudo;
 
 public abstract class DamagerBase : PComponent
 {
-	public virtual void Damage(IDamageable damageable)
+	public virtual void Damage(Damageable damageable)
 	{
 		if (damageable == null)
 			return;
 
-		var damage = GetDamageData();
-		if (damageable.CanBeDamagedBy(damage))
-		{
-			damageable.Damage(damage);
-			SendMessage("OnDamage", damageable, SendMessageOptions.DontRequireReceiver);
-		}
+		if (damageable.Damage(GetDamageData()))
+			Entity.SendMessage(EntityMessages.OnDamage, damageable);
 	}
 
 	public abstract DamageData GetDamageData();

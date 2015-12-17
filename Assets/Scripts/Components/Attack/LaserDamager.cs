@@ -28,7 +28,7 @@ public class LaserDamager : DamagerBase
 	public override void SetDamageData(DamageData damage)
 	{
 		damage.Damage *= DamageModifier * CachedTime.DeltaTime;
-		damage.Type = DamageTypes.Laser;
+		damage.Types |= DamageTypes.Laser;
 		this.damage = damage;
 	}
 }

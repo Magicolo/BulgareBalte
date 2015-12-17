@@ -9,17 +9,12 @@ public class SingleSpawner : SpawnerBase
 {
 	public PEntity ToSpawn;
 
-	bool hasSpawned;
+	[SerializeField, Button]
+	protected bool spawn;
 
 	public override void Spawn()
 	{
-		var spawn = PrefabPoolManager.Create(ToSpawn);
-		spawn.CachedTransform.position = CachedTransform.position;
-		hasSpawned = true;
-	}
-
-	protected override bool ShouldSpawn()
-	{
-		return !hasSpawned;
+		var spawned = PrefabPoolManager.Create(ToSpawn);
+		spawned.CachedTransform.position = CachedTransform.position;
 	}
 }

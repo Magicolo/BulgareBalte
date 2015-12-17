@@ -13,7 +13,7 @@ public class GroupProximityDetonator : PComponent
 
 	protected virtual void Update()
 	{
-		var entities = EntityManager.GetEntities(Group);
+		var entities = EntityManager.GetEntityGroup(Group).Entities;
 
 		for (int i = 0; i < entities.Count; i++)
 		{
@@ -21,7 +21,7 @@ public class GroupProximityDetonator : PComponent
 
 			if (Vector2.Distance(entity.CachedTransform.position, CachedTransform.position) <= Radius)
 			{
-				SendMessage("OnDie", SendMessageOptions.DontRequireReceiver);
+				Entity.SendMessage(EntityMessages.OnDie);
 				return;
 			}
 		}

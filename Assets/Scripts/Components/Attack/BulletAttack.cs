@@ -7,6 +7,7 @@ using Pseudo;
 
 public class BulletAttack : AttackBase
 {
+	[EntityRequires(CanBeNull = false)]
 	public PEntity Bullet;
 
 	public override void Attack()

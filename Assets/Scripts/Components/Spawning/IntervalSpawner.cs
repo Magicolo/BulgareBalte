@@ -22,6 +22,12 @@ public class IntervalSpawner : SpawnerBase
 		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
 	}
 
+	protected virtual void Update()
+	{
+		if (ShouldSpawn())
+			Spawn();
+	}
+
 	public override void Spawn()
 	{
 		PMonoBehaviour spawn = PrefabPoolManager.Create(ToSpawn);
@@ -29,7 +35,7 @@ public class IntervalSpawner : SpawnerBase
 		nextSpawnTime = CachedTime.Time + Interval;
 	}
 
-	protected override bool ShouldSpawn()
+	protected virtual bool ShouldSpawn()
 	{
 		return CachedTime.Time >= nextSpawnTime;
 	}

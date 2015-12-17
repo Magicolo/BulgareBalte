@@ -21,7 +21,7 @@ public class LaserRaycaster2D : Raycaster2DBase
 		Vector3 position = CachedTransform.position;
 		Vector3 direction = CachedTransform.rotation * Vector3.right;
 		BounceCount = 0;
-		IReflector reflector;
+		Reflector reflector;
 		bool startInCollider = Physics2D.queriesStartInColliders;
 
 		do
@@ -38,7 +38,8 @@ public class LaserRaycaster2D : Raycaster2DBase
 			else
 			{
 				DrawLine(position, hit.point);
-				reflector = hit.collider.GetComponentInParent<IReflector>();
+				var entity = hit.collider.GetEntity();
+				reflector = entity == null ? null : entity.GetComponent<Reflector>();
 				EndPosition = hit.point;
 
 				if (reflector != null)
