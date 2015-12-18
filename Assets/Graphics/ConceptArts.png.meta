@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ab5939957ee16104287799be2a0e7157
-timeCreated: 1447540008
+timeCreated: 1450455972
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -29,6 +29,31 @@ TextureImporter:
     21300044: ConceptArts_22
     21300046: ConceptArts_23
     21300048: ConceptArts_24
+    21300050: ConceptArts_25
+    21300052: ConceptArts_26
+    21300054: ConceptArts_27
+    21300056: ConceptArts_28
+    21300058: ConceptArts_29
+    21300060: ConceptArts_30
+    21300062: ConceptArts_31
+    21300064: ConceptArts_32
+    21300066: ConceptArts_33
+    21300068: ConceptArts_34
+    21300070: ConceptArts_35
+    21300072: ConceptArts_36
+    21300074: ConceptArts_37
+    21300076: ConceptArts_38
+    21300078: ConceptArts_39
+    21300080: ConceptArts_40
+    21300082: ConceptArts_41
+    21300084: ConceptArts_42
+    21300086: ConceptArts_43
+    21300088: ConceptArts_44
+    21300090: ConceptArts_45
+    21300092: ConceptArts_46
+    21300094: ConceptArts_47
+    21300096: ConceptArts_48
+    21300098: ConceptArts_49
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,7 +67,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -67,7 +92,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
   alphaIsTransparency: 1
@@ -79,83 +104,542 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: -10}
+        - {x: -16, y: -10}
     - name: ConceptArts_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ConceptArts_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 9}
+        - {x: -6, y: 7}
+        - {x: -6, y: 0}
+        - {x: 7, y: -15}
+        - {x: 14, y: -15}
+        - {x: 16, y: -14}
+        - {x: 16, y: 9}
+      - - {x: -14, y: 9}
+        - {x: -14, y: -7}
+        - {x: -10, y: -7}
+        - {x: -8, y: -6}
+        - {x: -8, y: 7}
+        - {x: -10, y: 9}
     - name: ConceptArts_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: -10}
+        - {x: -16, y: -10}
     - name: ConceptArts_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 16}
+        - {x: -16, y: -10}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: ConceptArts_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: 10}
+        - {x: -12, y: 10}
+        - {x: -10, y: 12}
+        - {x: -10, y: 16}
     - name: ConceptArts_6
       rect:
         serializedVersion: 2
         x: 192
-        y: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: -10}
+        - {x: -16, y: -10}
     - name: ConceptArts_7
       rect:
         serializedVersion: 2
         x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 16}
+        - {x: -16, y: -10}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: -10}
+        - {x: -16, y: -10}
+    - name: ConceptArts_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: 10}
+        - {x: -12, y: 10}
+        - {x: -10, y: 12}
+        - {x: -10, y: 16}
+    - name: ConceptArts_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 14}
+        - {x: -14, y: -12}
+        - {x: -8, y: -14}
+        - {x: 14, y: -14}
+        - {x: 14, y: 11}
+        - {x: 13, y: 14}
+    - name: ConceptArts_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 14}
+        - {x: -14, y: -12}
+        - {x: -8, y: -14}
+        - {x: 14, y: -14}
+        - {x: 14, y: 11}
+        - {x: 13, y: 14}
+    - name: ConceptArts_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 14}
+        - {x: -14, y: -14}
+        - {x: 14, y: -14}
+        - {x: 14, y: 14}
+    - name: ConceptArts_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: -11}
+        - {x: -16, y: -11}
+    - name: ConceptArts_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -3}
+        - {x: -16, y: -8}
+        - {x: -9, y: -9}
+        - {x: 16, y: -9}
+        - {x: 16, y: -4}
+        - {x: -9, y: -3}
+    - name: ConceptArts_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -10}
+        - {x: 15, y: -10}
+        - {x: 16, y: -9}
+        - {x: 16, y: -4}
+        - {x: -16, y: -5}
+    - name: ConceptArts_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 6}
+        - {x: -10, y: 5}
+        - {x: -10, y: -1}
+        - {x: -8, y: -6}
+        - {x: -1, y: -13}
+        - {x: 2, y: -12}
+        - {x: 10, y: -4}
+        - {x: 10, y: 3}
+        - {x: 8, y: 6}
+    - name: ConceptArts_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 6}
+        - {x: -2, y: 3}
+        - {x: -2, y: -2}
+        - {x: 1, y: -3}
+        - {x: 4, y: -3}
+        - {x: 5, y: 0}
+        - {x: 5, y: 3}
+        - {x: 2, y: 6}
+    - name: ConceptArts_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 6}
+        - {x: -3, y: 5}
+        - {x: -3, y: 1}
+        - {x: -2, y: -2}
+        - {x: 2, y: -2}
+        - {x: 5, y: 1}
+        - {x: 5, y: 3}
+        - {x: 2, y: 6}
+    - name: ConceptArts_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 11}
+        - {x: -8, y: 3}
+        - {x: -8, y: -8}
+        - {x: -4, y: -11}
+        - {x: 7, y: -11}
+        - {x: 9, y: -7}
+        - {x: 9, y: 6}
+        - {x: 3, y: 11}
+    - name: ConceptArts_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: 6}
+        - {x: -14, y: -2}
+        - {x: -11, y: -5}
+        - {x: -16, y: -12}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 10}
+        - {x: -10, y: 1}
+        - {x: -11, y: -6}
+        - {x: -10, y: -8}
+        - {x: 11, y: -8}
+        - {x: 11, y: 3}
+        - {x: 8, y: 10}
+    - name: ConceptArts_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 1}
+        - {x: 16, y: 1}
+        - {x: 16, y: 6}
+        - {x: -16, y: 6}
+    - name: ConceptArts_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 1}
+        - {x: 10, y: 1}
+        - {x: 12, y: 3}
+        - {x: 11, y: 6}
+        - {x: -16, y: 6}
+    - name: ConceptArts_24
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 96
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_8
+      outline:
+      - - {x: -6, y: -7}
+        - {x: 5, y: -7}
+        - {x: 8, y: -6}
+        - {x: 8, y: 6}
+        - {x: -8, y: 6}
+        - {x: -8, y: -5}
+    - name: ConceptArts_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 7}
+        - {x: -5, y: 5}
+        - {x: -5, y: -6}
+        - {x: -3, y: -7}
+        - {x: 9, y: -7}
+        - {x: 10, y: -6}
+        - {x: 10, y: 6}
+        - {x: 9, y: 7}
+    - name: ConceptArts_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 9}
+        - {x: -9, y: -9}
+        - {x: 9, y: -9}
+        - {x: 9, y: 9}
+    - name: ConceptArts_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 9}
+        - {x: -9, y: 8}
+        - {x: -9, y: -9}
+        - {x: 9, y: -9}
+        - {x: 9, y: 9}
+    - name: ConceptArts_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 9}
+        - {x: -5, y: 9}
+        - {x: -9, y: 8}
+        - {x: -11, y: 4}
+        - {x: -11, y: -8}
+        - {x: -4, y: -11}
+        - {x: 7, y: -11}
+        - {x: 11, y: -7}
+        - {x: 11, y: 2}
+        - {x: 9, y: 8}
+    - name: ConceptArts_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: 13}
+        - {x: 13, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_32
       rect:
         serializedVersion: 2
         x: 0
@@ -165,7 +649,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_9
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -16, y: -13}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_33
       rect:
         serializedVersion: 2
         x: 32
@@ -175,7 +665,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_10
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_34
       rect:
         serializedVersion: 2
         x: 64
@@ -185,7 +680,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_11
+      outline:
+      - - {x: -16, y: 2}
+        - {x: 16, y: 2}
+        - {x: 16, y: 7}
+        - {x: -16, y: 7}
+    - name: ConceptArts_35
       rect:
         serializedVersion: 2
         x: 96
@@ -195,7 +695,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_12
+      outline:
+      - - {x: 3, y: 16}
+        - {x: 3, y: 14}
+        - {x: 10, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 8}
+        - {x: 8, y: 16}
+    - name: ConceptArts_36
       rect:
         serializedVersion: 2
         x: 128
@@ -205,7 +712,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_13
+      outline:
+      - - {x: -7, y: -15}
+        - {x: -7, y: -16}
+        - {x: -2, y: -16}
+        - {x: 16, y: 2}
+        - {x: 16, y: 7}
+        - {x: 15, y: 7}
+    - name: ConceptArts_37
       rect:
         serializedVersion: 2
         x: 160
@@ -215,7 +729,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_14
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_38
       rect:
         serializedVersion: 2
         x: 192
@@ -225,7 +744,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_15
+      outline:
+      - - {x: -16, y: 7}
+        - {x: -16, y: -4}
+        - {x: -14, y: -7}
+        - {x: -8, y: -13}
+        - {x: 12, y: -13}
+        - {x: 16, y: -6}
+        - {x: 16, y: 7}
+    - name: ConceptArts_39
       rect:
         serializedVersion: 2
         x: 224
@@ -235,7 +762,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_16
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_40
       rect:
         serializedVersion: 2
         x: 0
@@ -245,7 +777,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_17
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_41
       rect:
         serializedVersion: 2
         x: 32
@@ -255,17 +792,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_18
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_19
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -13, y: 9}
+        - {x: -13, y: -12}
+        - {x: -11, y: -13}
+        - {x: 13, y: -13}
+        - {x: 13, y: 11}
+        - {x: 9, y: 13}
+      - - {x: -7, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: -7}
+        - {x: -7, y: -7}
+    - name: ConceptArts_42
       rect:
         serializedVersion: 2
         x: 96
@@ -275,7 +814,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_20
+      outline:
+      - - {x: -10, y: 11}
+        - {x: -7, y: 8}
+        - {x: 7, y: 8}
+        - {x: 10, y: 11}
+        - {x: 9, y: 14}
+        - {x: -9, y: 14}
+    - name: ConceptArts_43
       rect:
         serializedVersion: 2
         x: 128
@@ -285,7 +831,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_21
+      outline:
+      - - {x: -7, y: -3}
+        - {x: 3, y: -3}
+        - {x: 11, y: 6}
+        - {x: 11, y: 16}
+        - {x: -11, y: 16}
+        - {x: -11, y: 6}
+      - - {x: 13, y: 16}
+        - {x: 13, y: 12}
+        - {x: 14, y: 9}
+        - {x: 16, y: 9}
+        - {x: 16, y: 16}
+    - name: ConceptArts_44
       rect:
         serializedVersion: 2
         x: 160
@@ -295,7 +853,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_22
+      outline:
+      - - {x: -7, y: 10}
+        - {x: 8, y: 10}
+        - {x: 9, y: 16}
+        - {x: -9, y: 16}
+        - {x: -9, y: 15}
+    - name: ConceptArts_45
       rect:
         serializedVersion: 2
         x: 192
@@ -305,7 +869,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_23
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_46
       rect:
         serializedVersion: 2
         x: 224
@@ -315,7 +884,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ConceptArts_24
+      outline:
+      - - {x: -2, y: 7}
+        - {x: -5, y: 6}
+        - {x: -5, y: -2}
+        - {x: -1, y: -7}
+        - {x: 2, y: -7}
+        - {x: 4, y: -6}
+        - {x: 4, y: 7}
+    - name: ConceptArts_47
       rect:
         serializedVersion: 2
         x: 0
@@ -325,6 +902,42 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: ConceptArts_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
