@@ -79,7 +79,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .300000012, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 447474}
@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0250000004, y: 0, z: 0}
+  m_LocalPosition: {x: 0.025, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 447474}
@@ -117,7 +117,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170910}
-  m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -130,6 +130,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172554}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 10
   m_AngularDrag: 100
@@ -146,12 +147,13 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167896}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .200000003
+  m_Radius: 0.2
 --- !u!114 &11424810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,8 +241,8 @@ MonoBehaviour:
   Damager: {fileID: 11424810}
   StartWeapon: {fileID: 11419464, guid: ef771adfac1f4a54c8e2df1850034a31, type: 2}
   WeaponRoot: {fileID: 429660}
-  AttackSpeed: .5
-  BurstInterval: .25
+  AttackSpeed: 0.5
+  BurstInterval: 0.25
   BurstAmount: 3
 --- !u!114 &11469378
 MonoBehaviour:
@@ -256,7 +258,7 @@ MonoBehaviour:
   MoveSpeed: 10
   RotateSpeed: 2
   Target: {fileID: 0}
-  Threshold: .5
+  Threshold: 0.5
   StopDistance: 3
   CheckForTargetInterval: 1
   TargetGroup:
@@ -315,13 +317,15 @@ SpriteRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe9e5dbe2cbd6fd4bb512327868d357f, type: 3}
+  m_Sprite: {fileID: 21300042, guid: ab5939957ee16104287799be2a0e7157, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -366,6 +370,11 @@ Prefab:
       propertyPath: BySources.flag1
       value: 4294967293
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300042, guid: ab5939957ee16104287799be2a0e7157,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172554}
