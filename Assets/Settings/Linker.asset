@@ -16,62 +16,68 @@ MonoBehaviour:
   - Name: The Tileset
     Tiles:
     - Id: 1
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
-    - Id: 0
-      Prefab: {fileID: 0}
-      PreviewSprite: {fileID: 0}
+      Prefab: {fileID: 147956, guid: 42a7fd4502ace474fa04c504649cffdd, type: 2}
+      PreviewSprite: {fileID: 21300002, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 2
+      Prefab: {fileID: 173360, guid: ff4b6e95f0a92b3498319c634f951373, type: 2}
+      PreviewSprite: {fileID: 21300006, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 3
+      Prefab: {fileID: 126152, guid: 12f81da016dd10341bfb4f2d350cedfa, type: 2}
+      PreviewSprite: {fileID: 21300000, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 4
+      Prefab: {fileID: 113040, guid: 9255430c22b81c24aac22431d31a8f63, type: 2}
+      PreviewSprite: {fileID: 21300008, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 5
+      Prefab: {fileID: 197932, guid: 9bca7a0e6f8435844a6833e0f886aeb7, type: 2}
+      PreviewSprite: {fileID: 21300010, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 6
+      Prefab: {fileID: 121348, guid: 555f2b8605e080f448c11ed8fab6f8e6, type: 2}
+      PreviewSprite: {fileID: 21300012, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 7
+      Prefab: {fileID: 132224, guid: 0f2364fae0da2d044b3543bb73259fe9, type: 2}
+      PreviewSprite: {fileID: 21300016, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 8
+      Prefab: {fileID: 186088, guid: 3601906131eb0c045ad5ab7e741b68a7, type: 2}
+      PreviewSprite: {fileID: 21300014, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 9
+      Prefab: {fileID: 104522, guid: 67e5a833e66057443bc23fe52a12d97d, type: 2}
+      PreviewSprite: {fileID: 21300018, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 10
+      Prefab: {fileID: 186062, guid: 4759c271a7a4b7b4da45f3bd8ecb7f3f, type: 2}
+      PreviewSprite: {fileID: 21300020, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 11
+      Prefab: {fileID: 150840, guid: 56ad5b26e3823254aa8fd2b0b126d6c8, type: 2}
+      PreviewSprite: {fileID: 21300022, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 12
+      Prefab: {fileID: 147380, guid: e26879e65ecd488459abe9883a696428, type: 2}
+      PreviewSprite: {fileID: 21300056, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 13
+      Prefab: {fileID: 116866, guid: 3c6e8fc4843b1104a86169856acc4db0, type: 2}
+      PreviewSprite: {fileID: 21300060, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 14
+      Prefab: {fileID: 160826, guid: f243506ea61548e4391ba3a197281abc, type: 2}
+      PreviewSprite: {fileID: 21300062, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 15
+      Prefab: {fileID: 194104, guid: a9f3cf262e089b944bf648261b442b45, type: 2}
+      PreviewSprite: {fileID: 21300064, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 16
+      Prefab: {fileID: 192784, guid: c4a5cf7601c64554d9cf464a748579c0, type: 2}
+      PreviewSprite: {fileID: 21300074, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 17
+      Prefab: {fileID: 103030, guid: d6ede44af1baac04097af7c3f547227b, type: 2}
+      PreviewSprite: {fileID: 21300080, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 18
+      Prefab: {fileID: 136628, guid: 49d93e673c500e44fa30456b9b96fe63, type: 2}
+      PreviewSprite: {fileID: 21300078, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 19
+      Prefab: {fileID: 160290, guid: 722fa73925ffe2a45aa2ae96244d65eb, type: 2}
+      PreviewSprite: {fileID: 21300090, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 20
+      Prefab: {fileID: 131404, guid: ca7e602c052439342879b031391a88bc, type: 2}
+      PreviewSprite: {fileID: 21300094, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 21
+      Prefab: {fileID: 168968, guid: 505194df29c4ba149a3faa4d7c3f15cd, type: 2}
+      PreviewSprite: {fileID: 21300096, guid: ab5939957ee16104287799be2a0e7157, type: 3}
+    - Id: 22
+      Prefab: {fileID: 186206, guid: ae32be5ee98177b43983580b38c848c7, type: 2}
+      PreviewSprite: {fileID: 21300098, guid: ab5939957ee16104287799be2a0e7157, type: 3}
