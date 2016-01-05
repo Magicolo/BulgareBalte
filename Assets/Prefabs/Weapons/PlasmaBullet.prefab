@@ -154,8 +154,8 @@ MonoBehaviour:
   - Index: 3
     Path: HitEffect
     Reference: {fileID: 11495276, guid: 3e53d638753a2004da82df6ab694b733, type: 2}
-  data: "5\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":2,\"timeScale\":1.0}\r\nLifeTime\r\n{\"active\":true,\"Duration\":5.0}\r\nForwardMotion\r\n{\"active\":true,\"MoveSpeed\":50.0,\"RotateSpeed\":3.0}\r\nBulletDamager\r\n{\"active\":true,\"DamageModifier\":1.0,\"DamageTypes\":2,\"HitEffect\":{\"instanceID\":0}}\r\nRecycleOnMessage\r\n{\"active\":true,\"recycleMessages\":{\"f1\":9,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
-  isDeserialized: 0
+  data: "5\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":2,\"timeScale\":1.0}\r\nLifeTime\r\n{\"active\":true,\"Duration\":5.0}\r\nForwardMotion\r\n{\"active\":true,\"MoveSpeed\":50.0,\"RotateSpeed\":3.0}\r\nBulletDamager\r\n{\"active\":true,\"DamageModifier\":1.0,\"DamageTypes\":2,\"HitEffect\":{\"instanceID\":0}}\r\nRecycleOnMessage\r\n{\"active\":true,\"RecycleMessages\":{\"f1\":9,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
+  isDeserialized: 1
 --- !u!212 &21214778
 SpriteRenderer:
   m_ObjectHideFlags: 1

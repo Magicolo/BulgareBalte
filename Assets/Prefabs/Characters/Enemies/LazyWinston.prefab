@@ -170,14 +170,14 @@ MonoBehaviour:
   - Index: 3
     Path: Renderer
     Reference: {fileID: 21228764}
-  - Index: 7
+  - Index: 6
     Path: StartWeapon
     Reference: {fileID: 11448882, guid: 6a82571126868f141ae4db4bf54ac5ca, type: 2}
-  - Index: 7
+  - Index: 6
     Path: WeaponRoot
     Reference: {fileID: 413910}
-  data: "8\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":10.0,\"RotateSpeed\":3.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"StopDistance\":1.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"RecycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\nIntervalContinuousWeaponAttack\r\n{\"active\":true,\"StartWeapon\":{\"instanceID\":0},\"WeaponRoot\":{\"instanceID\":0},\"AttackSpeed\":1.0,\"ContinuousDuration\":1.0}\r\n"
-  isDeserialized: 0
+  data: "8\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":2.0,\"RotateSpeed\":1.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"StopDistance\":7.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nIntervalContinuousWeaponAttack\r\n{\"active\":true,\"StartWeapon\":{\"instanceID\":0},\"WeaponRoot\":{\"instanceID\":0},\"AttackSpeed\":0.75,\"ContinuousDuration\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"RecycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
+  isDeserialized: 1
 --- !u!212 &21228764
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -26,7 +26,6 @@ GameObject:
   - 4: {fileID: 423270}
   - 198: {fileID: 19852664}
   - 199: {fileID: 19948708}
-  - 114: {fileID: 11480784}
   - 114: {fileID: 11492754}
   m_Layer: 0
   m_Name: ExplosimanExplosion
@@ -76,29 +75,6 @@ MonoBehaviour:
     Y: 0
     Radius: 1
   draw: 1
---- !u!114 &11480784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groups:
-    f1: 0
-    f2: 0
-    f3: 0
-    f4: 0
-    f5: 0
-    f6: 0
-    f7: 0
-    f8: 0
-  references: []
-  data: "0\r\n"
-  isDeserialized: 0
 --- !u!114 &11492754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +90,7 @@ MonoBehaviour:
   Damage:
     Damage: 5
     Sources:
-      f1: 0
+      f1: 2
       f2: 0
       f3: 0
       f4: 0
@@ -1677,6 +1653,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Damage.sources.flag4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Damage.Sources.f1
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []

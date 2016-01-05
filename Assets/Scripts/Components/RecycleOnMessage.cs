@@ -6,37 +6,41 @@ using System.Linq;
 using Pseudo;
 
 [Serializable]
-public class RecycleOnMessage : ComponentBase
+public class RecycleOnMessage : ComponentBase, ILateUpdateable
 {
 	[EnumFlags(typeof(EntityMessages))]
 	public ByteFlag RecycleMessages;
 
-	public void Recycle()
+	bool shouldRecycle;
+
+	public float LateUpdateRate
 	{
-		PrefabPoolManager.Recycle(Entity);
+		get { return 0f; }
+	}
+
+	public void LateUpdate()
+	{
+		if (shouldRecycle)
+			PrefabPoolManager.Recycle(Entity);
 	}
 
 	protected virtual void OnDamaged()
 	{
-		if (RecycleMessages[(byte)EntityMessages.OnDamaged])
-			Recycle();
+		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDamaged];
 	}
 
 	protected virtual void OnDamage()
 	{
-		if (RecycleMessages[(byte)EntityMessages.OnDamage])
-			Recycle();
+		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDamage];
 	}
 
 	protected virtual void OnDie()
 	{
-		if (RecycleMessages[(byte)EntityMessages.OnDie])
-			Recycle();
+		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDie];
 	}
 
 	protected virtual void OnCollide()
 	{
-		if (RecycleMessages[(byte)EntityMessages.OnCollide])
-			Recycle();
+		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnCollide];
 	}
 }
