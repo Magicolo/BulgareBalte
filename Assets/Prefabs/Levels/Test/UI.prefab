@@ -125,8 +125,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22439278}
-  - 225: {fileID: 22572900}
   - 114: {fileID: 11435076}
+  - 225: {fileID: 22572900}
   m_Layer: 5
   m_Name: HealthBar2
   m_TagString: Untagged
@@ -174,8 +174,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22475844}
-  - 225: {fileID: 22524698}
   - 114: {fileID: 11420456}
+  - 225: {fileID: 22524698}
   m_Layer: 5
   m_Name: HealthBar4
   m_TagString: Untagged
@@ -336,8 +336,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22433720}
-  - 225: {fileID: 22537478}
   - 114: {fileID: 11413516}
+  - 225: {fileID: 22537478}
   m_Layer: 5
   m_Name: HealthBar1
   m_TagString: Untagged
@@ -530,8 +530,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22410066}
-  - 225: {fileID: 22505756}
   - 114: {fileID: 11415674}
+  - 225: {fileID: 22505756}
   m_Layer: 5
   m_Name: HealthBar3
   m_TagString: Untagged
@@ -682,7 +682,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -935,7 +935,7 @@ MonoBehaviour:
   - Index: 0
     Path: DamageSlider
     Reference: {fileID: 11471976}
-  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":2}\r\n"
   isDeserialized: 0
 --- !u!114 &11417596
 MonoBehaviour:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   - Index: 0
     Path: DamageSlider
     Reference: {fileID: 11493980}
-  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":3}\r\n"
   isDeserialized: 0
 --- !u!114 &11428344
 MonoBehaviour:
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   - Index: 0
     Path: DamageSlider
     Reference: {fileID: 11404424}
-  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":1}\r\n"
   isDeserialized: 0
 --- !u!114 &11440850
 MonoBehaviour:

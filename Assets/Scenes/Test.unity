@@ -1557,7 +1557,7 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 419194, guid: 72f6159db23b4b04ba79603fe5f40199, type: 2}
   m_PrefabInternal: {fileID: 1957328411}
---- !u!1001 &1763568376
+--- !u!1001 &1752032895
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1596,6 +1596,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1609,30 +1625,6 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -1660,21 +1652,13 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2084968, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: m_Depth
-      value: 1
+    - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11435076, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: data
-      value: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":1}\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 11415674, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: data
-      value: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":2}\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 11420456, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
-      propertyPath: data
-      value: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":3}\r\n"
+    - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
