@@ -21,7 +21,7 @@ public class WeaponAttack : AttackBase
 
 	protected WeaponAttack()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
 	}
 
 	public void EquipWeapon(PEntity weaponPrefab)

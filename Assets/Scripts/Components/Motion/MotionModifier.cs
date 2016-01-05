@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class MotionModifier : PComponent
+public class MotionModifier : ComponentBase
 {
 	public float MoveSpeedModifier = 1f;
 	public float RotateSpeedModifier = 1f;

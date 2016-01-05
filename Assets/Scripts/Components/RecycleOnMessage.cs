@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class RecycleOnMessage : PComponent
+public class RecycleOnMessage : ComponentBase
 {
 	public ByteFlag<EntityMessages> RecycleMessages
 	{

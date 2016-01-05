@@ -22,8 +22,8 @@ public class LaserAttack : AttackBase
 
 	public LaserAttack()
 	{
-		cachedRaycaster = new CachedValue<LaserRaycaster2D>(GetComponent<LaserRaycaster2D>);
-		cachedLineRenderer = new CachedValue<LineRenderer>(GetComponent<LineRenderer>);
+		cachedRaycaster = new CachedValue<LaserRaycaster2D>(Entity.GameObject.GetComponent<LaserRaycaster2D>);
+		cachedLineRenderer = new CachedValue<LineRenderer>(Entity.GameObject.GetComponent<LineRenderer>);
 	}
 
 	protected virtual void Update()
@@ -51,11 +51,11 @@ public class LaserAttack : AttackBase
 	{
 		CachedRaycaster.Cast();
 		CachedLineRenderer.SetVertexCount(CachedRaycaster.BounceCount + 2);
-		CachedLineRenderer.SetPosition(0, CachedTransform.position);
+		CachedLineRenderer.SetPosition(0, Entity.Transform.position);
 		CachedLineRenderer.material.color = isAttacking ? ActiveColor : InactiveColor;
 
 		var endPosition = CachedRaycaster.EndPosition;
-		endPosition.z = CachedTransform.position.z;
+		endPosition.z = Entity.Transform.position.z;
 
 		for (int i = 0; i < CachedRaycaster.BounceCount; i++)
 		{

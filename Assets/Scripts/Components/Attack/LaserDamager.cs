@@ -17,7 +17,7 @@ public class LaserDamager : DamagerBase
 
 	public LaserDamager()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
 	}
 
 	public override DamageData GetDamageData()

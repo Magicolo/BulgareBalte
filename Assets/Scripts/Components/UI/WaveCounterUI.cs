@@ -7,7 +7,7 @@ using Pseudo;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
-public class WaveCounterUI : PComponent
+public class WaveCounterUI : ComponentBase
 {
 	int timeBeforeNextWave;
 
@@ -16,7 +16,7 @@ public class WaveCounterUI : PComponent
 
 	public WaveCounterUI()
 	{
-		cachedText = new CachedValue<Text>(GetComponent<Text>);
+		cachedText = new CachedValue<Text>(Entity.GameObject.GetComponent<Text>);
 	}
 
 	void Update()

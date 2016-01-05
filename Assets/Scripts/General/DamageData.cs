@@ -17,20 +17,15 @@ public enum DamageTypes
 public struct DamageData
 {
 	public float Damage;
-	[SerializeField, PropertyField(typeof(EnumFlagsAttribute), typeof(EntityGroups))]
-	ByteFlag sources;
-	public ByteFlag<EntityGroups> Sources
-	{
-		get { return sources; }
-		set { sources = value; }
-	}
+
+	public EntityGroupDefinition Sources;
 	[EnumFlags]
 	public DamageTypes Types;
 
-	public DamageData(float damage, ByteFlag<EntityGroups> source = default(ByteFlag<EntityGroups>), DamageTypes type = 0)
+	public DamageData(float damage, EntityGroupDefinition sources = null, DamageTypes type = 0)
 	{
 		Damage = damage;
-		sources = source;
+		this.Sources = sources;
 		Types = type;
 	}
 

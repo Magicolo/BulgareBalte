@@ -7,7 +7,7 @@ using Pseudo;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CanvasGroup))]
-public class HealthBarUI : PComponent
+public class HealthBarUI : ComponentBase
 {
 	public Slider HealthSlider;
 	public Slider DamageSlider;
@@ -33,7 +33,7 @@ public class HealthBarUI : PComponent
 
 	public HealthBarUI()
 	{
-		cachedCanvasGroup = new CachedValue<CanvasGroup>(GetComponent<CanvasGroup>);
+		cachedCanvasGroup = new CachedValue<CanvasGroup>(Entity.GameObject.GetComponent<CanvasGroup>);
 	}
 
 	void Update()

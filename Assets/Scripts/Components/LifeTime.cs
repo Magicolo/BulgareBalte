@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(TimeComponent))]
-public class LifeTime : PComponent
+public class LifeTime : ComponentBase
 {
 	public float Duration = 5f;
 
@@ -17,7 +17,7 @@ public class LifeTime : PComponent
 
 	public LifeTime()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
 	}
 
 	protected virtual void Update()

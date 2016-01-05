@@ -11,7 +11,7 @@ public class SourceDamager : DamagerBase
 
 	public override DamageData GetDamageData()
 	{
-		return new DamageData(DamageAmount, Entity.Group);
+		return new DamageData(DamageAmount, Entity.Groups);
 	}
 
 	public override void SetDamageData(DamageData damage)

@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using Pseudo;
 
-public class RandomSpriteOnStart : PComponent
+public class RandomSpriteOnStart : ComponentBase, IStartable
 {
-
 	public SpriteRenderer SpriteRenderer;
 	public Sprite[] Sprites;
 
-	protected override void Start()
+	public void Start()
 	{
 		SpriteRenderer.sprite = Sprites.GetRandom();
-		this.Destroy();
+		Entity.RemoveComponent(this);
 	}
-
 }

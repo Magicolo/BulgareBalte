@@ -19,7 +19,7 @@ public class IntervalSpawner : SpawnerBase
 
 	public IntervalSpawner()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
 	}
 
 	protected virtual void Update()
@@ -31,7 +31,7 @@ public class IntervalSpawner : SpawnerBase
 	public override void Spawn()
 	{
 		PMonoBehaviour spawn = PrefabPoolManager.Create(ToSpawn);
-		spawn.CachedTransform.position = CachedTransform.position;
+		spawn.CachedTransform.position = Entity.Transform.position;
 		nextSpawnTime = CachedTime.Time + Interval;
 	}
 

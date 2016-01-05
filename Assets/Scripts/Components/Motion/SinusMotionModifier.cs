@@ -21,7 +21,7 @@ public class SinusMotionModifier : MotionModifier
 
 	public SinusMotionModifier()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
 	}
 
 	public override float GetAngleModifier()

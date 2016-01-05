@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class GroupProximityDetonator : PComponent
+public class GroupProximityDetonator : ComponentBase
 {
 	public EntityMatch Group;
 	public float Radius = 1f;
@@ -19,7 +19,7 @@ public class GroupProximityDetonator : PComponent
 		{
 			var entity = entities[i];
 
-			if (Vector2.Distance(entity.CachedTransform.position, CachedTransform.position) <= Radius)
+			if (Vector2.Distance(entity.Transform.position, Entity.Transform.position) <= Radius)
 			{
 				Entity.SendMessage(EntityMessages.OnDie);
 				return;
@@ -29,6 +29,6 @@ public class GroupProximityDetonator : PComponent
 
 	protected virtual void OnDie()
 	{
-		ParticleManager.Instance.Create(Explosion, CachedTransform.position - new Vector3(0f, 0f, 0.2f));
+		ParticleManager.Instance.Create(Explosion, Entity.Transform.position - new Vector3(0f, 0f, 0.2f));
 	}
 }

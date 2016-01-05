@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(TimeComponent))]
-public class Colorizer : PComponent
+public class Colorizer : ComponentBase
 {
 	public SpriteRenderer Renderer;
 	public float FadeSpeed = 5f;
@@ -20,7 +20,7 @@ public class Colorizer : PComponent
 
 	public Colorizer()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
 	}
 
 	protected virtual void Update()

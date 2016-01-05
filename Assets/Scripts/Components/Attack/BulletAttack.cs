@@ -14,7 +14,7 @@ public class BulletAttack : AttackBase
 	{
 		var bullet = PrefabPoolManager.Create(Bullet);
 		bullet.GetComponent<BulletDamager>().SetDamageData(Damager.GetDamageData());
-		bullet.CachedTransform.position = CachedTransform.position;
-		bullet.CachedTransform.eulerAngles = CachedTransform.eulerAngles;
+		bullet.CachedTransform.position = Entity.Transform.position;
+		bullet.CachedTransform.eulerAngles = Entity.Transform.eulerAngles;
 	}
 }

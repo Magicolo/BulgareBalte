@@ -15,22 +15,22 @@ public class SeekerMotion : MotionBase
 	{
 		Vector2 direction = base.GetDirection();
 
-		if (Vector2.Distance(CachedTransform.position, Target.CachedTransform.position) > StopDistance)
-			direction += CachedTransform.right.ToVector2();
+		if (Vector2.Distance(Entity.Transform.position, Target.CachedTransform.position) > StopDistance)
+			direction += Entity.Transform.right.ToVector2();
 		else
-			direction -= CachedTransform.right.ToVector2();
+			direction -= Entity.Transform.right.ToVector2();
 
 		return direction;
 	}
 
 	protected override float GetAngle()
 	{
-		return base.GetAngle() + (Target.CachedTransform.position - CachedTransform.position).ToVector2().Angle();
+		return base.GetAngle() + (Target.CachedTransform.position - Entity.Transform.position).ToVector2().Angle();
 	}
 
 	protected override bool ShouldMove()
 	{
-		return Target != null && Mathf.Abs(Vector2.Distance(CachedTransform.position, Target.CachedTransform.position) - StopDistance) > Threshold;
+		return Target != null && Mathf.Abs(Vector2.Distance(Entity.Transform.position, Target.CachedTransform.position) - StopDistance) > Threshold;
 	}
 
 	protected override bool ShouldRotate()

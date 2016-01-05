@@ -21,7 +21,7 @@ public class ModifierDamager : DamagerBase
 	public override void SetDamageData(DamageData damage)
 	{
 		damage.Damage *= DamageModifier;
-		damage.Sources |= Entity.Group;
+		//damage.Sources |= Entity.Groups;
 		damage.Types |= DamageTypes;
 		this.damage = damage;
 	}

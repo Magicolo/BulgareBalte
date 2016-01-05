@@ -5,16 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class Damageable : PComponent
+public class Damageable : ComponentBase
 {
-	[EnumFlags(typeof(EntityGroups))]
-	public ByteFlag BySources = ByteFlag.Everything;
+	public EntityGroupDefinition BySources;
 	[EnumFlags]
 	public DamageTypes ByTypes = (DamageTypes)int.MaxValue;
 
 	public virtual bool CanBeDamagedBy(DamageData damage)
 	{
-		return ((BySources & ~damage.Sources) != BySources) && ((ByTypes & ~damage.Types) != ByTypes);
+		return ((BySources.Groups & ~damage.Sources.Groups) != BySources.Groups) && ((ByTypes & ~damage.Types) != ByTypes);
 	}
 
 	public virtual bool Damage(DamageData damage)

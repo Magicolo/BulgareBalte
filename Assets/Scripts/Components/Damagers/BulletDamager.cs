@@ -30,6 +30,6 @@ public class BulletDamager : ModifierDamager
 			Entity.SendMessage(EntityMessages.OnCollide, collision);
 
 		if (HitEffect != null)
-			ParticleManager.Instance.Create(HitEffect, CachedTransform.position);
+			ParticleManager.Instance.Create(HitEffect, Entity.Transform.position);
 	}
 }

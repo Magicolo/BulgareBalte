@@ -6,12 +6,12 @@ using System.Linq;
 using Pseudo;
 
 [RequireComponent(typeof(TimeComponent), typeof(Rigidbody2D))]
-public abstract class MotionBase : PComponent
+public abstract class MotionBase : ComponentBase
 {
 	public float MoveSpeed = 10f;
 	public float RotateSpeed = 3f;
 
-	List<MotionModifier> modifiers = new List<MotionModifier>();
+	IList<MotionModifier> modifiers = new List<MotionModifier>();
 
 	readonly CachedValue<TimeComponent> cachedTime;
 	public TimeComponent CachedTime { get { return cachedTime; } }
@@ -21,8 +21,8 @@ public abstract class MotionBase : PComponent
 
 	protected MotionBase()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
-		cachedRigidbody = new CachedValue<Rigidbody2D>(GetComponent<Rigidbody2D>);
+		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
+		cachedRigidbody = new CachedValue<Rigidbody2D>(Entity.GameObject.GetComponent<Rigidbody2D>);
 	}
 
 	protected virtual void FixedUpdate()
