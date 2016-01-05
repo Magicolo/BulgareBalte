@@ -9,6 +9,8 @@ public class InstatiatePrefabInZone : MonoBehaviour
 	public GameObject Prefab;
 	public Zone2DBase Zone;
 
+	public float angle;
+
 	void Start()
 	{
 		if (Random.Range(0f, 1f) <= Chance)
@@ -16,6 +18,7 @@ public class InstatiatePrefabInZone : MonoBehaviour
 			var newGO = Instantiate(Prefab);
 			newGO.transform.parent = this.transform;
 			newGO.transform.localPosition = Zone.GetRandomLocalPoint();
+			newGO.transform.Rotate(angle, Axes.Z);
 		}
 
 		this.Destroy();
