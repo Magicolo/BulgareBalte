@@ -21,6 +21,6 @@ public class zTest : PMonoBehaviour
 	public bool test;
 	void Test()
 	{
-
+		PDebug.Log(JsonUtility.ToJson(new Damageable()));
 	}
 }

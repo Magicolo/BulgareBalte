@@ -125,9 +125,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22439278}
-  - 114: {fileID: 11485714}
-  - 114: {fileID: 11415740}
   - 225: {fileID: 22572900}
+  - 114: {fileID: 11435076}
   m_Layer: 5
   m_Name: HealthBar2
   m_TagString: Untagged
@@ -175,9 +174,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22475844}
-  - 114: {fileID: 11441824}
-  - 114: {fileID: 11430550}
   - 225: {fileID: 22524698}
+  - 114: {fileID: 11420456}
   m_Layer: 5
   m_Name: HealthBar4
   m_TagString: Untagged
@@ -338,9 +336,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22433720}
-  - 114: {fileID: 11459402}
-  - 114: {fileID: 11409190}
   - 225: {fileID: 22537478}
+  - 114: {fileID: 11413516}
   m_Layer: 5
   m_Name: HealthBar1
   m_TagString: Untagged
@@ -358,8 +355,7 @@ GameObject:
   - 224: {fileID: 22496884}
   - 222: {fileID: 22290730}
   - 114: {fileID: 11418062}
-  - 114: {fileID: 11458526}
-  - 114: {fileID: 11459940}
+  - 114: {fileID: 11417596}
   m_Layer: 5
   m_Name: WaveCounter
   m_TagString: Untagged
@@ -440,7 +436,6 @@ GameObject:
   - 20: {fileID: 2084968}
   - 124: {fileID: 12433048}
   - 92: {fileID: 9275480}
-  - 81: {fileID: 8162086}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -535,9 +530,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22410066}
-  - 114: {fileID: 11476866}
-  - 114: {fileID: 11491442}
   - 225: {fileID: 22505756}
+  - 114: {fileID: 11415674}
   m_Layer: 5
   m_Name: HealthBar3
   m_TagString: Untagged
@@ -701,13 +695,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!81 &8162086
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164608}
-  m_Enabled: 1
 --- !u!92 &9275480
 Behaviour:
   m_ObjectHideFlags: 1
@@ -763,26 +750,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &11409190
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cfcd304114a5643a4b0d37476ddb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthSlider: {fileID: 11463156}
-  DamageSlider: {fileID: 11409744}
-  ActiveAlpha: 0.8
-  InactiveAlpha: 0.4
-  FadeSpeed: 2.5
-  FadeDelay: 3
-  ChangeSpeed: 5
-  ChangeDelay: 1
-  PlayerIndex: 0
 --- !u!114 &11409744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -906,26 +873,96 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11415740
+--- !u!114 &11413516
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113948}
+  m_GameObject: {fileID: 141724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cfcd304114a5643a4b0d37476ddb48, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthSlider: {fileID: 11411000}
-  DamageSlider: {fileID: 11404424}
-  ActiveAlpha: 0.8
-  InactiveAlpha: 0.4
-  FadeSpeed: 2.5
-  FadeDelay: 3
-  ChangeSpeed: 5
-  ChangeDelay: 1
-  PlayerIndex: 1
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: CanvasGroup
+    Reference: {fileID: 22537478}
+  - Index: 0
+    Path: HealthSlider
+    Reference: {fileID: 11463156}
+  - Index: 0
+    Path: DamageSlider
+    Reference: {fileID: 11409744}
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  isDeserialized: 0
+--- !u!114 &11415674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: CanvasGroup
+    Reference: {fileID: 22505756}
+  - Index: 0
+    Path: HealthSlider
+    Reference: {fileID: 11496954}
+  - Index: 0
+    Path: DamageSlider
+    Reference: {fileID: 11471976}
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  isDeserialized: 0
+--- !u!114 &11417596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: Text
+    Reference: {fileID: 11418062}
+  data: "1\r\nWaveCounterUI\r\n{\"active\":true,\"Text\":{\"instanceID\":0}}\r\n"
+  isDeserialized: 0
 --- !u!114 &11418062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -959,6 +996,38 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Wave {0} In {1}
+--- !u!114 &11420456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: CanvasGroup
+    Reference: {fileID: 22524698}
+  - Index: 0
+    Path: HealthSlider
+    Reference: {fileID: 11448690}
+  - Index: 0
+    Path: DamageSlider
+    Reference: {fileID: 11493980}
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  isDeserialized: 0
 --- !u!114 &11428344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -986,26 +1055,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11430550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cfcd304114a5643a4b0d37476ddb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthSlider: {fileID: 11448690}
-  DamageSlider: {fileID: 11493980}
-  ActiveAlpha: 0.8
-  InactiveAlpha: 0.4
-  FadeSpeed: 2.5
-  FadeDelay: 3
-  ChangeSpeed: 5
-  ChangeDelay: 1
-  PlayerIndex: 3
 --- !u!114 &11431818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1047,6 +1096,38 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
+--- !u!114 &11435076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: CanvasGroup
+    Reference: {fileID: 22572900}
+  - Index: 0
+    Path: HealthSlider
+    Reference: {fileID: 11411000}
+  - Index: 0
+    Path: DamageSlider
+    Reference: {fileID: 11404424}
+  data: "1\r\nHealthBarUI\r\n{\"active\":true,\"CanvasGroup\":{\"instanceID\":0},\"HealthSlider\":{\"instanceID\":0},\"DamageSlider\":{\"instanceID\":0},\"ActiveAlpha\":1.0,\"InactiveAlpha\":0.5,\"FadeSpeed\":2.5,\"FadeDelay\":3.0,\"ChangeSpeed\":5.0,\"ChangeDelay\":1.0,\"PlayerIndex\":0}\r\n"
+  isDeserialized: 0
 --- !u!114 &11440850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1063,22 +1144,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &11441824
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 0
-    flag3: 0
-    flag4: 1
 --- !u!114 &11448690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1181,49 +1246,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11458526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 0
-    flag3: 0
-    flag4: 0
---- !u!114 &11459402
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 0
-    flag3: 0
-    flag4: 1
---- !u!114 &11459940
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f662b29eb3561e4cbf117318edd496f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11462484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1374,22 +1396,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &11476866
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 0
-    flag3: 0
-    flag4: 1
 --- !u!114 &11477436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1483,22 +1489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ForceModuleActive: 0
---- !u!114 &11485714
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 0
-    flag3: 0
-    flag4: 1
 --- !u!114 &11487992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1520,26 +1510,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &11491442
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cfcd304114a5643a4b0d37476ddb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthSlider: {fileID: 11496954}
-  DamageSlider: {fileID: 11471976}
-  ActiveAlpha: 0.8
-  InactiveAlpha: 0.4
-  FadeSpeed: 2.5
-  FadeDelay: 3
-  ChangeSpeed: 5
-  ChangeDelay: 1
-  PlayerIndex: 2
 --- !u!114 &11492284
 MonoBehaviour:
   m_ObjectHideFlags: 1

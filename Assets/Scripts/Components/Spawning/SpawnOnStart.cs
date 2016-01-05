@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class SpawnOnStart : ComponentBase, IStartable
 {
 	public void Start()

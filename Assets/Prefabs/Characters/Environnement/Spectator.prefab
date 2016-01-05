@@ -8,8 +8,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486998}
+  - 114: {fileID: 11496024}
   - 212: {fileID: 21279546}
-  - 114: {fileID: 11462868}
   m_Layer: 0
   m_Name: Hat
   m_TagString: Untagged
@@ -76,7 +76,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11462868
+--- !u!114 &11496024
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -84,24 +84,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 142114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8066d6935356b6c4d8c4b9eddc7f3973, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpriteRenderer: {fileID: 21279546}
-  Sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300048, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300050, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300052, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300054, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300056, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300058, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300060, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300062, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
-  - {fileID: 21300064, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: SpriteRenderer
+    Reference: {fileID: 21279546}
+  - Index: 0
+    Path: Sprites.0
+    Reference: {fileID: 21300048, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.1
+    Reference: {fileID: 21300050, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.2
+    Reference: {fileID: 21300052, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.3
+    Reference: {fileID: 21300054, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.4
+    Reference: {fileID: 21300056, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.5
+    Reference: {fileID: 21300058, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.6
+    Reference: {fileID: 21300060, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.7
+    Reference: {fileID: 21300062, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  - Index: 0
+    Path: Sprites.8
+    Reference: {fileID: 21300064, guid: 4aff08b57a65cc24480f31a7ab304139, type: 3}
+  data: "1\r\nRandomSpriteOnStart\r\n{\"active\":true,\"SpriteRenderer\":{\"instanceID\":0},\"Sprites\":[{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0},{\"instanceID\":0}]}\r\n"
+  isDeserialized: 0
 --- !u!212 &21279546
 SpriteRenderer:
   m_ObjectHideFlags: 1

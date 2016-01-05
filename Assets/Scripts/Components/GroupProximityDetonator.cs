@@ -5,13 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class GroupProximityDetonator : ComponentBase
+[Serializable]
+public class GroupProximityDetonator : ComponentBase, IUpdateable
 {
 	public EntityMatch Group;
 	public float Radius = 1f;
 	public ParticleEffect Explosion;
 
-	protected virtual void Update()
+	public float UpdateRate
+	{
+		get { return 0f; }
+	}
+
+	public virtual void Update()
 	{
 		var entities = EntityManager.GetEntityGroup(Group).Entities;
 

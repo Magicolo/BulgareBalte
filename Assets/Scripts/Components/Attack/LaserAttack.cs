@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(LaserRaycaster2D), typeof(LineRenderer))]
-public class LaserAttack : AttackBase
+[Serializable]
+public class LaserAttack : AttackBase, IUpdateable
 {
 	public Color ActiveColor = Color.red;
 	public Color InactiveColor = new Color(0.5f, 0f, 0f, 0.25f);
@@ -14,19 +14,15 @@ public class LaserAttack : AttackBase
 
 	bool isAttacking;
 
-	readonly CachedValue<LaserRaycaster2D> cachedRaycaster;
-	public LaserRaycaster2D CachedRaycaster { get { return cachedRaycaster; } }
+	public LaserRaycaster2D Raycaster;
+	public LineRenderer LineRenderer;
 
-	readonly CachedValue<LineRenderer> cachedLineRenderer;
-	public LineRenderer CachedLineRenderer { get { return cachedLineRenderer; } }
-
-	public LaserAttack()
+	public float UpdateRate
 	{
-		cachedRaycaster = new CachedValue<LaserRaycaster2D>(Entity.GameObject.GetComponent<LaserRaycaster2D>);
-		cachedLineRenderer = new CachedValue<LineRenderer>(Entity.GameObject.GetComponent<LineRenderer>);
+		get { return 0f; }
 	}
 
-	protected virtual void Update()
+	public virtual void Update()
 	{
 		UpdateLine();
 		Particles.CachedGameObject.SetActive(isAttacking);
@@ -39,9 +35,9 @@ public class LaserAttack : AttackBase
 
 		Particles.CachedGameObject.SetActive(true);
 
-		if (CachedRaycaster.Hits.Count > 0)
+		if (Raycaster.Hits.Count > 0)
 		{
-			var hit = CachedRaycaster.Hits.Last();
+			var hit = Raycaster.Hits.Last();
 			var entity = hit.collider.GetEntity();
 			Damager.Damage(entity == null ? null : entity.GetComponent<Damageable>());
 		}
@@ -49,22 +45,22 @@ public class LaserAttack : AttackBase
 
 	void UpdateLine()
 	{
-		CachedRaycaster.Cast();
-		CachedLineRenderer.SetVertexCount(CachedRaycaster.BounceCount + 2);
-		CachedLineRenderer.SetPosition(0, Entity.Transform.position);
-		CachedLineRenderer.material.color = isAttacking ? ActiveColor : InactiveColor;
+		Raycaster.Cast();
+		LineRenderer.SetVertexCount(Raycaster.BounceCount + 2);
+		LineRenderer.SetPosition(0, Entity.Transform.position);
+		LineRenderer.material.color = isAttacking ? ActiveColor : InactiveColor;
 
-		var endPosition = CachedRaycaster.EndPosition;
+		var endPosition = Raycaster.EndPosition;
 		endPosition.z = Entity.Transform.position.z;
 
-		for (int i = 0; i < CachedRaycaster.BounceCount; i++)
+		for (int i = 0; i < Raycaster.BounceCount; i++)
 		{
-			var hit = CachedRaycaster.Hits[i];
-			CachedLineRenderer.SetPosition(i + 1, hit.point);
+			var hit = Raycaster.Hits[i];
+			LineRenderer.SetPosition(i + 1, hit.point);
 		}
 
-		CachedLineRenderer.SetPosition(CachedRaycaster.BounceCount + 1, endPosition);
+		LineRenderer.SetPosition(Raycaster.BounceCount + 1, endPosition);
 		Particles.CachedTransform.position = endPosition;
-		Particles.CachedTransform.rotation = Quaternion.Euler(0f, 0f, CachedRaycaster.EndDirection.ToVector2().Angle() + 90f);
+		Particles.CachedTransform.rotation = Quaternion.Euler(0f, 0f, Raycaster.EndDirection.ToVector2().Angle() + 90f);
 	}
 }

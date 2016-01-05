@@ -5,13 +5,21 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class InputWeaponAttack : WeaponAttack
+[Serializable]
+public class InputWeaponAttack : WeaponAttack, IUpdateable
 {
 	public InputManager.Players Input;
 
-	protected virtual void Update()
+	public float UpdateRate
 	{
-		if (weapon != null && InputManager.Instance.GetKey(Input, "Attack") && CachedTime.Time - lastAttackTime > 1f / GetAttackSpeed())
+		get { return 0f; }
+	}
+
+	public virtual void Update()
+	{
+		var time = Entity.GetComponent<TimeComponent>();
+
+		if (weapon != null && InputManager.Instance.GetKey(Input, "Attack") && time.Time - lastAttackTime > 1f / GetAttackSpeed())
 			Attack();
 	}
 }

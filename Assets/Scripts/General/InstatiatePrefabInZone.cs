@@ -13,7 +13,7 @@ public class InstatiatePrefabInZone : MonoBehaviour
 	{
 		if (Random.Range(0f, 1f) <= Chance)
 		{
-			GameObject newGO = GameObject.Instantiate(Prefab);
+			var newGO = Instantiate(Prefab);
 			newGO.transform.parent = this.transform;
 			newGO.transform.localPosition = Zone.GetRandomLocalPoint();
 		}

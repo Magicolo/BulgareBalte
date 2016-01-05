@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
-public class Colorizer : ComponentBase
+[Serializable, EntityRequires(typeof(TimeComponent))]
+public class Colorizer : ComponentBase, IUpdateable
 {
 	public SpriteRenderer Renderer;
 	public float FadeSpeed = 5f;
@@ -15,17 +15,16 @@ public class Colorizer : ComponentBase
 
 	Color currentColor = Color.white;
 
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
-
-	public Colorizer()
+	public float UpdateRate
 	{
-		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
+		get { return 0f; }
 	}
 
-	protected virtual void Update()
+	public virtual void Update()
 	{
-		currentColor = Color.Lerp(currentColor, Normal, FadeSpeed * CachedTime.DeltaTime);
+		var time = Entity.GetComponent<TimeComponent>();
+
+		currentColor = Color.Lerp(currentColor, Normal, FadeSpeed * time.DeltaTime);
 		Renderer.color = currentColor;
 	}
 

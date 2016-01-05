@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class SourceDamager : DamagerBase
 {
 	public float DamageAmount = 1f;

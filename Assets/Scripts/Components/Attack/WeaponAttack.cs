@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
+[Serializable, EntityRequires(typeof(TimeComponent))]
 public class WeaponAttack : AttackBase
 {
 	[EntityRequires(typeof(DamagerBase), typeof(AttackBase))]
@@ -15,14 +15,6 @@ public class WeaponAttack : AttackBase
 
 	protected PEntity weapon;
 	protected float lastAttackTime;
-
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
-
-	protected WeaponAttack()
-	{
-		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
-	}
 
 	public void EquipWeapon(PEntity weaponPrefab)
 	{
@@ -36,9 +28,11 @@ public class WeaponAttack : AttackBase
 		weapon.CachedTransform.localPosition = Vector3.zero;
 		weapon.CachedTransform.localRotation = Quaternion.identity;
 
-		TimeComponent time;
-		if (weapon.TryGetComponent(out time))
-			time.Channel = CachedTime.Channel;
+		var time = Entity.GetComponent<TimeComponent>();
+		TimeComponent weaponTime;
+
+		if (weapon.TryGetComponent(out weaponTime))
+			weaponTime.Channel = time.Channel;
 	}
 
 	public void UnequipWeapon()
@@ -64,9 +58,11 @@ public class WeaponAttack : AttackBase
 
 	public override void Attack()
 	{
+		var time = Entity.GetComponent<TimeComponent>();
+
 		weapon.GetComponent<DamagerBase>().SetDamageData(Damager.GetDamageData());
 		weapon.GetComponent<AttackBase>().Attack();
-		lastAttackTime = CachedTime.Time;
+		lastAttackTime = time.Time;
 	}
 
 	public override void OnCreate()

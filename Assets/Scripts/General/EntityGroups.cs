@@ -5,10 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class EntityGroups : EntityGroupDefinition
+[EntityGroups]
+public static class EntityGroups
 {
-	public static readonly EntityGroups Player = new EntityGroups(0);
-	public static readonly EntityGroups Enemy = new EntityGroups(1);
-
-	public EntityGroups(params byte[] groupIds) : base(groupIds) { }
+	public static readonly ByteFlag Player = new ByteFlag(0);
+	public static readonly ByteFlag Enemy = new ByteFlag(1);
 }

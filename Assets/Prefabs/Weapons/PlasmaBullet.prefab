@@ -8,12 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411874}
-  - 114: {fileID: 11453522}
-  - 114: {fileID: 11429870}
-  - 114: {fileID: 11444486}
-  - 114: {fileID: 11441876}
-  - 114: {fileID: 11472328}
-  - 114: {fileID: 11434648}
+  - 114: {fileID: 11465822}
   - 50: {fileID: 5016956}
   m_Layer: 0
   m_Name: PlasmaBullet
@@ -99,6 +94,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113992}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 10
   m_AngularDrag: 100
@@ -115,13 +111,14 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184728}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .0649999976
---- !u!114 &11429870
+  m_Radius: 0.065
+--- !u!114 &11465822
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -129,82 +126,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 113992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ecddb927fb58541ac82f545ff3c10a, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  channel: 2
-  timeScale: 1
---- !u!114 &11434648
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a7f6fbb9067ae4d91c155f81fc7d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recycleMessages:
-    flag1: 13
-    flag2: 0
-    flag3: 0
-    flag4: 0
---- !u!114 &11441876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0b18750b4e3a247bd2e30b76e30dc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 150
-  RotateSpeed: 5
---- !u!114 &11444486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f27fdab5da19cd44a799e4ab74cc0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Duration: 5
---- !u!114 &11453522
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 2
-    flag3: 0
-    flag4: 0
---- !u!114 &11472328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03d33736e9649a14c8165f95984c919e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageModifier: 1
-  DamageTypes: 2
-  HitEffect: {fileID: 11495276, guid: 3e53d638753a2004da82df6ab694b733, type: 2}
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 3
+    Path: HitEffect
+    Reference: {fileID: 11495276, guid: 3e53d638753a2004da82df6ab694b733, type: 2}
+  data: "5\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":2,\"timeScale\":1.0}\r\nLifeTime\r\n{\"active\":true,\"Duration\":5.0}\r\nForwardMotion\r\n{\"active\":true,\"MoveSpeed\":10.0,\"RotateSpeed\":3.0}\r\nBulletDamager\r\n{\"active\":true,\"DamageModifier\":1.0,\"DamageTypes\":2,\"HitEffect\":{\"instanceID\":0}}\r\nRecycleOnMessage\r\n{\"active\":true,\"recycleMessages\":{\"f1\":5,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
+  isDeserialized: 0
 --- !u!212 &21214778
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -226,13 +165,15 @@ SpriteRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2e8e9e531a452da4f80ca014d541ab96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

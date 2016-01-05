@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class BurstWeaponAttack : WeaponAttack
+[Serializable]
+public class BurstWeaponAttack : WeaponAttack, IUpdateable
 {
 	public float BurstInterval = 0.25f;
 	public int BurstAmount = 3;
@@ -13,9 +14,16 @@ public class BurstWeaponAttack : WeaponAttack
 	int burstCounter;
 	float nextAttackTime;
 
-	protected virtual void Update()
+	public float UpdateRate
 	{
-		if (weapon != null && CachedTime.Time > nextAttackTime)
+		get { return 0f; }
+	}
+
+	public virtual void Update()
+	{
+		var time = Entity.GetComponent<TimeComponent>();
+
+		if (weapon != null && time.Time > nextAttackTime)
 			Attack();
 	}
 
@@ -23,14 +31,15 @@ public class BurstWeaponAttack : WeaponAttack
 	{
 		base.Attack();
 
+		var time = Entity.GetComponent<TimeComponent>();
 		burstCounter++;
 
 		if (burstCounter >= BurstAmount)
 		{
 			burstCounter = 0;
-			nextAttackTime = CachedTime.Time + 1f / GetAttackSpeed();
+			nextAttackTime = time.Time + 1f / GetAttackSpeed();
 		}
 		else
-			nextAttackTime = CachedTime.Time + BurstInterval;
+			nextAttackTime = time.Time + BurstInterval;
 	}
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[Serializable]
 public class BulletDamager : ModifierDamager
 {
 	[DoNotInitialize]

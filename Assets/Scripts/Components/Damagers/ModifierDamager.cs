@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class ModifierDamager : DamagerBase
 {
 	public float DamageModifier = 1f;
@@ -21,7 +22,7 @@ public class ModifierDamager : DamagerBase
 	public override void SetDamageData(DamageData damage)
 	{
 		damage.Damage *= DamageModifier;
-		//damage.Sources |= Entity.Groups;
+		damage.Sources |= Entity.Groups;
 		damage.Types |= DamageTypes;
 		this.damage = damage;
 	}

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class IntervalContinuousWeaponAttack : WeaponAttack
 {
 	public float ContinuousDuration = 1f;
@@ -14,12 +15,14 @@ public class IntervalContinuousWeaponAttack : WeaponAttack
 
 	protected virtual void Update()
 	{
-		if (CachedTime.Time > nextStopTime)
+		var time = Entity.GetComponent<TimeComponent>();
+
+		if (time.Time > nextStopTime)
 		{
-			nextAttackTime = CachedTime.Time + 1f / AttackSpeed;
+			nextAttackTime = time.Time + 1f / AttackSpeed;
 			nextStopTime = nextAttackTime + ContinuousDuration;
 		}
-		else if (CachedTime.Time > nextAttackTime)
+		else if (time.Time > nextAttackTime)
 			Attack();
 	}
 }

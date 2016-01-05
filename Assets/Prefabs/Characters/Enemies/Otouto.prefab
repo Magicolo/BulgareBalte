@@ -24,14 +24,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425418}
-  - 114: {fileID: 11439108}
-  - 114: {fileID: 11480296}
-  - 114: {fileID: 11460912}
-  - 114: {fileID: 11412350}
-  - 114: {fileID: 11468000}
-  - 114: {fileID: 11404832}
-  - 114: {fileID: 11478562}
-  - 114: {fileID: 11444228}
+  - 114: {fileID: 11444110}
   - 50: {fileID: 5087526}
   m_Layer: 0
   m_Name: Otouto
@@ -101,6 +94,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140890}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 10
   m_AngularDrag: 100
@@ -117,13 +111,14 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108050}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .5
---- !u!114 &11404832
+  m_Radius: 0.5
+--- !u!114 &11444110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -131,123 +126,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 140890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0afe27600831a7240b78e0958ff9c448, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  RotateSpeed: 2
-  Target: {fileID: 0}
-  Threshold: .5
-  StopDistance: 3
-  CheckForTargetInterval: 1
-  TargetGroup:
-    groups:
-      flag1: 1
-      flag2: 0
-      flag3: 0
-      flag4: 0
-    match: 0
---- !u!114 &11412350
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ecddb927fb58541ac82f545ff3c10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channel: 4
-  timeScale: 1
---- !u!114 &11439108
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 2
-    flag2: 0
-    flag3: 0
-    flag4: 0
---- !u!114 &11444228
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a7f6fbb9067ae4d91c155f81fc7d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recycleMessages:
-    flag1: 8
-    flag2: 0
-    flag3: 0
-    flag4: 0
---- !u!114 &11460912
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fef5ecefc2ccbc49989a21879ebd945, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BySources:
-    flag1: 18446744073709551613
-    flag2: 18446744073709551615
-    flag3: 18446744073709551615
-    flag4: 18446744073709551615
-  ByTypes: 2147483647
---- !u!114 &11468000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924c740f6ca6b2446a99b5ecb2ec7458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Renderer: {fileID: 21246264}
-  FadeSpeed: 5
-  Normal: {r: 1, g: 1, b: 1, a: 1}
-  Damaged: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &11478562
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d90935d9574a044bbf7ad025e9d6b53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageAmount: 1
---- !u!114 &11480296
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4298213cf83f57499f1979ff93807a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 4
+  groups:
+    f1: 2
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 3
+    Path: Renderer
+    Reference: {fileID: 21246264}
+  data: "7\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":10.0,\"RotateSpeed\":3.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"StopDistance\":1.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"recycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
+  isDeserialized: 0
 --- !u!212 &21246264
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -269,13 +165,15 @@ SpriteRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 829f8c6228075d240b889dfeb5b0ee97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -294,6 +192,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: BySources.flag1
       value: 4294967293
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: groups.f1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

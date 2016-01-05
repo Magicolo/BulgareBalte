@@ -8,9 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497000}
-  - 114: {fileID: 11419464}
-  - 114: {fileID: 11446096}
-  - 114: {fileID: 11419430}
+  - 114: {fileID: 11469150}
   m_Layer: 0
   m_Name: PlasmaWeapon
   m_TagString: Untagged
@@ -30,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11419430
+--- !u!114 &11469150
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -38,40 +36,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 197568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db03bf45e9e741b4e9921737e41a0658, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageModifier: 1
-  DamageTypes: 2
---- !u!114 &11419464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 1
-    flag3: 0
-    flag4: 0
---- !u!114 &11446096
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd35c69a846d75e4cb65e38f140aba31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damager: {fileID: 11419430}
-  Bullet: {fileID: 11453522, guid: 296386efcff73db47a20e320e8c28e4f, type: 2}
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 0
+    Path: Bullet
+    Reference: {fileID: 11465822, guid: 296386efcff73db47a20e320e8c28e4f, type: 2}
+  data: "2\r\nBulletAttack\r\n{\"active\":true,\"Bullet\":{\"instanceID\":0}}\r\nModifierDamager\r\n{\"active\":true,\"DamageModifier\":2.0,\"DamageTypes\":2}\r\n"
+  isDeserialized: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -103,7 +85,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Damager
       value: 
-      objectReference: {fileID: 11419430}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197568}

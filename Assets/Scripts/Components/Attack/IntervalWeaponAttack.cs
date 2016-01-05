@@ -9,7 +9,9 @@ public class IntervalWeaponAttack : WeaponAttack
 {
 	protected virtual void Update()
 	{
-		if (weapon != null && CachedTime.Time - lastAttackTime > 1f / GetAttackSpeed())
+		var time = Entity.GetComponent<TimeComponent>();
+
+		if (weapon != null && time.Time - lastAttackTime > 1f / GetAttackSpeed())
 			Attack();
 	}
 }

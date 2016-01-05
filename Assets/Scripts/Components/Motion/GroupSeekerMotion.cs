@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class GroupSeekerMotion : SeekerMotion
 {
 	public float CheckForTargetInterval = 1f;
@@ -20,10 +21,12 @@ public class GroupSeekerMotion : SeekerMotion
 
 	protected virtual void UpdateTarget()
 	{
-		if (Target == null || CachedTime.Time > nextPlayerCheckTime)
+		var time = Entity.GetComponent<TimeComponent>();
+
+		if (Target == null || time.Time > nextPlayerCheckTime)
 		{
 			Target = GetTarget();
-			nextPlayerCheckTime = CachedTime.Time + CheckForTargetInterval;
+			nextPlayerCheckTime = time.Time + CheckForTargetInterval;
 		}
 		else if (!Target.gameObject.activeSelf)
 			Target = null;

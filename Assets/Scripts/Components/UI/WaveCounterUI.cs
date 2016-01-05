@@ -6,29 +6,25 @@ using System.Linq;
 using Pseudo;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
-public class WaveCounterUI : ComponentBase
+[Serializable]
+public class WaveCounterUI : ComponentBase, IUpdateable
 {
 	int timeBeforeNextWave;
 
-	readonly CachedValue<Text> cachedText;
-	public Text CachedText { get { return cachedText.Value; } }
+	public Text Text;
 
-	public WaveCounterUI()
-	{
-		cachedText = new CachedValue<Text>(Entity.GameObject.GetComponent<Text>);
-	}
+	public float UpdateRate { get { return 0f; } }
 
-	void Update()
+	public void Update()
 	{
 		if (WaveManager.Instance == null || WaveManager.Instance.WaveIsInProgress || WaveManager.Instance.TimeBeforeNextWave <= 0f)
-			CachedText.enabled = false;
+			Text.enabled = false;
 		else
 		{
-			CachedText.enabled = true;
+			Text.enabled = true;
 
 			if (timeBeforeNextWave != (timeBeforeNextWave = Mathf.CeilToInt(WaveManager.Instance.TimeBeforeNextWave)))
-				CachedText.text = "Wave " + (WaveManager.Instance.CurrentWaveIndex + 1) + " In " + timeBeforeNextWave;
+				Text.text = "Wave " + (WaveManager.Instance.CurrentWaveIndex + 1) + " In " + timeBeforeNextWave;
 		}
 	}
 }

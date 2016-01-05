@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using Pseudo;
+using System;
 
+[Serializable]
 public class RandomSpriteOnStart : ComponentBase, IStartable
 {
 	public SpriteRenderer SpriteRenderer;

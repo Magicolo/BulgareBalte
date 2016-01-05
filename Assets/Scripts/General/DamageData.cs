@@ -18,14 +18,15 @@ public struct DamageData
 {
 	public float Damage;
 
-	public EntityGroupDefinition Sources;
+	[EntityGroups]
+	public ByteFlag Sources;
 	[EnumFlags]
 	public DamageTypes Types;
 
-	public DamageData(float damage, EntityGroupDefinition sources = null, DamageTypes type = 0)
+	public DamageData(float damage, ByteFlag sources = default(ByteFlag), DamageTypes type = 0)
 	{
 		Damage = damage;
-		this.Sources = sources;
+		Sources = sources;
 		Types = type;
 	}
 

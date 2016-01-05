@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
+[Serializable, EntityRequires(typeof(TimeComponent))]
 public class SinusMotionModifier : MotionModifier
 {
 	public MinMax Amplitude = new MinMax(25f, 100f);
@@ -16,17 +16,11 @@ public class SinusMotionModifier : MotionModifier
 	float randomFrequency;
 	float randomOffset;
 
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
-
-	public SinusMotionModifier()
-	{
-		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
-	}
-
 	public override float GetAngleModifier()
 	{
-		return base.GetAngleModifier() + randomAmplitude * Mathf.Sin(CachedTime.Time * randomFrequency + randomOffset);
+		var time = Entity.GetComponent<TimeComponent>();
+
+		return base.GetAngleModifier() + randomAmplitude * Mathf.Sin(time.Time * randomFrequency + randomOffset);
 	}
 
 	public override void OnCreate()

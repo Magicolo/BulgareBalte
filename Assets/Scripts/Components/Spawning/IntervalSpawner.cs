@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
-public class IntervalSpawner : SpawnerBase
+[Serializable, EntityRequires(typeof(TimeComponent))]
+public class IntervalSpawner : SpawnerBase, IUpdateable
 {
 	[Min]
 	public float Interval = 1f;
@@ -14,15 +14,9 @@ public class IntervalSpawner : SpawnerBase
 
 	float nextSpawnTime;
 
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
+	public float UpdateRate { get { return 0f; } }
 
-	public IntervalSpawner()
-	{
-		cachedTime = new CachedValue<TimeComponent>(Entity.GameObject.GetComponent<TimeComponent>);
-	}
-
-	protected virtual void Update()
+	public virtual void Update()
 	{
 		if (ShouldSpawn())
 			Spawn();
@@ -32,11 +26,11 @@ public class IntervalSpawner : SpawnerBase
 	{
 		PMonoBehaviour spawn = PrefabPoolManager.Create(ToSpawn);
 		spawn.CachedTransform.position = Entity.Transform.position;
-		nextSpawnTime = CachedTime.Time + Interval;
+		nextSpawnTime = Entity.GetComponent<TimeComponent>().Time + Interval;
 	}
 
 	protected virtual bool ShouldSpawn()
 	{
-		return CachedTime.Time >= nextSpawnTime;
+		return Entity.GetComponent<TimeComponent>().Time >= nextSpawnTime;
 	}
 }
