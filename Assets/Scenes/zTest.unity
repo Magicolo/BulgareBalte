@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b20c8e89f07050945acf66541aac9e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Script: {fileID: 11500000, guid: b20c8e89f07050945acf66541aac9e80, type: 3}
   test: 0
 --- !u!4 &163703429
 Transform:
@@ -125,6 +126,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1001 &462883831
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 454432, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406984, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: references.Array.data[0].Index
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406984, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+      propertyPath: data
+      value: "2\r\nSpawnOnStart\r\n{\"active\":true}\r\nSingleSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"spawn\":false}\r\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8567922d5c54b5e48b7814b990aa5612, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1032443204
 Prefab:
   m_ObjectHideFlags: 0

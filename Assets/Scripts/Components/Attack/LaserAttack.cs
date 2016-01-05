@@ -37,9 +37,10 @@ public class LaserAttack : AttackBase, IUpdateable
 
 		if (Raycaster.Hits.Count > 0)
 		{
+			var damager = Entity.GetComponent<DamagerBase>();
 			var hit = Raycaster.Hits.Last();
 			var entity = hit.collider.GetEntity();
-			Damager.Damage(entity == null ? null : entity.GetComponent<Damageable>());
+			damager.Damage(entity == null ? null : entity.GetComponent<Damageable>());
 		}
 	}
 

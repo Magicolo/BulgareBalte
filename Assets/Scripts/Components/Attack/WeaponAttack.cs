@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 
 [Serializable, EntityRequires(typeof(TimeComponent))]
-public class WeaponAttack : AttackBase
+public class WeaponAttack : AttackBase, IStartable
 {
 	[EntityRequires(typeof(DamagerBase), typeof(AttackBase))]
 	public PEntity StartWeapon;
@@ -16,6 +16,11 @@ public class WeaponAttack : AttackBase
 	protected PEntity weapon;
 	protected float lastAttackTime;
 
+	public void Start()
+	{
+		EquipWeapon(StartWeapon);
+	}
+
 	public void EquipWeapon(PEntity weaponPrefab)
 	{
 		UnequipWeapon();
@@ -24,9 +29,9 @@ public class WeaponAttack : AttackBase
 			return;
 
 		weapon = PrefabPoolManager.Create(weaponPrefab);
-		weapon.CachedTransform.parent = WeaponRoot;
-		weapon.CachedTransform.localPosition = Vector3.zero;
-		weapon.CachedTransform.localRotation = Quaternion.identity;
+		weapon.Transform.parent = WeaponRoot;
+		weapon.Transform.localPosition = Vector3.zero;
+		weapon.Transform.localRotation = Quaternion.identity;
 
 		var time = Entity.GetComponent<TimeComponent>();
 		TimeComponent weaponTime;
@@ -59,17 +64,11 @@ public class WeaponAttack : AttackBase
 	public override void Attack()
 	{
 		var time = Entity.GetComponent<TimeComponent>();
+		var damager = Entity.GetComponent<DamagerBase>();
 
-		weapon.GetComponent<DamagerBase>().SetDamageData(Damager.GetDamageData());
+		weapon.GetComponent<DamagerBase>().SetDamageData(damager.GetDamageData());
 		weapon.GetComponent<AttackBase>().Attack();
 		lastAttackTime = time.Time;
-	}
-
-	public override void OnCreate()
-	{
-		base.OnCreate();
-
-		EquipWeapon(StartWeapon);
 	}
 
 	public override void OnRecycle()

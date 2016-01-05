@@ -15,6 +15,6 @@ public class WaveNode
 	public void Spawn()
 	{
 		for (int i = 0; i < Spawners.Length; i++)
-			Spawners[i].SendMessage("Spawn");
+			Spawners[i].SendMessage(EntityMessages.Spawn);
 	}
 }
