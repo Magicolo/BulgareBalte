@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433502}
-  - 114: {fileID: 11457674}
+  - 114: {fileID: 11474644}
   m_Layer: 0
-  m_Name: Managers
+  m_Name: PersistentManagers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11457674
+--- !u!114 &11474644
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -36,14 +36,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 128072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4b0a67272616bf4ba429833d37fa7fd, type: 3}
+  m_Script: {fileID: 11500000, guid: a8b318560c426604eb0aaf9dade5afca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AudioManager: {fileID: 11455216, guid: 4e55a1d6d747c7a4e90b62020bb15efa, type: 2}
   GravityManager: {fileID: 0}
   InputManager: {fileID: 11482024, guid: 4648a04e3e79e164b87d701849a2eb6f, type: 2}
   ParticleManager: {fileID: 11451878, guid: 774653406b76c34478644932655c89f1, type: 2}
-  TimeManager: {fileID: 11470992, guid: 03e9f3e3bff27e04aafc3a97ed086e10, type: 2}
+  GameManager: {fileID: 11466366, guid: 96391124046f80f418cd637143606d08, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
