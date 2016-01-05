@@ -91,7 +91,7 @@ MonoBehaviour:
   - Index: 1
     Path: LineRenderer
     Reference: {fileID: 12005300}
-  data: "4\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":0,\"timeScale\":1.0}\r\nLaserAttack\r\n{\"active\":true,\"ActiveColor\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0},\"InactiveColor\":{\"r\":0.5,\"g\":0.0,\"b\":0.0,\"a\":0.25},\"Particles\":{\"instanceID\":0},\"Raycaster\":{\"instanceID\":0},\"LineRenderer\":{\"instanceID\":0}}\r\nLaserDamager\r\n{\"active\":true,\"DamageModifier\":0.10000000149011612}\r\nAttackSpeedModifier\r\n{\"active\":true,\"Modifier\":100.0}\r\n"
+  data: "4\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":0,\"timeScale\":1.0}\r\nLaserAttack\r\n{\"active\":true,\"ActiveColor\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0},\"InactiveColor\":{\"r\":0.5,\"g\":0.0,\"b\":0.0,\"a\":0.25},\"Particles\":{\"instanceID\":0},\"Raycaster\":{\"instanceID\":0},\"LineRenderer\":{\"instanceID\":0}}\r\nLaserDamager\r\n{\"active\":true,\"DamageModifier\":1.0}\r\nAttackSpeedModifier\r\n{\"active\":true,\"Modifier\":100.0}\r\n"
   isDeserialized: 0
 --- !u!114 &11472382
 MonoBehaviour:

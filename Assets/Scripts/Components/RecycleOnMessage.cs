@@ -8,14 +8,8 @@ using Pseudo;
 [Serializable]
 public class RecycleOnMessage : ComponentBase
 {
-	public ByteFlag<EntityMessages> RecycleMessages
-	{
-		get { return recycleMessages; }
-		set { recycleMessages = value; }
-	}
-
-	[SerializeField, EnumFlags(typeof(EntityMessages))]
-	ByteFlag recycleMessages;
+	[EnumFlags(typeof(EntityMessages))]
+	public ByteFlag RecycleMessages;
 
 	public void Recycle()
 	{
@@ -24,25 +18,25 @@ public class RecycleOnMessage : ComponentBase
 
 	protected virtual void OnDamaged()
 	{
-		if (recycleMessages[(byte)EntityMessages.OnDamaged])
+		if (RecycleMessages[(byte)EntityMessages.OnDamaged])
 			Recycle();
 	}
 
 	protected virtual void OnDamage()
 	{
-		if (recycleMessages[(byte)EntityMessages.OnDamage])
+		if (RecycleMessages[(byte)EntityMessages.OnDamage])
 			Recycle();
 	}
 
 	protected virtual void OnDie()
 	{
-		if (recycleMessages[(byte)EntityMessages.OnDie])
+		if (RecycleMessages[(byte)EntityMessages.OnDie])
 			Recycle();
 	}
 
 	protected virtual void OnCollide()
 	{
-		if (recycleMessages[(byte)EntityMessages.OnCollide])
+		if (RecycleMessages[(byte)EntityMessages.OnCollide])
 			Recycle();
 	}
 }

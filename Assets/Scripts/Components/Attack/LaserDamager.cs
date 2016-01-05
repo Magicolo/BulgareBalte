@@ -12,8 +12,6 @@ public class LaserDamager : DamagerBase
 
 	protected DamageData damage;
 
-	readonly CachedValue<TimeComponent> cachedTime;
-
 	public override DamageData GetDamageData()
 	{
 		return damage;

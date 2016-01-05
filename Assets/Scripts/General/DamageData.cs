@@ -23,11 +23,11 @@ public struct DamageData
 	[EnumFlags]
 	public DamageTypes Types;
 
-	public DamageData(float damage, ByteFlag sources = default(ByteFlag), DamageTypes type = 0)
+	public DamageData(float damage, ByteFlag sources = default(ByteFlag), DamageTypes types = 0)
 	{
 		Damage = damage;
 		Sources = sources;
-		Types = type;
+		Types = types;
 	}
 
 	public override string ToString()

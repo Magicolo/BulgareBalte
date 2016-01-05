@@ -6,12 +6,17 @@ using System.Linq;
 using Pseudo;
 
 [Serializable]
-public class Status : ComponentBase
+public class Status : ComponentBase, IStartable
 {
 	public float Health = 100f;
 
 	public bool Alive { get { return CurrentHealth > 0; } }
 	public float CurrentHealth { get; set; }
+
+	public void Start()
+	{
+		CurrentHealth = Health;
+	}
 
 	protected virtual void OnDamaged(DamageData damage)
 	{
@@ -19,12 +24,5 @@ public class Status : ComponentBase
 
 		if (CurrentHealth <= 0)
 			Entity.SendMessage(EntityMessages.OnDie);
-	}
-
-	public override void OnCreate()
-	{
-		base.OnCreate();
-
-		CurrentHealth = Health;
 	}
 }
