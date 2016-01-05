@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Serializable]
+[Serializable, ComponentCategory("General")]
 public class RecycleOnMessage : ComponentBase, ILateUpdateable
 {
 	[EnumFlags(typeof(EntityMessages))]

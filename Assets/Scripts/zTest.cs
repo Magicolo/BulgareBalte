@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 using UnityEditor;
+using Pseudo.Internal.Input;
 
 public class zTest : PMonoBehaviour
 {
@@ -14,11 +15,11 @@ public class zTest : PMonoBehaviour
 	public bool test;
 	void Test()
 	{
-		var scripts = MonoImporter.GetAllRuntimeMonoScripts();
+		PDebug.Log(2 / 3);
+	}
 
-		for (int i = 0; i < scripts.Length; i++)
-		{
-			PDebug.Log(scripts[i].GetClass());
-		}
+	void Update()
+	{
+		PDebug.Log(InputUtility.GetPressedKeys());
 	}
 }

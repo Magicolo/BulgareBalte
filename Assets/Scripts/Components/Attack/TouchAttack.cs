@@ -6,7 +6,10 @@ using System.Linq;
 using Pseudo;
 
 [Serializable]
-public class TouchAttack : ComponentBase
+public class TouchAttack : AttackBase
 {
-
+	public override void Attack()
+	{
+		throw new NotImplementedException();
+	}
 }

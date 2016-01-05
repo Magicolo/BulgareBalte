@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Serializable]
+[Serializable, ComponentCategory("General")]
 public class Status : ComponentBase, IStartable
 {
 	public float Health = 100f;

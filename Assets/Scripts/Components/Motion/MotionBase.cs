@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[EntityRequires(typeof(TimeComponent))]
+[ComponentCategory("Motion"), EntityRequires(typeof(TimeComponent))]
 public abstract class MotionBase : ComponentBase, IStartable, IFixedUpdateable
 {
 	public float MoveSpeed = 10f;
