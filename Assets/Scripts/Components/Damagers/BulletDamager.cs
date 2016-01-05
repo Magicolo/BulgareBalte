@@ -24,12 +24,12 @@ public class BulletDamager : ModifierDamager
 		var entity = collision.GetEntity();
 		var damageable = entity == null ? null : entity.GetComponent<Damageable>();
 
+		if (HitEffect != null)
+			ParticleManager.Instance.Create(HitEffect, Entity.Transform.position);
+
 		if (damageable != null)
 			Damage(damageable);
 		else
-			Entity.SendMessage(EntityMessages.OnCollide, collision);
-
-		if (HitEffect != null)
-			ParticleManager.Instance.Create(HitEffect, Entity.Transform.position);
+			Entity.SendMessage(EntityMessages.OnDie);
 	}
 }

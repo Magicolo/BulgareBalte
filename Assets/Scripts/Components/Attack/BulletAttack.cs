@@ -13,8 +13,9 @@ public class BulletAttack : AttackBase
 
 	public override void Attack()
 	{
+		var damager = Entity.GetComponent<DamagerBase>();
 		var bullet = PrefabPoolManager.Create(Bullet);
-		bullet.GetComponent<BulletDamager>().SetDamageData(Damager.GetDamageData());
+		bullet.GetComponent<BulletDamager>().SetDamageData(damager.GetDamageData());
 		bullet.CachedTransform.position = Entity.Transform.position;
 		bullet.CachedTransform.eulerAngles = Entity.Transform.eulerAngles;
 	}
