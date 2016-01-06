@@ -7,6 +7,14 @@ using Pseudo;
 
 public class LevelManager : Singleton<LevelManager>
 {
+	IEntityGroup playerGroup = EntityManager.GetEntityGroup(EntityGroups.Player);
+
+	void Update()
+	{
+		if (playerGroup.Entities.Count == 0 && GameManager.Instance.CurrentState == GameManager.GameStates.Playing)
+			GameManager.Instance.LevelFailure();
+	}
+
 	protected override void Start()
 	{
 		base.Start();
@@ -17,6 +25,6 @@ public class LevelManager : Singleton<LevelManager>
 
 	public void OnWavesCompleted()
 	{
-
+		GameManager.Instance.LevelSuccess();
 	}
 }

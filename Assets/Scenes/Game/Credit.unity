@@ -403,7 +403,7 @@ MonoBehaviour:
     f7: 0
     f8: 0
   references: []
-  data: "2\r\nQuitOnKeyPressed\r\n{\"active\":true,\"QuitKey\":27}\r\nQuitOnKeyPressed\r\n{\"active\":true,\"QuitKey\":13}\r\n"
+  data: "1\r\nQuitOnKeyPressed\r\n{\"active\":true,\"QuitKeys\":[13,27]}\r\n"
   isDeserialized: 0
 --- !u!4 &1305050439
 Transform:
