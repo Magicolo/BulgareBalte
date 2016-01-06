@@ -60,6 +60,7 @@ public abstract class MotionBase : ComponentBase, IStartable, IFixedUpdateable
 	protected virtual Vector2 GetDirection()
 	{
 		Vector2 direction = Vector2.zero;
+
 		for (int i = 0; i < modifiers.Count; i++)
 			direction = direction.Mult(modifiers[i].GetDirectionModifier());
 
@@ -70,6 +71,7 @@ public abstract class MotionBase : ComponentBase, IStartable, IFixedUpdateable
 	protected virtual float GetAngle()
 	{
 		float angle = 0f;
+
 		for (int i = 0; i < modifiers.Count; i++)
 			angle += modifiers[i].GetAngleModifier();
 
