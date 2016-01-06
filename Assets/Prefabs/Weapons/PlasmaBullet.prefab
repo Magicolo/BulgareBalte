@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 411874}
   - 114: {fileID: 11465822}
-  - 114: {fileID: 11430614}
+  - 114: {fileID: 11451100}
   - 50: {fileID: 5016956}
   m_Layer: 0
   m_Name: PlasmaBullet
@@ -119,7 +119,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.065
---- !u!114 &11430614
+--- !u!114 &11451100
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 113992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b82afb11395f6e442af07e858d06b355, type: 3}
+  m_Script: {fileID: 11500000, guid: af72310de1ed3b0438010e78709498c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11465822
