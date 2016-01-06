@@ -3,19 +3,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 using Pseudo;
-using UnityEditor;
 using Pseudo.Internal.Input;
 
 public class zTest : PMonoBehaviour
 {
-	public MonoScript Script;
+	public UnityEngine.Object Scene;
+	public TextAsset Scene1;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-		PDebug.Log(2 / 3);
 	}
 
 	void Update()
