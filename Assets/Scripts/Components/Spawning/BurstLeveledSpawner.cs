@@ -12,11 +12,11 @@ public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 	public int CurrentLevel = -1;
 	public int[] NbSpawned;
 	public int[] Interval;
-	public override bool IsDone { get { return true; } }
+
+	public override bool IsDone { get { return spawnRemainning == 0; } }
 
 	float nextSpawnTime;
 	int spawnRemainning;
-
 
 	[SerializeField, Button]
 	protected bool spawn;
