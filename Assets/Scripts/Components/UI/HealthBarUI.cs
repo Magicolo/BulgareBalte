@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 using UnityEngine.UI;
 
-[Serializable]
+[Serializable, ComponentCategory("UI")]
 public class HealthBarUI : ComponentBase, IUpdateable
 {
 	public CanvasGroup CanvasGroup;

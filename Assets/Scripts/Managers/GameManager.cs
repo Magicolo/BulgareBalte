@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 using Pseudo;
 using System;
+using Pseudo.Internal.Pool;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -26,6 +27,7 @@ public class GameManager : Singleton<GameManager>
 	{
 		base.Awake();
 
+		PoolUtility.InitializeJanitor();
 		currentSceneIndex = Array.IndexOf(LevelNames, SceneManager.GetActiveScene().name);
 	}
 
