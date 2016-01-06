@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Pseudo;
 using System;
 
-[Serializable, EntityRequires(typeof(TimeComponent)), ComponentCategory("Spawner")]
+[Serializable, EntityRequires(typeof(TimeComponent))]
 public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 {
 	public PEntity ToSpawn;

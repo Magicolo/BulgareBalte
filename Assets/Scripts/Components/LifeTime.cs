@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Serializable, EntityRequires(typeof(TimeComponent))]
+[Serializable, ComponentCategory("General"), EntityRequires(typeof(TimeComponent))]
 public class LifeTime : ComponentBase
 {
 	public float Duration = 5f;
