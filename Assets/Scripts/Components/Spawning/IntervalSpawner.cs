@@ -14,6 +14,7 @@ public class IntervalSpawner : SpawnerBase, IUpdateable
 
 	float nextSpawnTime;
 
+	public override bool IsDone { get { return false; } }
 	public float UpdateRate { get { return 0f; } }
 
 	public virtual void Update()

@@ -9,10 +9,10 @@ public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 	public PEntity ToSpawn;
 
 	[Disable]
-	public int currentLevel = -1;
-
+	public int CurrentLevel = -1;
 	public int[] NbSpawned;
 	public int[] Interval;
+	public override bool IsDone { get { return true; } }
 
 	float nextSpawnTime;
 	int spawnRemainning;
@@ -23,9 +23,9 @@ public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 
 	public override void Spawn()
 	{
-		currentLevel++;
-		spawnRemainning = NbSpawned[currentLevel];
-		nextSpawnTime = Entity.GetComponent<TimeComponent>().Time + Interval[currentLevel];
+		CurrentLevel++;
+		spawnRemainning = NbSpawned[CurrentLevel];
+		nextSpawnTime = Entity.GetComponent<TimeComponent>().Time + Interval[CurrentLevel];
 	}
 
 
@@ -44,7 +44,7 @@ public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 
 	void RealSpawn()
 	{
-		nextSpawnTime = Entity.GetComponent<TimeComponent>().Time + Interval[currentLevel];
+		nextSpawnTime = Entity.GetComponent<TimeComponent>().Time + Interval[CurrentLevel];
 		spawnRemainning--;
 		var spawned = PrefabPoolManager.Create(ToSpawn);
 		spawned.CachedTransform.position = Entity.Transform.position;
