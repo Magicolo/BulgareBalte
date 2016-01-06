@@ -12,6 +12,7 @@ public class IntervalContinuousWeaponAttack : WeaponAttack, IUpdateable
 
 	float nextAttackTime;
 	float nextStopTime;
+	bool startedAttacking;
 
 	public float UpdateRate
 	{
@@ -23,11 +24,23 @@ public class IntervalContinuousWeaponAttack : WeaponAttack, IUpdateable
 		var time = Entity.GetComponent<TimeComponent>();
 
 		if (time.Time > nextStopTime)
-		{
-			nextAttackTime = time.Time + 1f / AttackSpeed;
-			nextStopTime = nextAttackTime + ContinuousDuration.GetRandom();
-		}
+			StopAttacking(time);
 		else if (time.Time > nextAttackTime)
-			Attack();
+			HandleAttack();
+	}
+
+	private void HandleAttack()
+	{
+		Attack();
+		if (!startedAttacking)
+			Entity.SendMessage(EntityMessages.OnStartAttacking);
+	}
+
+	private void StopAttacking(TimeComponent time)
+	{
+		nextAttackTime = time.Time + 1f / AttackSpeed;
+		nextStopTime = nextAttackTime + ContinuousDuration.GetRandom();
+		Entity.SendMessage(EntityMessages.OnStopAttacking);
+		startedAttacking = false;
 	}
 }

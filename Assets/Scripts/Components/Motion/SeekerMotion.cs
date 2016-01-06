@@ -9,7 +9,10 @@ public class SeekerMotion : MotionBase
 {
 	public PEntity Target;
 	public float Threshold = 0.5f;
+	public float RotationThreshold = 0.5f;
 	public float StopDistance = 1f;
+
+	public bool LookingAtTarget { get { return (Target == null) || GetAngle() - Entity.Transform.rotation.eulerAngles.z < RotationThreshold; } }
 
 	protected override Vector2 GetDirection()
 	{

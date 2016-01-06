@@ -14,7 +14,7 @@ public class WeaponAttack : AttackBase, IStartable
 	public float AttackSpeed = 1f;
 
 	protected PEntity weapon;
-	protected float lastAttackTime;
+	public float lastAttackTime { get; protected set; }
 
 	public void Start()
 	{
