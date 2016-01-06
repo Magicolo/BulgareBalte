@@ -9,7 +9,7 @@ using Pseudo;
 public class Damageable : ComponentBase
 {
 	[EntityGroups]
-	public ByteFlag BySources;
+	public ByteFlag BySources = ByteFlag.Everything;
 	[EnumFlags]
 	public DamageTypes ByTypes = (DamageTypes)int.MaxValue;
 

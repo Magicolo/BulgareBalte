@@ -314,38 +314,47 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.95
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalPosition.y
       value: 2.5
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 434896, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+    - target: {fileID: 414688, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 184436, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
+      propertyPath: m_Name
+      value: OtoutoSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416504, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
+      propertyPath: references.Array.data[0].Reference
+      value: 
+      objectReference: {fileID: 11444110, guid: 958f42ee11739124a96211d17d307888,
+        type: 2}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d199218118964944bbbdaa1878e49cb9, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: bb3af665fb088ae488591c9f8da7bc22, type: 2}
   m_IsPrefabParent: 0

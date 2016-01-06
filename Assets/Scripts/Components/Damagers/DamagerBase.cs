@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[ComponentCategory("Attack")]
+[ComponentCategory("Damager")]
 public abstract class DamagerBase : ComponentBase
 {
 	public virtual void Damage(Damageable damageable)

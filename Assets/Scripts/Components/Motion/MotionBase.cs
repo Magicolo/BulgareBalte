@@ -31,7 +31,7 @@ public abstract class MotionBase : ComponentBase, IStartable, IFixedUpdateable
 		var time = Entity.GetComponent<TimeComponent>();
 
 		if (ShouldMove())
-			rigidbody.AddForce(GetDirection() * GetMoveSpeed() * time.FixedDeltaTime, ForceMode2D.Impulse);
+			rigidbody.AddForce(GetDirection() * GetMoveSpeed() * time.FixedDeltaTime * rigidbody.mass, ForceMode2D.Impulse);
 
 		if (ShouldRotate())
 			rigidbody.RotateTowards(GetAngle(), GetRotateSpeed() * time.FixedDeltaTime);
