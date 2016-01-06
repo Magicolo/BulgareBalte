@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1d368ba3a9f194493a74e6525d7ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelManager: {fileID: 11427504, guid: 0cadf941db593614ab374b470a93cc00, type: 2}
+  LevelManager: {fileID: 11430126, guid: 0cadf941db593614ab374b470a93cc00, type: 2}
   WaveManager: {fileID: 11471138, guid: ca42eaaf7495354418275c6e9832d782, type: 2}
 --- !u!1001 &100100000
 Prefab:

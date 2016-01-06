@@ -9,9 +9,10 @@ public class Wave : PMonoBehaviour
 {
 	public WaveNode[] Nodes;
 
-	public bool IsCompleted { get { return waitingNodes.Count == 0; } }
+	public bool IsCompleted { get { return waitingNodes.Count == 0 && activeNodes.Count == 0; } }
 
 	readonly List<WaveNode> waitingNodes = new List<WaveNode>();
+	readonly List<WaveNode> activeNodes = new List<WaveNode>();
 
 	float counter;
 
@@ -19,11 +20,13 @@ public class Wave : PMonoBehaviour
 	{
 		counter = 0;
 		waitingNodes.AddRange(Nodes);
+		activeNodes.Clear();
 	}
 
 	void OnDisable()
 	{
 		waitingNodes.Clear();
+		activeNodes.Clear();
 	}
 
 	void Update()
@@ -37,8 +40,16 @@ public class Wave : PMonoBehaviour
 			if (counter >= node.Delay)
 			{
 				node.Spawn();
-				waitingNodes.RemoveAt(i--);
+				activeNodes.Add(waitingNodes.Pop(i--));
 			}
+		}
+
+		for (int i = 0; i < activeNodes.Count; i++)
+		{
+			var node = activeNodes[i];
+
+			if (node.IsCompleted)
+				activeNodes.RemoveAt(i--);
 		}
 	}
 }
