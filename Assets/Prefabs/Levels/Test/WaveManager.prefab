@@ -399,7 +399,7 @@ MonoBehaviour:
   - Index: 0
     Path: ToSpawn
     Reference: {fileID: 11462294, guid: 42c66c7b765795145b6f47a42aceb345, type: 2}
-  data: "2\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":1.0,\"ToSpawn\":{\"instanceID\":0}}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\n"
+  data: "1\r\nSingleSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"spawn\":false}\r\n"
   isDeserialized: 0
 --- !u!114 &11410756
 MonoBehaviour:
@@ -526,10 +526,10 @@ MonoBehaviour:
     f7: 0
     f8: 0
   references:
-  - Index: 1
+  - Index: 0
     Path: ToSpawn
     Reference: {fileID: 11434216, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":1.0,\"ToSpawn\":{\"instanceID\":0}}\r\n"
+  data: "1\r\nSingleSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"spawn\":false}\r\n"
   isDeserialized: 0
 --- !u!114 &11491300
 MonoBehaviour:
@@ -555,7 +555,7 @@ MonoBehaviour:
   - Index: 0
     Path: ToSpawn
     Reference: {fileID: 11449188, guid: 99dae24b3db4a8445920f5a54274ea2c, type: 2}
-  data: "2\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":1.0,\"ToSpawn\":{\"instanceID\":0}}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\n"
+  data: "1\r\nSingleSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"spawn\":false}\r\n"
   isDeserialized: 0
 --- !u!114 &11495928
 MonoBehaviour:
