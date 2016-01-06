@@ -16,7 +16,7 @@ public class WeaponAttack : AttackBase, IStartable
 	protected PEntity weapon;
 	public float lastAttackTime { get; protected set; }
 
-	public void Start()
+	public virtual void Start()
 	{
 		EquipWeapon(StartWeapon);
 	}

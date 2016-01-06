@@ -6,25 +6,57 @@ using System;
 [Serializable, ComponentCategory("Attack"), RequireComponent(typeof(SeekerMotion))]
 public class DisableWeaponsWhenNotLookingAtTarget : ComponentBase, IUpdateable
 {
+	public bool ResetVelocityWhenAttacking;
+
 	public float UpdateRate { get { return 0; } }
 
-	public bool CanDisableWhenFiring = false;
 	[EntityRequires(typeof(WeaponAttack))]
 	public PEntity Weapon;
+
+	enum State { Reset, Targetting, Firing };
+	State currentState;
+
+	public Animator Animator;
+	public string ReactivateAnimationName;
+	public string ReactivateTriggerName;
 
 	public void Update()
 	{
 		var seekerMotion = Entity.GetComponent<SeekerMotion>();
-		PDebug.Log(seekerMotion.LookingAtTarget, justAttacked());
-		if ((CanDisableWhenFiring && justAttacked()) || !justAttacked())
-			Weapon.GetComponent<WeaponAttack>().Active = seekerMotion.LookingAtTarget;
+
+		switch (currentState)
+		{
+			case State.Reset:
+				currentState = State.Targetting;
+				Weapon.GetComponent<WeaponAttack>().Active = false;
+				break;
+
+			case State.Targetting:
+				if (seekerMotion.LookingAtTarget)
+				{
+					currentState = State.Firing;
+					if (ResetVelocityWhenAttacking)
+						Entity.GameObject.GetComponent<Rigidbody2D>().SetVelocity(0);
+
+					if (Animator != null)
+						Animator.SetTrigger(ReactivateTriggerName);
+					else
+						Weapon.GetComponent<WeaponAttack>().Active = true;
+				}
+				break;
+			case State.Firing:
+				break;
+		}
 	}
 
-	bool justAttacked()
+	public void OnStopAttacking()
 	{
-		var time = Entity.GetComponent<TimeComponent>();
-		return time.Time - Weapon.GetComponent<WeaponAttack>().lastAttackTime < 0.5f;
+		currentState = State.Reset;
+	}
 
+	void OnStateExit(AnimatorStateInfo info)
+	{
+		Weapon.GetComponent<WeaponAttack>().Active = true;
 	}
 }
 

@@ -12,7 +12,7 @@ public class SeekerMotion : MotionBase
 	public float RotationThreshold = 0.5f;
 	public float StopDistance = 1f;
 
-	public bool LookingAtTarget { get { return (Target == null) || GetAngle() - Entity.Transform.rotation.eulerAngles.z < RotationThreshold; } }
+	public bool LookingAtTarget { get { return (Target != null) && Math.Abs(GetAngle() - Entity.Transform.rotation.eulerAngles.z) < RotationThreshold; } }
 
 	protected override Vector2 GetDirection()
 	{
