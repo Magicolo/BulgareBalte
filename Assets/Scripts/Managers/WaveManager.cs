@@ -52,7 +52,7 @@ public class WaveManager : Singleton<WaveManager>
 
 	protected virtual void UpdateWaves()
 	{
-		WaveIsInProgress = CurrentWave != null && !CurrentWave.IsCompleted || enemyGroup.Entities.Count > 0;
+		WaveIsInProgress = CurrentWave != null && (!CurrentWave.IsCompleted || enemyGroup.Entities.Count > 0);
 
 		if (waveIsInProgress)
 			return;

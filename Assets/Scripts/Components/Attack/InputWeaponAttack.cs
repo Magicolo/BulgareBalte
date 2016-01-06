@@ -18,8 +18,9 @@ public class InputWeaponAttack : WeaponAttack, IUpdateable
 	public virtual void Update()
 	{
 		var time = Entity.GetComponent<TimeComponent>();
+		var screenPosition = Camera.main.WorldToScreenPoint(Entity.Transform.position);
 
-		if (weapon != null && InputManager.Instance.GetKey(Input, "Attack") && time.Time - lastAttackTime > 1f / GetAttackSpeed())
+		if (weapon != null && InputManager.Instance.GetKey(Input, "Attack", screenPosition) && time.Time - lastAttackTime > 1f / GetAttackSpeed())
 			Attack();
 	}
 }

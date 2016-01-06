@@ -8,7 +8,7 @@ using Pseudo;
 [Serializable]
 public class WaveNode
 {
-	static Predicate<PEntity> spawnersAreDone = spawner => spawner != null && spawner.GetComponent<SpawnerBase>().IsDone;
+	static Predicate<PEntity> spawnersAreDone = spawner => spawner == null || spawner.GetComponent<SpawnerBase>().IsDone;
 
 	public float Delay;
 	[EntityRequires(typeof(SpawnerBase), CanBeNull = false)]

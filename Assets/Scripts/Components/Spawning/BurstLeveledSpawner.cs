@@ -11,7 +11,7 @@ public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 	[Disable]
 	public int CurrentLevel = -1;
 	public int[] NbSpawned;
-	public int[] Interval;
+	public float[] Interval;
 
 	public override bool IsDone { get { return spawnRemainning == 0; } }
 
