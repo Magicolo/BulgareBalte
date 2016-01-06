@@ -13,6 +13,9 @@ public class TouchDamager : SourceDamager
 
 	float nextDamageTime;
 
+	public Animator Animator;
+	public string AttackTrigger;
+
 	public override DamageData GetDamageData()
 	{
 		var damage = base.GetDamageData();
@@ -35,6 +38,7 @@ public class TouchDamager : SourceDamager
 		{
 			nextDamageTime = time.Time + DamageInterval;
 			Damage(damageable);
+			Animator.SetTrigger(AttackTrigger);
 		}
 	}
 }

@@ -6,18 +6,16 @@ using System.Linq;
 using Pseudo;
 
 [Serializable, ComponentCategory("General"), EntityRequires(typeof(TimeComponent))]
-public class LifeTime : ComponentBase
+public class LifeTime : ComponentBase, IUpdateable
 {
 	public float Duration = 5f;
 
 	float counter;
+	public float Progress { get { return counter / Duration; } }
 
-	protected virtual void Update()
-	{
-		UpdateLife();
-	}
+	public float UpdateRate { get { return 0f; } }
 
-	protected virtual void UpdateLife()
+	public virtual void Update()
 	{
 		counter += Entity.GetComponent<TimeComponent>().DeltaTime;
 
