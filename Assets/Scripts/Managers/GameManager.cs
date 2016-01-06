@@ -7,15 +7,12 @@ using System;
 
 public class GameManager : Singleton<GameManager>
 {
-
-	public enum GameStates { None, Playing, Loading, Winning, Losing };
+	public enum GameStates { Playing, Loading, Winning, Losing };
 
 	public GameStates CurrentState { get; private set; }
 
 	public string[] LevelNames;
 	int currentSceneIndex = -1;
-
-	public Scene[] Levels;
 
 	public float WinDelay = 3f;
 	public float LoseDelay = 2.97f;
@@ -25,19 +22,17 @@ public class GameManager : Singleton<GameManager>
 
 	public string CurrentSceneName { get { return LevelNames[currentSceneIndex]; } }
 
-	protected override void Start()
+	protected override void Awake()
 	{
-		base.Start();
+		base.Awake();
 
-		LoadNextLevel();
+		currentSceneIndex = Array.IndexOf(LevelNames, SceneManager.GetActiveScene().name);
 	}
 
 	void Update()
 	{
 		switch (CurrentState)
 		{
-			case GameStates.None:
-				break;
 			case GameStates.Playing:
 				break;
 			case GameStates.Loading:
@@ -57,6 +52,11 @@ public class GameManager : Singleton<GameManager>
 		}
 	}
 
+	public void StartGame()
+	{
+		LoadNextLevel();
+	}
+
 	public void LevelSuccess()
 	{
 		SwitchState(GameStates.Winning);
@@ -71,8 +71,6 @@ public class GameManager : Singleton<GameManager>
 	{
 		switch (CurrentState)
 		{
-			case GameStates.None:
-				break;
 			case GameStates.Playing:
 				break;
 			case GameStates.Loading:
@@ -88,8 +86,6 @@ public class GameManager : Singleton<GameManager>
 
 		switch (CurrentState)
 		{
-			case GameStates.None:
-				break;
 			case GameStates.Playing:
 				break;
 			case GameStates.Loading:
@@ -112,7 +108,6 @@ public class GameManager : Singleton<GameManager>
 			SwitchLevel(CurrentSceneName);
 		else
 			SwitchLevel("Credit");
-
 	}
 
 	void ReloadCurrentLevel()
