@@ -42,14 +42,12 @@ public class GroupProximityDetonator : ComponentBase, IUpdateable
 	void OnStateExit(AnimatorStateInfo info)
 	{
 		if (info.IsName(AnimationName))
-		{
 			Die();
-		}
 	}
 
 	private void Die()
 	{
-		DamageData data = new DamageData(Entity.GetComponent<Status>().Health, Entity.Groups, DamageTypes.None);
+		var data = new DamageData(Entity.GetComponent<Status>().Health, Entity.Groups, DamageTypes.None);
 		Entity.GetComponent<Damageable>().Damage(data);
 	}
 }

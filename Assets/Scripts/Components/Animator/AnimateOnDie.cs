@@ -28,27 +28,20 @@ public class AnimateOnDie : ComponentBase
 				item.Active = false;
 		}
 		else
-		{
 			SpawnPrefab();
-			PrefabPoolManager.Recycle(Entity);
-		}
-
 	}
 
 	void OnStateExit(AnimatorStateInfo info)
 	{
 		if (info.IsName(AnimationName))
-		{
 			SpawnPrefab();
-			PrefabPoolManager.Recycle(Entity);
-		}
 	}
 
 	private void SpawnPrefab()
 	{
 		if (DeadPrefab == null) return;
 
-		GameObject go = PrefabPoolManager.Create(DeadPrefab);
+		var go = PrefabPoolManager.Create(DeadPrefab);
 		go.transform.position = Entity.GameObject.transform.position;
 		go.transform.localRotation = Entity.GameObject.transform.localRotation;
 	}
