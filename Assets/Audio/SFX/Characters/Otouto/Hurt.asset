@@ -14,7 +14,7 @@ MonoBehaviour:
   Loop: 0
   FadeIn: 0
   FadeInEase: 1
-  FadeOut: 0.1
+  FadeOut: 0.025
   FadeOutEase: 2
   VolumeScale: 1
   PitchScaleMode: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   RandomPitch: 0.1
   RTPCs: []
   Options: []
-  Clip: {fileID: 8300000, guid: 17235848adf3d2d469f281ab2c03d0c5, type: 3}
+  Clip: {fileID: 8300000, guid: d9369b5fe287e374eab4d8e18cd83721, type: 3}
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1

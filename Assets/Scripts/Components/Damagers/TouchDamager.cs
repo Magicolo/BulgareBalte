@@ -39,6 +39,7 @@ public class TouchDamager : SourceDamager
 			nextDamageTime = time.Time + DamageInterval;
 			Damage(damageable);
 			Animator.SetTrigger(AttackTrigger);
+			Entity.SendMessage(EntityMessages.OnStartAttacking);
 		}
 	}
 }

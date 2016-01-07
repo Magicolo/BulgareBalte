@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b53ae96fa75304eb58aa398c00bbc3, type: 3}
-  m_Name: Hurt
+  m_Name: Footstep1
   m_EditorClassIdentifier: 
   Loop: 0
   FadeIn: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   RandomPitch: 0.1
   RTPCs: []
   Options: []
-  Clip: {fileID: 8300000, guid: 17235848adf3d2d469f281ab2c03d0c5, type: 3}
+  Clip: {fileID: 8300000, guid: d954e0476f3dfae46800654c0d9dad6a, type: 3}
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1
