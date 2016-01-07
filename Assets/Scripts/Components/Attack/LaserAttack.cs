@@ -27,7 +27,11 @@ public class LaserAttack : AttackBase, IUpdateable
 	{
 		UpdateLine();
 		Particles.CachedGameObject.SetActive(isAttacking);
-		isAttacking = false;
+
+		if (isAttacking != (isAttacking = false))
+		{
+
+		}
 	}
 
 	public override void Attack()
