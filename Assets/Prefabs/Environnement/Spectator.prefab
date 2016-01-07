@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 438974}
   - 212: {fileID: 21290736}
   - 95: {fileID: 9584032}
+  - 114: {fileID: 11437308}
   m_Layer: 0
   m_Name: Spectator
   m_TagString: Untagged
@@ -76,6 +77,29 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11437308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groups:
+    f1: 4
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references: []
+  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":0,\"timeScale\":1.0}\r\nSpectator\r\n{\"active\":true,\"ChanceToClap\":{\"min\":0.009999999776482582,\"max\":0.009999999776482582},\"ChanceToBanana\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ChanceToCough\":{\"min\":0.019999999552965165,\"max\":0.05000000074505806},\"ChanceToBoo\":{\"min\":0.5,\"max\":0.699999988079071},\"ChanceToFirst1\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ChanceToFirst2\":{\"min\":0.10000000149011612,\"max\":0.20000000298023225},\"ChanceToWave\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165}}\r\n"
+  isDeserialized: 0
 --- !u!114 &11496024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,7 +219,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: groups.f1
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190526}

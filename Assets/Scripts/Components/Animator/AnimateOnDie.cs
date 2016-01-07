@@ -17,24 +17,40 @@ public class AnimateOnDie : ComponentBase
 
 	protected virtual void OnDie()
 	{
-		Animator.SetTrigger(TriggerName);
-		foreach (var item in Entity.GetComponents<DamagerBase>())
-			item.Active = false;
-		foreach (var item in Entity.GetComponents<AttackBase>())
-			item.Active = false;
-		foreach (var item in Entity.GetComponents<MotionBase>())
-			item.Active = false;
+		if (Animator)
+		{
+			Animator.SetTrigger(TriggerName);
+			foreach (var item in Entity.GetComponents<DamagerBase>())
+				item.Active = false;
+			foreach (var item in Entity.GetComponents<AttackBase>())
+				item.Active = false;
+			foreach (var item in Entity.GetComponents<MotionBase>())
+				item.Active = false;
+		}
+		else
+		{
+			SpawnPrefab();
+			PrefabPoolManager.Recycle(Entity);
+		}
+
 	}
 
 	void OnStateExit(AnimatorStateInfo info)
 	{
 		if (info.IsName(AnimationName))
 		{
-			GameObject go = PrefabPoolManager.Create(DeadPrefab);
-			go.transform.position = Entity.GameObject.transform.position;
-			go.transform.localRotation = Entity.GameObject.transform.localRotation;
+			SpawnPrefab();
 			PrefabPoolManager.Recycle(Entity);
 		}
+	}
+
+	private void SpawnPrefab()
+	{
+		if (DeadPrefab == null) return;
+
+		GameObject go = PrefabPoolManager.Create(DeadPrefab);
+		go.transform.position = Entity.GameObject.transform.position;
+		go.transform.localRotation = Entity.GameObject.transform.localRotation;
 	}
 }
 

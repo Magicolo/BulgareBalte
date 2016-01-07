@@ -40045,7 +40045,7 @@ MonoBehaviour:
   - Index: 1
     Path: ToSpawn
     Reference: {fileID: 11444110, guid: 958f42ee11739124a96211d17d307888, type: 2}
-  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":20.0,\"ToSpawn\":{\"instanceID\":0}}\r\n"
+  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":0.20000000298023225,\"ToSpawn\":{\"instanceID\":0}}\r\n"
   isDeserialized: 0
 --- !u!4 &912718680
 Transform:

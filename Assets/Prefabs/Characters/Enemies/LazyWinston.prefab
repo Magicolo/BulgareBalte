@@ -209,7 +209,7 @@ MonoBehaviour:
   - Index: 10
     Path: Animator
     Reference: {fileID: 9583264}
-  data: "11\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":2.0,\"RotateSpeed\":1.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"RotationThreshold\":5.0,\"StopDistance\":5.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"RecycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\nDisableMotionOnAttack\r\n{\"active\":true,\"ResetVelocityOnAttack\":false,\"Animator\":{\"instanceID\":0},\"AnimationTriggerOnActivate\":\"Fly\",\"AnimationNameOnActivate\":\"GroundToFly\"}\r\nDisableWeaponsWhenNotLookingAtTarget\r\n{\"active\":true,\"ResetVelocityWhenAttacking\":true,\"Weapon\":{\"instanceID\":0},\"Animator\":{\"instanceID\":0},\"ReactivateAnimationName\":\"FlyToGround\",\"ReactivateTriggerName\":\"Ground\"}\r\nAnimatedIntervalContinousAttack\r\n{\"active\":false,\"StartWeapon\":{\"instanceID\":0},\"WeaponRoot\":{\"instanceID\":0},\"AttackSpeed\":1.0,\"ContinuousDuration\":{\"min\":0.75,\"max\":1.5},\"Animator\":{\"instanceID\":0},\"ChargeAnimationName\":\"ChargeAttack\",\"ChargeTriggerName\":\"Attack\",\"StopAttackingTriggerName\":\"StopAttack\",\"currentState\":0}\r\nAnimateOnStart\r\n{\"active\":true,\"Animator\":{\"instanceID\":0},\"TriggerName\":\"Spawn\"}\r\n"
+  data: "12\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":2.0,\"RotateSpeed\":1.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"RotationThreshold\":5.0,\"StopDistance\":5.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"RecycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\nDisableMotionOnAttack\r\n{\"active\":true,\"ResetVelocityOnAttack\":false,\"Animator\":{\"instanceID\":0},\"AnimationTriggerOnActivate\":\"Fly\",\"AnimationNameOnActivate\":\"GroundToFly\"}\r\nDisableWeaponsWhenNotLookingAtTarget\r\n{\"active\":true,\"ResetVelocityWhenAttacking\":true,\"Weapon\":{\"instanceID\":0},\"Animator\":{\"instanceID\":0},\"ReactivateAnimationName\":\"FlyToGround\",\"ReactivateTriggerName\":\"Ground\"}\r\nAnimatedIntervalContinousAttack\r\n{\"active\":false,\"StartWeapon\":{\"instanceID\":0},\"WeaponRoot\":{\"instanceID\":0},\"AttackSpeed\":1.0,\"ContinuousDuration\":{\"min\":0.75,\"max\":1.5},\"Animator\":{\"instanceID\":0},\"ChargeAnimationName\":\"ChargeAttack\",\"ChargeTriggerName\":\"Attack\",\"StopAttackingTriggerName\":\"StopAttack\",\"currentState\":0}\r\nAnimateOnStart\r\n{\"active\":true,\"Animator\":{\"instanceID\":0},\"TriggerName\":\"Spawn\",\"DisactivateMotionWhileAnimating\":false,\"DisactivateAttacksWhileAnimating\":false,\"DisactivateDamagersWhileAnimating\":false,\"AnimationName\":\"\"}\r\nOnDieBroadcastToSpectator\r\n{\"active\":true,\"ShowEventType\":2}\r\n"
   isDeserialized: 0
 --- !u!212 &21228764
 SpriteRenderer:
@@ -235,8 +235,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1629478359
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: d74dbb10ee572784dadcb52909bc706c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -311,6 +311,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: data
       value: "7\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":10.0,\"RotateSpeed\":3.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"StopDistance\":1.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"recycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: -1629478359
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

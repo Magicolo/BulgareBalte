@@ -10,7 +10,10 @@ public class GroupProximityDetonator : ComponentBase, IUpdateable
 {
 	public EntityMatch Group;
 	public float Radius = 1f;
-	public ParticleEffect Explosion;
+
+	public Animator Animator;
+	public string AnimationName;
+	public string TriggerName;
 
 	public float UpdateRate
 	{
@@ -27,14 +30,25 @@ public class GroupProximityDetonator : ComponentBase, IUpdateable
 
 			if (Vector2.Distance(entity.Transform.position, Entity.Transform.position) <= Radius)
 			{
-				Entity.SendMessage(EntityMessages.OnDie);
+				if (Animator)
+					Animator.SetTrigger(TriggerName);
+				else
+					Die();
 				return;
 			}
 		}
 	}
 
-	protected virtual void OnDie()
+	void OnStateExit(AnimatorStateInfo info)
 	{
-		ParticleManager.Instance.Create(Explosion, Entity.Transform.position - new Vector3(0f, 0f, 0.2f));
+		if (info.IsName(AnimationName))
+		{
+			Die();
+		}
+	}
+
+	private void Die()
+	{
+		Entity.SendMessage(EntityMessages.OnDie);
 	}
 }
