@@ -11,20 +11,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b53ae96fa75304eb58aa398c00bbc3, type: 3}
   m_Name: Lazer_Spark
   m_EditorClassIdentifier: 
-  Loop: 0
+  Loop: 1
   FadeIn: 0
   FadeInEase: 1
-  FadeOut: 0
+  FadeOut: 0.1
   FadeOutEase: 2
-  VolumeScale: 1
+  VolumeScale: 0.1
   PitchScaleMode: 0
-  PitchScale: 1
+  PitchScale: 1.5
   RandomVolume: 0
-  RandomPitch: 0
+  RandomPitch: 0.1
   RTPCs: []
   Options: []
   Clip: {fileID: 8300000, guid: f63f946de376c8a41bacaa7bcaf86ae2, type: 3}
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1
-  MaxInstances: 0
+  MaxInstances: 5

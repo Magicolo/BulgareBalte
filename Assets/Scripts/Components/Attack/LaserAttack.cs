@@ -28,16 +28,16 @@ public class LaserAttack : AttackBase, IUpdateable
 		UpdateLine();
 		Particles.CachedGameObject.SetActive(isAttacking);
 
-		if (isAttacking != (isAttacking = false))
-		{
+		if (Time.frameCount - lastAttackFrame > 1)
+			Entity.SendMessage(EntityMessages.OnStopAttacking);
 
-		}
+		isAttacking = false;
 	}
 
 	public override void Attack()
 	{
 		if (Time.frameCount - lastAttackFrame > 1)
-			Entity.SendMessage(EntityMessages.OnAttack);
+			Entity.SendMessage(EntityMessages.OnStartAttacking);
 
 		lastAttackFrame = Time.frameCount;
 		isAttacking = true;

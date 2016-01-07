@@ -32,7 +32,7 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 		[EnumFlags(typeof(EntityMessages))]
 		public ByteFlag Messages;
 		public AudioActions Action;
-		public SpatializationModes Spatialization;
+		public SpatializationModes Spatialization = SpatializationModes.Static;
 		public bool ExecuteOnce;
 		public float ExecutionDelay = 0.1f;
 		public AudioSettingsBase Settings;
@@ -193,7 +193,6 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 	void OnDamage() { TryExecuteAction(EntityMessages.OnDamage); }
 	void OnDamaged() { TryExecuteAction(EntityMessages.OnDamaged); }
 	void OnDie() { TryExecuteAction(EntityMessages.OnDie); }
-	void OnAttack() { TryExecuteAction(EntityMessages.OnAttack); }
 	void Spawn() { TryExecuteAction(EntityMessages.Spawn); }
 	void Spawned() { TryExecuteAction(EntityMessages.Spawned); }
 	void OnCollisionEnter2D() { TryExecuteAction(EntityMessages.OnCollisionEnter2D); }

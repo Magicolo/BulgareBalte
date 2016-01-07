@@ -16,7 +16,7 @@ MonoBehaviour:
   FadeInEase: 1
   FadeOut: 0
   FadeOutEase: 2
-  VolumeScale: 1
+  VolumeScale: 0.3
   PitchScaleMode: 0
   PitchScale: 1.25
   RandomVolume: 0
@@ -27,4 +27,4 @@ MonoBehaviour:
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1
-  MaxInstances: 0
+  MaxInstances: 5

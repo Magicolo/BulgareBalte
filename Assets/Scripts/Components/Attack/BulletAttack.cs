@@ -18,6 +18,6 @@ public class BulletAttack : AttackBase
 		bullet.GetComponent<BulletDamager>().SetDamageData(damager.GetDamageData());
 		bullet.CachedTransform.position = Entity.Transform.position;
 		bullet.CachedTransform.eulerAngles = Entity.Transform.eulerAngles;
-		Entity.SendMessage(EntityMessages.OnAttack, bullet);
+		Entity.SendMessage(EntityMessages.OnStartAttacking);
 	}
 }
