@@ -10,13 +10,21 @@ using Pseudo.Internal.Input;
 public class zTest : PMonoBehaviour
 {
 	public PEntity Entity;
-
-	const int iterations = 1000;
+	public PEntity Entity2;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-		Entity.SendMessage(EntityMessages.OnDie);
+		StartCoroutine(RecycleAfterDelay(PrefabPoolManager.Create(Entity), 2f));
+		StartCoroutine(RecycleAfterDelay(PrefabPoolManager.Create(Entity2), 2f));
+	}
+
+	IEnumerator RecycleAfterDelay(object toRecycle, float delay)
+	{
+		for (float counter = 0; counter < delay; counter += Time.deltaTime)
+			yield return null;
+
+		PrefabPoolManager.Recycle(toRecycle);
 	}
 }
