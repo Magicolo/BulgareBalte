@@ -7341,67 +7341,67 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22423736, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22423736, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22400826, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22400826, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447524, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447524, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
@@ -8363,10 +8363,10 @@ MonoBehaviour:
   - Delay: 2
     Spawners:
     - {fileID: 514325967}
-  - Delay: 10
+  - Delay: 15
     Spawners:
     - {fileID: 375979617}
-  - Delay: 15
+  - Delay: 25
     Spawners:
     - {fileID: 375979617}
 --- !u!4 &170015571
@@ -9686,10 +9686,10 @@ MonoBehaviour:
   - Delay: 2
     Spawners:
     - {fileID: 514325967}
-  - Delay: 10
+  - Delay: 17
     Spawners:
     - {fileID: 375979617}
-  - Delay: 15
+  - Delay: 27
     Spawners:
     - {fileID: 375979617}
 --- !u!4 &200655644
@@ -22900,10 +22900,10 @@ MonoBehaviour:
   - Delay: 2
     Spawners:
     - {fileID: 514325967}
-  - Delay: 10
+  - Delay: 16
     Spawners:
     - {fileID: 375979617}
-  - Delay: 15
+  - Delay: 26
     Spawners:
     - {fileID: 375979617}
 --- !u!4 &465742141
@@ -25997,7 +25997,7 @@ MonoBehaviour:
   - Index: 2
     Path: Actions.0.Settings
     Reference: {fileID: 11400000, guid: b75a9013db7e4da48b6af1eb5f069d1a, type: 2}
-  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[1,2,3,4,5],\"Interval\":[5.0,4.0,4.0,3.0,3.0],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
+  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[0,1,2,3,4],\"Interval\":[5.0,5.0,5.0,5.0,5.0],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
   isDeserialized: 0
 --- !u!4 &514325968
 Transform:
@@ -35110,10 +35110,10 @@ MonoBehaviour:
   - Delay: 2
     Spawners:
     - {fileID: 514325967}
-  - Delay: 10
+  - Delay: 17
     Spawners:
     - {fileID: 375979617}
-  - Delay: 15
+  - Delay: 27
     Spawners:
     - {fileID: 375979617}
 --- !u!4 &718879760
@@ -60598,10 +60598,10 @@ MonoBehaviour:
   - Delay: 2
     Spawners:
     - {fileID: 514325967}
-  - Delay: 10
+  - Delay: 15
     Spawners:
     - {fileID: 375979617}
-  - Delay: 15
+  - Delay: 25
     Spawners:
     - {fileID: 375979617}
 --- !u!4 &1250502172

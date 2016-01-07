@@ -12,7 +12,8 @@ public class Status : ComponentBase, IStartable
 
 	public bool Alive { get { return CurrentHealth > 0; } }
 	public float CurrentHealth { get; set; }
-	bool died;
+	[Disable]
+	public bool died;
 
 	public void Start()
 	{
