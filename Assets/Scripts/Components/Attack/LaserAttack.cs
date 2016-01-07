@@ -12,6 +12,7 @@ public class LaserAttack : AttackBase, IUpdateable
 	public Color InactiveColor = new Color(0.5f, 0f, 0f, 0.25f);
 	public ParticleEffect Particles;
 
+	int lastAttackFrame;
 	bool isAttacking;
 
 	public LaserRaycaster2D Raycaster;
@@ -31,8 +32,11 @@ public class LaserAttack : AttackBase, IUpdateable
 
 	public override void Attack()
 	{
-		isAttacking = true;
+		if (Time.frameCount - lastAttackFrame > 1)
+			Entity.SendMessage(EntityMessages.OnAttack);
 
+		lastAttackFrame = Time.frameCount;
+		isAttacking = true;
 		Particles.CachedGameObject.SetActive(true);
 
 		if (Raycaster.Hits.Count > 0)

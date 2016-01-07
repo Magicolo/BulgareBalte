@@ -48,6 +48,7 @@ public class BurstLeveledSpawner : SpawnerBase, IUpdateable
 		spawnRemainning--;
 		var spawned = PrefabPoolManager.Create(ToSpawn);
 		spawned.CachedTransform.position = Entity.Transform.position;
+		Entity.SendMessage(EntityMessages.Spawned, spawned);
 	}
 }
 

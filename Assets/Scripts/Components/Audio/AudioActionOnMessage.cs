@@ -193,7 +193,9 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 	void OnDamage() { TryExecuteAction(EntityMessages.OnDamage); }
 	void OnDamaged() { TryExecuteAction(EntityMessages.OnDamaged); }
 	void OnDie() { TryExecuteAction(EntityMessages.OnDie); }
+	void OnAttack() { TryExecuteAction(EntityMessages.OnAttack); }
 	void Spawn() { TryExecuteAction(EntityMessages.Spawn); }
+	void Spawned() { TryExecuteAction(EntityMessages.Spawned); }
 	void OnCollisionEnter2D() { TryExecuteAction(EntityMessages.OnCollisionEnter2D); }
 	void OnCollisionStay2D() { TryExecuteAction(EntityMessages.OnCollisionStay2D); }
 	void OnCollisionExit2D() { TryExecuteAction(EntityMessages.OnCollisionExit2D); }

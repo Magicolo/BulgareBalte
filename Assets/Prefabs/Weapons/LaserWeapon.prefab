@@ -91,8 +91,11 @@ MonoBehaviour:
   - Index: 0
     Path: LineRenderer
     Reference: {fileID: 12005300}
-  data: "4\r\nLaserAttack\r\n{\"active\":true,\"ActiveColor\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0},\"InactiveColor\":{\"r\":0.5,\"g\":0.250980406999588,\"b\":0.0,\"a\":0.25},\"Particles\":{\"instanceID\":0},\"Raycaster\":{\"instanceID\":0},\"LineRenderer\":{\"instanceID\":0}}\r\nLaserDamager\r\n{\"active\":true,\"DamageModifier\":1.0}\r\nAttackSpeedModifier\r\n{\"active\":true,\"Modifier\":1000.0}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":2,\"timeScale\":1.0}\r\n"
-  isDeserialized: 1
+  - Index: 4
+    Path: Actions.0.Settings
+    Reference: {fileID: 11400000, guid: 009719502d4aa234f94243fb108564d2, type: 2}
+  data: "5\r\nLaserAttack\r\n{\"active\":true,\"ActiveColor\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0},\"InactiveColor\":{\"r\":0.5,\"g\":0.250980406999588,\"b\":0.0,\"a\":0.25},\"Particles\":{\"instanceID\":0},\"Raycaster\":{\"instanceID\":0},\"LineRenderer\":{\"instanceID\":0}}\r\nLaserDamager\r\n{\"active\":true,\"DamageModifier\":1.0}\r\nAttackSpeedModifier\r\n{\"active\":true,\"Modifier\":1000.0}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":2,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":16,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
+  isDeserialized: 0
 --- !u!114 &11472382
 MonoBehaviour:
   m_ObjectHideFlags: 1
