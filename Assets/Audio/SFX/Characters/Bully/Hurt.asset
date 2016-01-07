@@ -14,17 +14,17 @@ MonoBehaviour:
   Loop: 0
   FadeIn: 0
   FadeInEase: 1
-  FadeOut: 0
+  FadeOut: 0.1
   FadeOutEase: 2
   VolumeScale: 1
   PitchScaleMode: 0
   PitchScale: 1
-  RandomVolume: 0
-  RandomPitch: 0
+  RandomVolume: 0.1
+  RandomPitch: 0.1
   RTPCs: []
   Options: []
   Clip: {fileID: 8300000, guid: 2ea7a38fea891d84c88cf891508baca0, type: 3}
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1
-  MaxInstances: 3
+  MaxInstances: 5

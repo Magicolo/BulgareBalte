@@ -9,9 +9,14 @@ using Pseudo.Internal.Input;
 
 public class zTest : PMonoBehaviour
 {
+	public PEntity Entity;
+
+	const int iterations = 1000;
+
 	[Button]
 	public bool test;
 	void Test()
 	{
+		Entity.SendMessage(EntityMessages.OnDie);
 	}
 }
