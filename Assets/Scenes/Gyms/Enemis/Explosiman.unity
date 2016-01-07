@@ -146,6 +146,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 3126977}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &4414750
 GameObject:
@@ -208,6 +210,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 4414752}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &9962295
 GameObject:
@@ -270,6 +274,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 9962297}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &10062985
 GameObject:
@@ -520,6 +526,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 16094874}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &17206489
 GameObject:
@@ -612,6 +620,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 18175924}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &18295564
 GameObject:
@@ -674,6 +684,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 18295566}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &18552826
 GameObject:
@@ -1028,6 +1040,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 19960264}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &20948846
 GameObject:
@@ -1090,6 +1104,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 20948848}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &21005797
 GameObject:
@@ -1307,6 +1323,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 24312508}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &26037077
 GameObject:
@@ -1369,6 +1387,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 26037079}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &26818804
 GameObject:
@@ -1431,6 +1451,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 26818806}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &29889092
 GameObject:
@@ -1493,6 +1515,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 29889094}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &32473073
 GameObject:
@@ -1652,6 +1676,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 33851617}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &34059373
 GameObject:
@@ -1714,6 +1740,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 34059375}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &34701400
 GameObject:
@@ -1933,6 +1961,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 40701687}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &41449450
 GameObject:
@@ -2025,6 +2055,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 43604011}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &44401196
 GameObject:
@@ -2087,6 +2119,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 44401198}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &46868983
 GameObject:
@@ -2149,6 +2183,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 46868985}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &48029394
 GameObject:
@@ -2211,6 +2247,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 48029396}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &49420167
 GameObject:
@@ -2273,6 +2311,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 49420169}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &54448902
 GameObject:
@@ -2365,6 +2405,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 59106976}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &59597771
 GameObject:
@@ -2427,6 +2469,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 59597773}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &59959273
 GameObject:
@@ -2743,6 +2787,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 62243156}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &62325370
 GameObject:
@@ -2902,6 +2948,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 66541556}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &67044531
 GameObject:
@@ -3188,6 +3236,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 70633524}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &71236547
 GameObject:
@@ -3586,6 +3636,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 82237473}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &84507809
 GameObject:
@@ -3734,6 +3786,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 85033348}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &85517978
 GameObject:
@@ -3796,6 +3850,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 85517980}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &85533669
 GameObject:
@@ -3956,6 +4012,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 86113003}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &87548677
 GameObject:
@@ -4018,6 +4076,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 87548679}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &89395829
 GameObject:
@@ -4177,6 +4237,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 92352790}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &94381592
 GameObject:
@@ -4239,6 +4301,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 94381594}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &95440680
 GameObject:
@@ -5209,6 +5273,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 121305976}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &121504378
 GameObject:
@@ -5271,6 +5337,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 121504380}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &121927711
 GameObject:
@@ -5333,6 +5401,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 121927713}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &122284003
 GameObject:
@@ -5395,6 +5465,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 122284005}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &122325722
 GameObject:
@@ -5457,6 +5529,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 122325724}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &122428662
 GameObject:
@@ -5616,6 +5690,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 123887893}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &124856627
 GameObject:
@@ -5678,6 +5754,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 124856629}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &125589102
 GameObject:
@@ -5740,6 +5818,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 125589104}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &126179031
 GameObject:
@@ -5900,6 +5980,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 127641929}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &127840544
 GameObject:
@@ -5962,6 +6044,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 127840546}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &128871341
 GameObject:
@@ -6279,6 +6363,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 133162498}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &134015076
 GameObject:
@@ -6341,6 +6427,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 134015078}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &134530007
 GameObject:
@@ -6403,6 +6491,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 134530009}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &135182111
 GameObject:
@@ -6465,6 +6555,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 135182113}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &136161317
 GameObject:
@@ -6527,6 +6619,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 136161319}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &137361945
 GameObject:
@@ -6619,6 +6713,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 138130130}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &139585307
 GameObject:
@@ -6681,6 +6777,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 139585309}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &139680492
 GameObject:
@@ -6898,6 +6996,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 146746581}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &147752226
 GameObject:
@@ -6960,6 +7060,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 147752228}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1001 &149216966
 Prefab:
@@ -7002,67 +7104,67 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22423736, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 22423736, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400826, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22400826, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22447524, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22447524, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
@@ -7225,6 +7327,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 150510926}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &151943712
 GameObject:
@@ -7287,6 +7391,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 151943714}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &154423506
 GameObject:
@@ -7379,6 +7485,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 156303700}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &158335786
 GameObject:
@@ -7471,6 +7579,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 160741821}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &161947721
 GameObject:
@@ -7533,6 +7643,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 161947723}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &163351389
 GameObject:
@@ -7750,6 +7862,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 166179871}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &167465392
 GameObject:
@@ -7812,6 +7926,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 167465394}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &167469349
 GameObject:
@@ -8195,6 +8311,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 170730308}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &171681525
 GameObject:
@@ -8257,6 +8375,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 171681527}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &174450523
 GameObject:
@@ -8319,6 +8439,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 174450525}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &178016021
 GameObject:
@@ -8381,6 +8503,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 178016023}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &181064972
 GameObject:
@@ -8540,6 +8664,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 181106290}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &181271929
 GameObject:
@@ -8729,6 +8855,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 182817834}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &183014779
 GameObject:
@@ -9170,6 +9298,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 187473986}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &192099087
 GameObject:
@@ -9262,6 +9392,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 192172057}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &193096920
 GameObject:
@@ -9324,6 +9456,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 193096922}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &194146553
 GameObject:
@@ -9386,6 +9520,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 194146555}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &194423572
 GameObject:
@@ -9448,6 +9584,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 194423574}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &196625849
 GameObject:
@@ -9607,6 +9745,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 198241132}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &198476879
 GameObject:
@@ -9699,6 +9839,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 201028722}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &201220012
 GameObject:
@@ -9858,6 +10000,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 202856842}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &204471463
 GameObject:
@@ -10017,6 +10161,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 204700755}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &205816427
 GameObject:
@@ -10079,6 +10225,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 205816429}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &206729255
 GameObject:
@@ -10141,6 +10289,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 206729257}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &208588290
 GameObject:
@@ -10203,6 +10353,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 208588292}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &215433585
 GameObject:
@@ -10265,6 +10417,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 215433587}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &216535439
 GameObject:
@@ -10327,6 +10481,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 216535441}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &219124234
 GameObject:
@@ -10449,6 +10605,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 223976645}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &224065798
 GameObject:
@@ -10511,6 +10669,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 224065800}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &228403091
 GameObject:
@@ -10573,6 +10733,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 228403093}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &230525850
 GameObject:
@@ -10790,6 +10952,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 231579485}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &232315401
 GameObject:
@@ -10852,6 +11016,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 232315403}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &234565726
 GameObject:
@@ -10914,6 +11080,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 234565728}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &234983127
 GameObject:
@@ -10976,6 +11144,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 234983129}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &235231633
 GameObject:
@@ -11038,6 +11208,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 235231635}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &235743372
 GameObject:
@@ -11100,6 +11272,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 235743374}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &236489966
 GameObject:
@@ -11495,6 +11669,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 242303114}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &244666732
 GameObject:
@@ -11751,6 +11927,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 249211627}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &249317263
 GameObject:
@@ -11813,6 +11991,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 249317265}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &249431989
 GameObject:
@@ -11875,6 +12055,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 249431991}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &250866692
 GameObject:
@@ -12034,6 +12216,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 250926123}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &251000574
 GameObject:
@@ -12350,6 +12534,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 258589294}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &261158117
 GameObject:
@@ -12412,6 +12598,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 261158119}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &261436721
 GameObject:
@@ -12571,6 +12759,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 262941601}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &265783157
 GameObject:
@@ -12633,6 +12823,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 265783159}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &267053676
 GameObject:
@@ -12695,6 +12887,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 267053678}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &267232034
 GameObject:
@@ -12854,6 +13048,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 268217328}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &268977752
 GameObject:
@@ -12916,6 +13112,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 268977754}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &269002981
 GameObject:
@@ -12978,6 +13176,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 269002983}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &270638042
 GameObject:
@@ -13167,6 +13367,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 272448817}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &272849060
 GameObject:
@@ -13229,6 +13431,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 272849062}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &273113888
 GameObject:
@@ -13388,6 +13592,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 278196791}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &282619606
 GameObject:
@@ -13508,6 +13714,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 287173230}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &287555011
 GameObject:
@@ -13728,6 +13936,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 288127371}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &293174032
 GameObject:
@@ -13888,6 +14098,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 299611526}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &299623317
 GameObject:
@@ -14011,6 +14223,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 299878983}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &300536467
 GameObject:
@@ -14073,6 +14287,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 300536469}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &301157543
 GameObject:
@@ -14329,6 +14545,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 303681301}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &305709780
 GameObject:
@@ -14391,6 +14609,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 305709782}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &306581977
 GameObject:
@@ -14453,6 +14673,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 306581979}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &307169340
 GameObject:
@@ -14867,6 +15089,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 312901215}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &316315148
 GameObject:
@@ -14959,6 +15183,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 317408853}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &319409517
 GameObject:
@@ -15021,6 +15247,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 319409519}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &320046622
 GameObject:
@@ -15302,6 +15530,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 322284278}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &324144250
 GameObject:
@@ -15461,6 +15691,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 324430869}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &327291637
 GameObject:
@@ -15620,6 +15852,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 327434383}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &329616723
 GameObject:
@@ -15682,6 +15916,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 329616725}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &329738587
 GameObject:
@@ -15929,6 +16165,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 340267228}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &342548921
 GameObject:
@@ -15991,6 +16229,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 342548923}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &343392612
 GameObject:
@@ -16053,6 +16293,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 343392614}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &343593265
 GameObject:
@@ -16176,6 +16418,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 343604239}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &344142308
 GameObject:
@@ -16336,6 +16580,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 346150552}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &348110027
 GameObject:
@@ -16398,6 +16644,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 348110029}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1001 &348178418
 Prefab:
@@ -16502,6 +16750,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 348666597}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &349737430
 GameObject:
@@ -16594,6 +16844,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 353887304}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &356373288
 GameObject:
@@ -16656,6 +16908,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 356373290}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &356614730
 GameObject:
@@ -16972,6 +17226,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 366463803}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &368250493
 GameObject:
@@ -17064,6 +17320,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 368737024}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &369463984
 GameObject:
@@ -17447,6 +17705,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 375148417}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &376046832
 GameObject:
@@ -17509,6 +17769,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 376046834}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &379731258
 GameObject:
@@ -17571,6 +17833,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 379731260}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &379770295
 GameObject:
@@ -17633,6 +17897,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 379770297}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &379874542
 GameObject:
@@ -17792,6 +18058,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 380674349}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &380674383
 GameObject:
@@ -17854,6 +18122,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 380674385}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &384181605
 GameObject:
@@ -17916,6 +18186,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 384181607}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &388874135
 GameObject:
@@ -17978,6 +18250,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 388874137}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &392253951
 GameObject:
@@ -18040,6 +18314,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 392253953}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &394647189
 GameObject:
@@ -18134,6 +18410,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 398547556}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &399930100
 GameObject:
@@ -18196,6 +18474,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 399930102}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &403963407
 GameObject:
@@ -18258,6 +18538,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 403963409}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &404804665
 GameObject:
@@ -18320,6 +18602,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 404804667}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &404914772
 GameObject:
@@ -18509,6 +18793,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 408432983}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &410770613
 GameObject:
@@ -18571,6 +18857,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 410770615}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &410845881
 GameObject:
@@ -18633,6 +18921,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 410845883}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &411604702
 GameObject:
@@ -18695,6 +18985,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 411604704}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &416332104
 GameObject:
@@ -18787,6 +19079,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 417750151}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &419563590
 GameObject:
@@ -18849,6 +19143,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 419563592}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &421166272
 GameObject:
@@ -19202,6 +19498,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 424623147}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &424712710
 GameObject:
@@ -19294,6 +19592,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 425300912}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &425994645
 GameObject:
@@ -19386,6 +19686,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 428333770}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &430685372
 GameObject:
@@ -19448,6 +19750,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 430685374}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &432122007
 GameObject:
@@ -19704,6 +20008,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 434164686}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &435039857
 GameObject:
@@ -19766,6 +20072,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 435039859}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &438585901
 GameObject:
@@ -19858,6 +20166,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 438981188}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &439831548
 GameObject:
@@ -20011,6 +20321,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 446052492}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &446548856
 GameObject:
@@ -20298,6 +20610,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 450244875}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &451878786
 GameObject:
@@ -20457,6 +20771,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 452196132}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &457597480
 GameObject:
@@ -20519,6 +20835,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 457597482}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &457891978
 GameObject:
@@ -20775,6 +21093,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 459837205}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &460283595
 GameObject:
@@ -20837,6 +21157,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 460283597}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &464142353
 GameObject:
@@ -20899,6 +21221,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 464142355}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &464683208
 GameObject:
@@ -21156,6 +21480,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 467647408}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &467662904
 GameObject:
@@ -21315,6 +21641,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 473619205}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &475527673
 GameObject:
@@ -21377,6 +21705,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 475527675}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &475795486
 GameObject:
@@ -21439,6 +21769,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 475795488}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &476609117
 GameObject:
@@ -21562,6 +21894,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 482724033}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &485524067
 GameObject:
@@ -21782,6 +22116,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 489948143}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &490361803
 GameObject:
@@ -21971,6 +22307,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 492582245}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &493332103
 GameObject:
@@ -22227,6 +22565,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 494034195}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &495204860
 GameObject:
@@ -22483,6 +22823,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 498773498}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &502439055
 GameObject:
@@ -22831,6 +23173,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 510833219}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &511811426
 GameObject:
@@ -22990,6 +23334,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 511873076}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &512405190
 GameObject:
@@ -23052,6 +23398,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 512405192}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &513422149
 GameObject:
@@ -23144,6 +23492,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 514213116}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &517338188
 GameObject:
@@ -23267,6 +23617,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 519005980}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &521873849
 GameObject:
@@ -23426,6 +23778,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 522308024}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &523136554
 GameObject:
@@ -23488,6 +23842,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 523136556}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &525642933
 GameObject:
@@ -23872,6 +24228,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 538418724}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &540140257
 GameObject:
@@ -24031,6 +24389,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 542524989}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &546382190
 GameObject:
@@ -24093,6 +24453,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 546382192}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &546387060
 GameObject:
@@ -24155,6 +24517,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 546387062}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &548265220
 GameObject:
@@ -24314,6 +24678,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 548921258}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &550594149
 GameObject:
@@ -24570,6 +24936,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 558644512}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &559080590
 GameObject:
@@ -24632,6 +25000,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 559080592}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &559278092
 GameObject:
@@ -24694,6 +25064,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 559278094}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &559338653
 GameObject:
@@ -24756,6 +25128,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 559338655}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &561471422
 GameObject:
@@ -25176,6 +25550,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 575469072}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &575476726
 GameObject:
@@ -25268,6 +25644,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 575947338}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &576584521
 GameObject:
@@ -25330,6 +25708,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 576584523}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &580440074
 GameObject:
@@ -25483,6 +25863,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 585624915}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &587056666
 GameObject:
@@ -25545,6 +25927,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 587056668}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &588349893
 GameObject:
@@ -25735,6 +26119,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 588850104}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &591001428
 GameObject:
@@ -25797,6 +26183,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 591001430}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &591177219
 GameObject:
@@ -26053,6 +26441,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 593766578}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &594205781
 GameObject:
@@ -26147,6 +26537,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 598343969}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &598882484
 GameObject:
@@ -26404,6 +26796,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 600327806}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &603412970
 GameObject:
@@ -26563,6 +26957,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 603823062}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &603979391
 GameObject:
@@ -26625,6 +27021,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 603979393}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &604841521
 GameObject:
@@ -26687,6 +27085,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 604841523}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &604885489
 GameObject:
@@ -26809,6 +27209,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 605881695}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &608499923
 GameObject:
@@ -26871,6 +27273,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 608499925}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &608644198
 GameObject:
@@ -26991,6 +27395,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 609833362}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &609946961
 GameObject:
@@ -27083,6 +27489,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 610371992}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &611797994
 GameObject:
@@ -27145,6 +27553,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 611797996}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &613410470
 GameObject:
@@ -27304,6 +27714,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 615021852}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &617292774
 GameObject:
@@ -27366,6 +27778,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 617292776}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &618534370
 GameObject:
@@ -27622,6 +28036,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 620976771}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &623421780
 GameObject:
@@ -27684,6 +28100,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 623421782}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &624011512
 GameObject:
@@ -27843,6 +28261,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 624423799}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &624888240
 GameObject:
@@ -27935,6 +28355,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 625763082}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &625989598
 GameObject:
@@ -28094,6 +28516,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 626827415}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &627125079
 GameObject:
@@ -28350,6 +28774,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 631184405}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &631878522
 GameObject:
@@ -28764,6 +29190,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 638590282}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &639716449
 GameObject:
@@ -28923,6 +29351,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 641437571}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &642202214
 GameObject:
@@ -29112,6 +29542,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 650779839}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &652995352
 GameObject:
@@ -29262,6 +29694,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 656162904}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &656707184
 GameObject:
@@ -29385,6 +29819,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 661685299}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &668544213
 GameObject:
@@ -29672,6 +30108,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 670076819}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &672715417
 GameObject:
@@ -29734,6 +30172,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 672715419}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &672870696
 GameObject:
@@ -29796,6 +30236,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 672870698}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &674187458
 GameObject:
@@ -30140,6 +30582,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 682973127}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &683140575
 GameObject:
@@ -30202,6 +30646,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 683140577}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &683432328
 GameObject:
@@ -30361,6 +30807,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 686304158}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &687476283
 GameObject:
@@ -30550,6 +30998,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 688494073}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &691252098
 GameObject:
@@ -30612,6 +31062,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 691252100}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &692245365
 GameObject:
@@ -30674,6 +31126,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 692245367}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &694426568
 GameObject:
@@ -30766,6 +31220,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 694843862}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &699068228
 GameObject:
@@ -30919,6 +31375,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 702030548}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &703997903
 GameObject:
@@ -31139,6 +31597,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 708092894}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &711341911
 GameObject:
@@ -31298,6 +31758,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 712337836}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &712446470
 GameObject:
@@ -31390,6 +31852,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 715171201}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &715488561
 GameObject:
@@ -31452,6 +31916,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 715488563}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &716692506
 GameObject:
@@ -31544,6 +32010,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 717003812}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &718066995
 GameObject:
@@ -31921,6 +32389,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 726579204}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &730563425
 GameObject:
@@ -31983,6 +32453,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 730563427}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &732007118
 GameObject:
@@ -32366,6 +32838,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 741165388}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &741165875
 GameObject:
@@ -32518,6 +32992,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 754237912}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &754470803
 GameObject:
@@ -32580,6 +33056,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 754470805}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &757267807
 GameObject:
@@ -32642,6 +33120,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 757267809}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &757952800
 GameObject:
@@ -32859,6 +33339,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 760994816}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &764690581
 GameObject:
@@ -32921,6 +33403,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 764690583}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &765343216
 GameObject:
@@ -32983,6 +33467,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 765343218}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &765754193
 GameObject:
@@ -33201,6 +33687,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 770238849}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &771228787
 GameObject:
@@ -33390,6 +33878,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 772914931}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &773777594
 GameObject:
@@ -33704,6 +34194,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 778955892}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &780384454
 GameObject:
@@ -33922,6 +34414,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 781331898}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &781848516
 GameObject:
@@ -34081,6 +34575,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 783006117}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &783860166
 GameObject:
@@ -34143,6 +34639,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 783860168}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &785507404
 GameObject:
@@ -34418,6 +34916,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 786982595}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &787842473
 GameObject:
@@ -34577,6 +35077,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 789634426}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &789668626
 GameObject:
@@ -34736,6 +35238,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 790434537}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &790520268
 GameObject:
@@ -34798,6 +35302,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 790520270}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &791087997
 GameObject:
@@ -34860,6 +35366,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 791087999}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &792121061
 GameObject:
@@ -35080,6 +35588,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 794406687}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &797689713
 GameObject:
@@ -35142,6 +35652,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 797689715}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &797788279
 GameObject:
@@ -35486,6 +35998,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 810991427}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &811680926
 GameObject:
@@ -35548,6 +36062,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 811680928}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &812535169
 GameObject:
@@ -35640,6 +36156,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 812809172}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &814623856
 GameObject:
@@ -35823,6 +36341,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 820403566}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &822668480
 GameObject:
@@ -35945,6 +36465,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 824028622}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &825103106
 GameObject:
@@ -36298,6 +36820,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 828005257}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &828092545
 GameObject:
@@ -36360,6 +36884,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 828092547}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &828112946
 GameObject:
@@ -36422,6 +36948,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 828112948}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &831792534
 GameObject:
@@ -36775,6 +37303,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 833736474}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &835855599
 GameObject:
@@ -36897,6 +37427,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 838408113}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &839695886
 GameObject:
@@ -36959,6 +37491,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 839695888}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &841195057
 GameObject:
@@ -37021,6 +37555,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 841195059}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1001 &841537160
 Prefab:
@@ -37125,6 +37661,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 841904540}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &842011106
 GameObject:
@@ -37284,6 +37822,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 843117362}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &846831990
 GameObject:
@@ -37346,6 +37886,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 846831992}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &847859507
 GameObject:
@@ -37505,6 +38047,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 848225825}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &848781685
 GameObject:
@@ -37567,6 +38111,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 848781687}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &849470506
 GameObject:
@@ -37726,6 +38272,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 849983746}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &857296219
 GameObject:
@@ -37788,6 +38336,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 857296221}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &859940702
 GameObject:
@@ -37850,6 +38400,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 859940704}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &861473522
 GameObject:
@@ -38009,6 +38561,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 865445286}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &866523053
 GameObject:
@@ -38071,6 +38625,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 866523055}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &866673696
 GameObject:
@@ -38230,6 +38786,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 868748532}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &868867363
 GameObject:
@@ -38292,6 +38850,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 868867365}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &869987920
 GameObject:
@@ -38416,6 +38976,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 871246914}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &874307343
 GameObject:
@@ -38478,6 +39040,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 874307345}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &875605794
 GameObject:
@@ -38540,6 +39104,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 875605796}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &877086680
 GameObject:
@@ -38796,6 +39362,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 877556453}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &882918572
 GameObject:
@@ -38858,6 +39426,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 882918574}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &885805013
 GameObject:
@@ -38920,6 +39490,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 885805015}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &885827327
 GameObject:
@@ -38982,6 +39554,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 885827329}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &886814211
 GameObject:
@@ -39165,6 +39739,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 890478397}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &890809675
 GameObject:
@@ -39227,6 +39803,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 890809677}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &891347349
 GameObject:
@@ -39386,6 +39964,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 891412011}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &894227018
 GameObject:
@@ -39545,6 +40125,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 894934056}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &898692038
 GameObject:
@@ -39607,6 +40189,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 898692040}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &899960874
 GameObject:
@@ -40163,6 +40747,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 912774400}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &917319139
 GameObject:
@@ -40437,6 +41023,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 924942774}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &925464298
 GameObject:
@@ -40499,6 +41087,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 925464300}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &926336879
 GameObject:
@@ -40785,6 +41375,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 930058552}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &930895443
 GameObject:
@@ -40847,6 +41439,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 930895445}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &931602047
 GameObject:
@@ -41064,6 +41658,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 938720157}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &938788708
 GameObject:
@@ -41126,6 +41722,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 938788710}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &939062452
 GameObject:
@@ -41188,6 +41786,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 939062454}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &939239034
 GameObject:
@@ -41250,6 +41850,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 939239036}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &939606057
 GameObject:
@@ -41312,6 +41914,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 939606059}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &940379342
 GameObject:
@@ -41471,6 +42075,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 944354775}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &945940117
 GameObject:
@@ -41533,6 +42139,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 945940119}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &947591708
 GameObject:
@@ -42011,6 +42619,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 955381687}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &957521682
 GameObject:
@@ -42195,6 +42805,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 958950297}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &958976793
 GameObject:
@@ -42317,6 +42929,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 959910362}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &960168340
 GameObject:
@@ -42379,6 +42993,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 960168342}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &962745501
 GameObject:
@@ -42441,6 +43057,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 962745503}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &963631437
 GameObject:
@@ -42503,6 +43121,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 963631439}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &965070564
 GameObject:
@@ -42595,6 +43215,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 965262853}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &966455919
 GameObject:
@@ -42812,6 +43434,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 968258318}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &970972362
 GameObject:
@@ -43227,6 +43851,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 986211260}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &986356063
 GameObject:
@@ -43484,6 +44110,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 992049846}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &994484208
 GameObject:
@@ -43576,6 +44204,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 995363365}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &998607428
 GameObject:
@@ -43765,6 +44395,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 999269062}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &999541949
 GameObject:
@@ -44051,6 +44683,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1002912170}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1003722249
 GameObject:
@@ -44143,6 +44777,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1004355361}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1006788044
 GameObject:
@@ -44266,6 +44902,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1007462924}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1007529987
 GameObject:
@@ -44328,6 +44966,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1007529989}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1011305555
 GameObject:
@@ -44390,6 +45030,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1011305557}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1016108132
 GameObject:
@@ -44549,6 +45191,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1022507831}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1022983746
 GameObject:
@@ -44611,6 +45255,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1022983748}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1023885822
 GameObject:
@@ -44673,6 +45319,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1023885824}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1023986194
 GameObject:
@@ -44735,6 +45383,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1023986196}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1024364286
 GameObject:
@@ -44797,6 +45447,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1024364288}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1026997446
 GameObject:
@@ -45053,6 +45705,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1032261753}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1037577333
 GameObject:
@@ -45115,6 +45769,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1037577335}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1038541801
 GameObject:
@@ -45238,6 +45894,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1039408281}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1041538214
 GameObject:
@@ -45397,6 +46055,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1042405264}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1042663601
 GameObject:
@@ -45459,6 +46119,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1042663603}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1043651054
 GameObject:
@@ -45618,6 +46280,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1043899105}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1043986269
 GameObject:
@@ -45680,6 +46344,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1043986271}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1047019450
 GameObject:
@@ -45742,6 +46408,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1047019452}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1047458839
 GameObject:
@@ -46028,6 +46696,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1048060165}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1048797535
 GameObject:
@@ -46090,6 +46760,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1048797537}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1049424986
 GameObject:
@@ -46152,6 +46824,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1049424988}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1056760422
 GameObject:
@@ -46244,6 +46918,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1058154151}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1060291169
 GameObject:
@@ -46404,6 +47080,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1064014609}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1066664766
 GameObject:
@@ -46593,6 +47271,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1078588389}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1078628926
 GameObject:
@@ -46655,6 +47335,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1078628928}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1078975984
 GameObject:
@@ -46875,6 +47557,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1080366110}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1087493224
 GameObject:
@@ -46937,6 +47621,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1087493226}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1087648658
 GameObject:
@@ -47157,6 +47843,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1089566824}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1089661604
 GameObject:
@@ -47219,6 +47907,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1089661606}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1089917648
 GameObject:
@@ -47281,6 +47971,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1089917650}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1091598353
 GameObject:
@@ -47343,6 +48035,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1091598355}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1092354643
 GameObject:
@@ -47502,6 +48196,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1092397112}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1093902315
 GameObject:
@@ -47781,6 +48477,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1097236935}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1097256770
 GameObject:
@@ -47843,6 +48541,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1097256772}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1097614262
 GameObject:
@@ -48032,6 +48732,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1098589983}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1100997341
 GameObject:
@@ -48221,6 +48923,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1106575541}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1107064026
 GameObject:
@@ -48283,6 +48987,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1107064028}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1107287001
 GameObject:
@@ -48345,6 +49051,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1107287003}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1111720379
 GameObject:
@@ -48504,6 +49212,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1112775066}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1113027071
 GameObject:
@@ -48566,6 +49276,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1113027073}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1114627891
 GameObject:
@@ -48628,6 +49340,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1114627893}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1118451247
 GameObject:
@@ -48690,6 +49404,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1118451249}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1118740849
 GameObject:
@@ -48752,6 +49468,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1118740851}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1119646021
 GameObject:
@@ -48941,6 +49659,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1120849529}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1121091779
 GameObject:
@@ -49198,6 +49918,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1125615816}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1127112370
 GameObject:
@@ -49260,6 +49982,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1127112372}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1127670338
 GameObject:
@@ -49419,6 +50143,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1128643485}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1130079008
 GameObject:
@@ -49578,6 +50304,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1130561755}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1134908690
 GameObject:
@@ -49640,6 +50368,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1134908692}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1139589589
 GameObject:
@@ -49702,6 +50432,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1139589591}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1144506459
 GameObject:
@@ -49764,6 +50496,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1144506461}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1144720967
 GameObject:
@@ -50078,6 +50812,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1154321711}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1155327031
 GameObject:
@@ -50140,6 +50876,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1155327033}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1156492361
 GameObject:
@@ -50299,6 +51037,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1156634962}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1159140494
 GameObject:
@@ -50361,6 +51101,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1159140496}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1161410617
 GameObject:
@@ -50642,6 +51384,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1163566573}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1164148575
 GameObject:
@@ -50704,6 +51448,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1164148577}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1164691815
 GameObject:
@@ -50766,6 +51512,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1164691817}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1164917716
 GameObject:
@@ -51022,6 +51770,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1166588506}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1171060555
 GameObject:
@@ -51181,6 +51931,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1171255805}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1173364146
 GameObject:
@@ -51243,6 +51995,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1173364148}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1176841023
 GameObject:
@@ -51432,6 +52186,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1177261738}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1178905001
 GameObject:
@@ -51494,6 +52250,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1178905003}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1180039978
 GameObject:
@@ -51556,6 +52314,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1180039980}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1180060396
 GameObject:
@@ -51618,6 +52378,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1180060398}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1180578509
 GameObject:
@@ -51680,6 +52442,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1180578511}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1180817144
 GameObject:
@@ -51869,6 +52633,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1182894773}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1183659118
 GameObject:
@@ -52028,6 +52794,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1183736156}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1184127066
 GameObject:
@@ -52090,6 +52858,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1184127068}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1186877221
 GameObject:
@@ -52210,6 +52980,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1188798793}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1191082962
 GameObject:
@@ -52272,6 +53044,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1191082964}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1191190224
 GameObject:
@@ -52683,6 +53457,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1200750105}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1203575147
 GameObject:
@@ -52745,6 +53521,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1203575149}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1203923038
 GameObject:
@@ -53098,6 +53876,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1206623641}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1210211638
 GameObject:
@@ -53221,6 +54001,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1210690441}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1211265205
 GameObject:
@@ -53313,6 +54095,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1211738621}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1214670341
 GameObject:
@@ -53472,6 +54256,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1215347335}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1216118763
 GameObject:
@@ -53728,6 +54514,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1216837216}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1223324218
 GameObject:
@@ -53820,6 +54608,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1223694953}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1223702707
 GameObject:
@@ -53882,6 +54672,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1223702709}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1227099775
 GameObject:
@@ -54295,6 +55087,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1231516013}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1233082203
 GameObject:
@@ -54551,6 +55345,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1235417028}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!4 &1238054522 stripped
 Transform:
@@ -54744,6 +55540,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1238943878}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1241157417
 GameObject:
@@ -54836,6 +55634,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1241843022}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1242765170
 GameObject:
@@ -54898,6 +55698,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1242765172}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1243240155
 GameObject:
@@ -54960,6 +55762,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1243240157}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1244160228
 GameObject:
@@ -55195,6 +55999,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1245810944}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1250041960
 GameObject:
@@ -55257,6 +56063,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1250041962}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1251345343
 GameObject:
@@ -55447,6 +56255,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1252429512}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1252508259
 GameObject:
@@ -55606,6 +56416,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1254020864}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1254100564
 GameObject:
@@ -55698,6 +56510,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1254526102}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1254646623
 GameObject:
@@ -55760,6 +56574,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1254646625}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1254668219
 GameObject:
@@ -55822,6 +56638,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1254668221}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1255307524
 GameObject:
@@ -56078,6 +56896,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1259611660}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1263606363
 GameObject:
@@ -56297,6 +57117,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1265886437}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1266351196
 GameObject:
@@ -56456,6 +57278,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1266722835}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1266879074
 GameObject:
@@ -56615,6 +57439,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1267108833}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1267362547
 GameObject:
@@ -56765,6 +57591,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1269315502}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1270368716
 GameObject:
@@ -56827,6 +57655,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1270368718}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1270834806
 GameObject:
@@ -56889,6 +57719,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1270834808}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1271286337
 GameObject:
@@ -56951,6 +57783,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1271286339}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1271936708
 GameObject:
@@ -57110,6 +57944,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1272114682}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1273109549
 GameObject:
@@ -57427,6 +58263,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1274250762}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1276020117
 GameObject:
@@ -57644,6 +58482,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1277610466}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1277979750
 GameObject:
@@ -57706,6 +58546,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1277979752}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1278421978
 GameObject:
@@ -58083,6 +58925,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1283076224}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1285049904
 GameObject:
@@ -58369,6 +59213,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1287703045}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1288463457
 GameObject:
@@ -58519,6 +59365,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1291484208}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1291842921
 GameObject:
@@ -58581,6 +59429,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1291842923}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1291964432
 GameObject:
@@ -58740,6 +59590,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1292593017}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1294004519
 GameObject:
@@ -58957,6 +59809,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1295648858}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1297526378
 GameObject:
@@ -59049,6 +59903,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1298734041}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1304796293
 GameObject:
@@ -59402,6 +60258,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1307572477}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1308228113
 GameObject:
@@ -59619,6 +60477,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1309741385}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1310652319
 GameObject:
@@ -59937,6 +60797,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1317887543}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1317948193
 GameObject:
@@ -59999,6 +60861,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1317948195}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1319621683
 GameObject:
@@ -60189,6 +61053,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1325040775}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1325447456
 GameObject:
@@ -60281,6 +61147,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1331036938}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1331872561
 GameObject:
@@ -60343,6 +61211,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1331872563}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1336761731
 GameObject:
@@ -60644,6 +61514,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1338431485}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1341819093
 GameObject:
@@ -60736,6 +61608,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1342980000}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1343633288
 GameObject:
@@ -60798,6 +61672,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1343633290}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1346416298
 GameObject:
@@ -61018,6 +61894,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1347823486}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1348466496
 GameObject:
@@ -61080,6 +61958,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1348466498}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1351687525
 GameObject:
@@ -61299,6 +62179,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1358306885}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1359328445
 GameObject:
@@ -61391,6 +62273,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1360449942}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1361898800
 GameObject:
@@ -61453,6 +62337,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1361898802}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1363994802
 GameObject:
@@ -61515,6 +62401,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1363994804}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1365049070
 GameObject:
@@ -61674,6 +62562,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1370712446}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1371843452
 GameObject:
@@ -62087,6 +62977,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1383321806}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1385473353
 GameObject:
@@ -62149,6 +63041,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1385473355}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1386562218
 GameObject:
@@ -62369,6 +63263,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1388378056}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1389329429
 GameObject:
@@ -62627,6 +63523,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1391330697}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1394352026
 GameObject:
@@ -62719,6 +63617,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1398887137}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1403644462
 GameObject:
@@ -62908,6 +63808,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1406096664}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1408143339
 GameObject:
@@ -62970,6 +63872,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1408143341}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1410343174
 GameObject:
@@ -63129,6 +64033,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1412474691}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1414266182
 GameObject:
@@ -63191,6 +64097,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1414266184}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1414266600
 GameObject:
@@ -63253,6 +64161,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1414266602}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1414991170
 GameObject:
@@ -63470,6 +64380,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1417224556}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1421048011
 GameObject:
@@ -63817,6 +64729,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1424093629}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1424405577
 GameObject:
@@ -64103,6 +65017,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1433559090}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1435118313
 GameObject:
@@ -64383,6 +65299,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1440729190}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1443350218
 GameObject:
@@ -64445,6 +65363,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1443350220}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1443966062
 GameObject:
@@ -64507,6 +65427,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1443966064}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1444029154
 GameObject:
@@ -64696,6 +65618,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1446349607}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1448411201
 GameObject:
@@ -64758,6 +65682,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1448411203}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1449056535
 GameObject:
@@ -64917,6 +65843,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1450190131}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1451562660
 GameObject:
@@ -64979,6 +65907,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1451562662}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1453269024
 GameObject:
@@ -65041,6 +65971,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1453269026}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1455016321
 GameObject:
@@ -65103,6 +66035,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1455016323}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1455989442
 GameObject:
@@ -65256,6 +66190,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1457885906}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1458753408
 GameObject:
@@ -65318,6 +66254,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1458753410}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1458788052
 GameObject:
@@ -65438,6 +66376,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1459697388}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1459783155
 GameObject:
@@ -65500,6 +66440,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1459783157}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1461480597
 GameObject:
@@ -65719,6 +66661,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1464410732}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1465603888
 GameObject:
@@ -65781,6 +66725,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1465603890}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1466803051
 GameObject:
@@ -66067,6 +67013,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1467700155}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1468037662
 GameObject:
@@ -66129,6 +67077,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1468037664}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1470734808
 GameObject:
@@ -66446,6 +67396,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1473842213}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1475201613
 GameObject:
@@ -66605,6 +67557,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1478618934}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1482066920
 GameObject:
@@ -66764,6 +67718,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1484931509}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1487722288
 GameObject:
@@ -66826,6 +67782,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1487722290}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1489472414
 GameObject:
@@ -66888,6 +67846,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1489472416}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1491095563
 GameObject:
@@ -66950,6 +67910,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1491095565}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1491725835
 GameObject:
@@ -67070,6 +68032,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1492900177}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1493038546
 GameObject:
@@ -67132,6 +68096,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1493038548}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1493579396
 GameObject:
@@ -67194,6 +68160,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1493579398}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1494304320
 GameObject:
@@ -67578,6 +68546,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1500773389}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1505815427
 GameObject:
@@ -67640,6 +68610,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1505815429}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1507217622
 GameObject:
@@ -67800,6 +68772,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1508996391}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1509583022
 GameObject:
@@ -67862,6 +68836,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1509583024}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1513583254
 GameObject:
@@ -67924,6 +68900,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1513583256}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1513776402
 GameObject:
@@ -68195,6 +69173,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1517422923}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1517617940
 GameObject:
@@ -68257,6 +69237,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1517617942}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1527629401
 GameObject:
@@ -68349,6 +69331,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1528042985}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1532363687
 GameObject:
@@ -68411,6 +69395,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1532363689}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1537739028
 GameObject:
@@ -68473,6 +69459,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1537739030}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1538828557
 GameObject:
@@ -68535,6 +69523,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1538828559}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1542008262
 GameObject:
@@ -68597,6 +69587,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1542008264}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1543616238
 GameObject:
@@ -68941,6 +69933,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1548382669}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1548778139
 GameObject:
@@ -69100,6 +70094,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1548884007}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1001 &1549975408
 Prefab:
@@ -69301,6 +70297,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1553407088}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1554251261
 GameObject:
@@ -69363,6 +70361,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1554251263}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1555346787
 GameObject:
@@ -69425,6 +70425,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1555346789}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1560347968
 GameObject:
@@ -69487,6 +70489,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1560347970}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1562978843
 GameObject:
@@ -69646,6 +70650,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1562996626}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1565344830
 GameObject:
@@ -69990,6 +70996,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1568499195}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1570687223
 GameObject:
@@ -70082,6 +71090,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1571141764}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1573914311
 GameObject:
@@ -70338,6 +71348,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1576954046}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1577987063
 GameObject:
@@ -70497,6 +71509,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1580793725}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1581317722
 GameObject:
@@ -70559,6 +71573,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1581317724}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1583427997
 GameObject:
@@ -70621,6 +71637,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1583427999}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1585491271
 GameObject:
@@ -70683,6 +71701,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1585491273}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1588703325
 GameObject:
@@ -70745,6 +71765,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1588703327}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1589305916
 GameObject:
@@ -71056,6 +72078,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1596457363}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1597296260
 GameObject:
@@ -71118,6 +72142,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1597296262}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1600098688
 GameObject:
@@ -71238,6 +72264,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1600181407}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1600864519
 GameObject:
@@ -71582,6 +72610,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1605562760}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1606761029
 GameObject:
@@ -71705,6 +72735,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1608135361}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1608342213
 GameObject:
@@ -71797,6 +72829,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1608348915}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1609950051
 GameObject:
@@ -72053,6 +73087,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1614984639}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1616241544
 GameObject:
@@ -72145,6 +73181,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1617832168}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1619486319
 GameObject:
@@ -72462,6 +73500,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1622976859}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1624147624
 GameObject:
@@ -72524,6 +73564,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1624147626}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1624535283
 GameObject:
@@ -72586,6 +73628,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1624535285}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1626404149
 GameObject:
@@ -72843,6 +73887,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1629611870}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1629947065
 GameObject:
@@ -72993,6 +74039,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1632421587}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1632648213
 GameObject:
@@ -73152,6 +74200,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1637304935}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1642796336
 GameObject:
@@ -73602,6 +74652,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1647804920}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1648234760
 GameObject:
@@ -73664,6 +74716,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1648234762}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1649074837
 GameObject:
@@ -73726,6 +74780,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1649074839}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1650536621
 GameObject:
@@ -73788,6 +74844,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1650536623}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1651126074
 GameObject:
@@ -73880,6 +74938,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1653488527}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1654397651
 GameObject:
@@ -74166,6 +75226,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1656595160}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1656921104
 GameObject:
@@ -74228,6 +75290,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1656921106}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1657358145
 GameObject:
@@ -74703,6 +75767,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1661003882}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1662881734
 GameObject:
@@ -74856,6 +75922,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1663457081}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1663998478
 GameObject:
@@ -75212,6 +76280,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1669498980}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1669541477
 GameObject:
@@ -75274,6 +76344,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1669541479}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1673271828
 GameObject:
@@ -75336,6 +76408,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1673271830}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1673654827
 GameObject:
@@ -75495,6 +76569,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1675606571}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1675889918
 GameObject:
@@ -75751,6 +76827,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1681165176}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1683163384
 GameObject:
@@ -75813,6 +76891,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1683163386}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1683410727
 GameObject:
@@ -75875,6 +76955,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1683410729}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1683842614
 GameObject:
@@ -76131,6 +77213,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1689859018}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1690145352
 GameObject:
@@ -76193,6 +77277,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1690145354}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1692616285
 GameObject:
@@ -76255,6 +77341,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1692616287}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1693774852
 GameObject:
@@ -76378,6 +77466,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1694170459}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1694852641
 GameObject:
@@ -76440,6 +77530,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1694852643}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1695928384
 GameObject:
@@ -76502,6 +77594,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1695928386}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1698063617
 GameObject:
@@ -76846,6 +77940,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1701994103}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1707195091
 GameObject:
@@ -76908,6 +78004,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1707195093}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1709311646
 GameObject:
@@ -77383,6 +78481,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1726310361}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1727559328
 GameObject:
@@ -77445,6 +78545,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1727559330}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1727950049
 GameObject:
@@ -77507,6 +78609,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1727950051}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1728092577
 GameObject:
@@ -77569,6 +78673,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1728092579}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1728320159
 GameObject:
@@ -77661,6 +78767,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1728332640}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1729717913
 GameObject:
@@ -77821,6 +78929,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1731255268}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1733628893
 GameObject:
@@ -77883,6 +78993,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1733628895}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1734462843
 GameObject:
@@ -77945,6 +79057,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1734462845}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1734589297
 GameObject:
@@ -78358,6 +79472,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1741708067}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1742907300
 GameObject:
@@ -78420,6 +79536,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1742907302}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1743095745
 GameObject:
@@ -78512,6 +79630,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1743542605}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1744198824
 GameObject:
@@ -78604,6 +79724,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1744200583}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1744884492
 GameObject:
@@ -78666,6 +79788,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1744884494}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1747093028
 GameObject:
@@ -78728,6 +79852,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1747093030}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1748010312
 GameObject:
@@ -78970,6 +80096,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1751800748}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1757767736
 GameObject:
@@ -79323,6 +80451,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1763977485}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1764323110
 GameObject:
@@ -79482,6 +80612,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1766277826}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1767179974
 GameObject:
@@ -79544,6 +80676,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1767179976}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1768130254
 GameObject:
@@ -79800,6 +80934,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1771047648}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1771843622
 GameObject:
@@ -79892,6 +81028,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1771898705}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1775439803
 GameObject:
@@ -79954,6 +81092,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1775439805}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1778673653
 GameObject:
@@ -80076,6 +81216,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1780416491}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1782313259
 GameObject:
@@ -80168,6 +81310,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1785592749}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1785950269
 GameObject:
@@ -80230,6 +81374,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1785950271}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1785993249
 GameObject:
@@ -80353,6 +81499,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1787318567}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1790660121
 GameObject:
@@ -80512,6 +81660,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1792173366}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1794384327
 GameObject:
@@ -80574,6 +81724,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1794384329}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1797311030
 GameObject:
@@ -80921,6 +82073,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1801475559}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1803669600
 GameObject:
@@ -80983,6 +82137,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1803669602}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1803795946
 GameObject:
@@ -81045,6 +82201,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1803795948}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1805644492
 GameObject:
@@ -81264,6 +82422,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1810392944}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1810443715
 GameObject:
@@ -81356,6 +82516,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1811074283}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1811363758
 GameObject:
@@ -81418,6 +82580,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1811363760}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1816020129
 GameObject:
@@ -81480,6 +82644,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1816020131}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1816609417
 GameObject:
@@ -81572,6 +82738,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1818095893}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1819543580
 GameObject:
@@ -81634,6 +82802,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1819543582}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1820430710
 GameObject:
@@ -81890,6 +83060,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1821980954}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1822990343
 GameObject:
@@ -82049,6 +83221,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1823313282}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1823903874
 GameObject:
@@ -82305,6 +83479,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1825640683}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1826372829
 GameObject:
@@ -82367,6 +83543,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1826372831}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1828624473
 GameObject:
@@ -82429,6 +83607,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1828624475}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1830002000
 GameObject:
@@ -82521,6 +83701,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1837392274}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1838040004
 GameObject:
@@ -82583,6 +83765,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1838040006}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1838841859
 GameObject:
@@ -82645,6 +83829,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1838841861}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1840370515
 GameObject:
@@ -82795,6 +83981,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1843935654}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1844423721
 GameObject:
@@ -83169,6 +84357,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1846953285}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1847082947
 GameObject:
@@ -83573,6 +84763,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1861978826}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1862069893
 GameObject:
@@ -83732,6 +84924,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1862212841}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1862649353
 GameObject:
@@ -83921,6 +85115,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1866888691}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1869578457
 GameObject:
@@ -83983,6 +85179,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1869578459}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1870015795
 GameObject:
@@ -84045,6 +85243,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1870015797}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1874340106
 GameObject:
@@ -84107,6 +85307,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1874340108}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1874532003
 GameObject:
@@ -84489,6 +85691,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1879219145}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1880151623
 GameObject:
@@ -84551,6 +85755,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1880151625}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1882660636
 GameObject:
@@ -84837,6 +86043,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1884201460}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1888033611
 GameObject:
@@ -84899,6 +86107,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1888033613}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1888799825
 GameObject:
@@ -84961,6 +86171,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1888799827}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1889941351
 GameObject:
@@ -85120,6 +86332,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1895365194}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1896023271
 GameObject:
@@ -85242,6 +86456,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1896273894}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1897255091
 GameObject:
@@ -85304,6 +86520,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1897255093}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1898568177
 GameObject:
@@ -85366,6 +86584,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1898568179}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1898793773
 GameObject:
@@ -85428,6 +86648,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1898793775}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1899473703
 GameObject:
@@ -85520,6 +86742,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1899507471}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1899800954
 GameObject:
@@ -85709,6 +86933,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1901438680}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1902862026
 GameObject:
@@ -85868,6 +87094,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1903043363}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1903097560
 GameObject:
@@ -86184,6 +87412,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1911846066}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1912692797
 GameObject:
@@ -86246,6 +87476,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1912692799}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1915610213
 GameObject:
@@ -86308,6 +87540,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1915610215}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1915737440
 GameObject:
@@ -86370,6 +87604,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1915737442}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1917168353
 GameObject:
@@ -86493,6 +87729,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1918238007}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1919651686
 GameObject:
@@ -86779,6 +88017,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1921179854}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1922091489
 GameObject:
@@ -86938,6 +88178,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1922996330}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1923955517
 GameObject:
@@ -87000,6 +88242,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1923955519}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1925741899
 GameObject:
@@ -87062,6 +88306,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1925741901}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1925989556
 GameObject:
@@ -87124,6 +88370,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1925989558}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1926811807
 GameObject:
@@ -87186,6 +88434,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1926811809}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1931472331
 GameObject:
@@ -87406,6 +88656,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1932578278}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1936564669
 GameObject:
@@ -87468,6 +88720,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1936564671}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1937254074
 GameObject:
@@ -87875,6 +89129,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1941685070}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1941694716
 GameObject:
@@ -88123,6 +89379,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1942796566}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1946278219
 GameObject:
@@ -88185,6 +89443,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1946278221}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1946455722
 GameObject:
@@ -88402,6 +89662,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1949859243}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1952976062
 GameObject:
@@ -88660,6 +89922,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1953015072}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: -90
 --- !u!1 &1956841830
 GameObject:
@@ -88722,6 +89986,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1956841832}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1959815823
 GameObject:
@@ -88814,6 +90080,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1961030090}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1961170036
 GameObject:
@@ -88906,6 +90174,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1961305315}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1962321651
 GameObject:
@@ -89065,6 +90335,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1963933075}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1967970194
 GameObject:
@@ -89127,6 +90399,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1967970196}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1968783940
 GameObject:
@@ -89286,6 +90560,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1970501045}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1971955283
 GameObject:
@@ -89348,6 +90624,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1971955285}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1972271921
 GameObject:
@@ -89507,6 +90785,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1975283653}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1978079196
 GameObject:
@@ -89569,6 +90849,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1978079198}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1978124613
 GameObject:
@@ -89631,6 +90913,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1978124615}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1978438373
 GameObject:
@@ -89790,6 +91074,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1978944334}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1979597757
 GameObject:
@@ -90046,6 +91332,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1983643354}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1984056284
 GameObject:
@@ -90266,6 +91554,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1988902915}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1989866131
 GameObject:
@@ -90425,6 +91715,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1990233484}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1991916855
 GameObject:
@@ -90547,6 +91839,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 1997238968}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &1999089051
 GameObject:
@@ -91342,6 +92636,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2023271471}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2023355965
 GameObject:
@@ -91725,6 +93021,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2027270765}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2027991078
 GameObject:
@@ -91787,6 +93085,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2027991080}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2028140983
 GameObject:
@@ -91939,6 +93239,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2031481186}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2034640581
 GameObject:
@@ -92128,6 +93430,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2038387603}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2039151177
 GameObject:
@@ -92287,6 +93591,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2041589639}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2044514857
 GameObject:
@@ -92349,6 +93655,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2044514859}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2045822448
 GameObject:
@@ -92411,6 +93719,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2045822450}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2046200658
 GameObject:
@@ -92473,6 +93783,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2046200660}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2047608404
 GameObject:
@@ -93044,6 +94356,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2060458235}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2060844312
 GameObject:
@@ -93106,6 +94420,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2060844314}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2061796340
 GameObject:
@@ -93168,6 +94484,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2061796342}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2064907406
 GameObject:
@@ -93454,6 +94772,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2070607768}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2075057204
 GameObject:
@@ -93802,6 +95122,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2078175094}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2079739221
 GameObject:
@@ -93864,6 +95186,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2079739223}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2081986032
 GameObject:
@@ -93956,6 +95280,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2082997151}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2083702748
 GameObject:
@@ -94018,6 +95344,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2083702750}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2084724544
 GameObject:
@@ -94361,6 +95689,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2093033373}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2098211837
 GameObject:
@@ -94520,6 +95850,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2100410570}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2101721018
 GameObject:
@@ -94582,6 +95914,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2101721020}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2103751228
 GameObject:
@@ -94644,6 +95978,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2103751230}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2103857624
 GameObject:
@@ -94736,6 +96072,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2109242030}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2109958881
 GameObject:
@@ -94798,6 +96136,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2109958883}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2112038801
 GameObject:
@@ -94860,6 +96200,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2112038803}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2113802494
 GameObject:
@@ -94922,6 +96264,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2113802496}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2113844424
 GameObject:
@@ -94984,6 +96328,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2113844426}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2116169975
 GameObject:
@@ -95205,6 +96551,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2119288584}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2120040998
 GameObject:
@@ -95364,6 +96712,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2121200816}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2121705108
 GameObject:
@@ -95426,6 +96776,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2121705110}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2122059698
 GameObject:
@@ -95488,6 +96840,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2122059700}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2123732928
 GameObject:
@@ -95873,6 +97227,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2126550816}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2127759546
 GameObject:
@@ -95935,6 +97291,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2127759548}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2128172193
 GameObject:
@@ -95997,6 +97355,8 @@ MonoBehaviour:
   Chance: 0.7
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2128172195}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2134099651
 GameObject:
@@ -96119,6 +97479,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2134740603}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2135274110
 GameObject:
@@ -96211,6 +97573,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2137712603}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2139741576
 GameObject:
@@ -96273,6 +97637,8 @@ MonoBehaviour:
   Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2139741578}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2140235277
 GameObject:
@@ -96335,6 +97701,8 @@ MonoBehaviour:
   Chance: 0.95
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 2140235279}
+  ParentTransform: {fileID: 0}
+  DestroyGameobject: 0
   angle: 0
 --- !u!1 &2140752664
 GameObject:

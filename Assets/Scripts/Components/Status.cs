@@ -12,6 +12,7 @@ public class Status : ComponentBase, IStartable
 
 	public bool Alive { get { return CurrentHealth > 0; } }
 	public float CurrentHealth { get; set; }
+	bool died;
 
 	public void Start()
 	{
@@ -22,7 +23,10 @@ public class Status : ComponentBase, IStartable
 	{
 		CurrentHealth -= damage.Damage;
 
-		if (CurrentHealth <= 0)
+		if (!died && CurrentHealth <= 0)
+		{
+			died = true;
 			Entity.SendMessage(EntityMessages.OnDie);
+		}
 	}
 }

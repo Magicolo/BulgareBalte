@@ -49,6 +49,7 @@ public class GroupProximityDetonator : ComponentBase, IUpdateable
 
 	private void Die()
 	{
-		Entity.SendMessage(EntityMessages.OnDie);
+		DamageData data = new DamageData(Entity.GetComponent<Status>().Health, Entity.Groups, DamageTypes.None);
+		Entity.GetComponent<Damageable>().Damage(data);
 	}
 }

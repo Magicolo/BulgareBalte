@@ -11,7 +11,8 @@ public enum DamageTypes
 	Laser = 1 << 0,
 	Plasma = 1 << 1,
 	Fire = 1 << 2,
-	Physical = 1 << 3
+	Physical = 1 << 3,
+	None = 1 << 4
 }
 
 [Serializable]
