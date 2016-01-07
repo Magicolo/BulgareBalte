@@ -8,6 +8,7 @@ public class InstatiatePrefabInZone : MonoBehaviour
 	public GameObject Prefab;
 	public Zone2DBase Zone;
 	public Transform ParentTransform;
+	public bool DestroyGameobject;
 
 	public float angle;
 
@@ -19,10 +20,15 @@ public class InstatiatePrefabInZone : MonoBehaviour
 			newGO.transform.parent = this.transform;
 			newGO.transform.localPosition = Zone.GetRandomLocalPoint();
 			if (ParentTransform != null)
+			{
 				newGO.transform.parent = ParentTransform;
+				newGO.transform.Rotate(ParentTransform.rotation.eulerAngles.z, Axes.Z);
+			}
+
 			newGO.transform.Rotate(angle, Axes.Z);
 		}
-
+		if (DestroyGameobject)
+			gameObject.Destroy();
 		this.Destroy();
 	}
 }

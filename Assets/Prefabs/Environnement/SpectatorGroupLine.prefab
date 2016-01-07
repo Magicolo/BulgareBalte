@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 499792}
   m_Layer: 0
-  m_Name: Right
+  m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473166}
   m_Layer: 0
-  m_Name: Left
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,7 +359,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 12, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478794}
@@ -393,9 +393,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.95
+  Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11446306}
+  ParentTransform: {fileID: 499792}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11406988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -407,9 +410,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.95
+  Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11408974}
+  ParentTransform: {fileID: 499792}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11408292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -457,9 +463,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.7
+  Chance: 0.6
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11436032}
+  ParentTransform: {fileID: 473166}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11414794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -489,9 +498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.7
+  Chance: 0.6
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11465068}
+  ParentTransform: {fileID: 473166}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11436032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -557,9 +569,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.9
+  Chance: 0.8
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11447996}
+  ParentTransform: {fileID: 478794}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11461942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -625,9 +640,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.7
+  Chance: 0.6
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11468926}
+  ParentTransform: {fileID: 473166}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11482400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,9 +657,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.95
+  Chance: 0.9
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11414794}
+  ParentTransform: {fileID: 499792}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11482464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -653,9 +674,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.9
+  Chance: 0.8
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11461942}
+  ParentTransform: {fileID: 478794}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!114 &11499602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -667,9 +691,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302ca1387df5d6e4b8835ba79dbdb69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chance: 0.9
+  Chance: 0.8
   Prefab: {fileID: 190526, guid: b3337f146041750479073ada0bbcf7e8, type: 2}
   Zone: {fileID: 11408292}
+  ParentTransform: {fileID: 478794}
+  DestroyGameobject: 1
+  angle: 0
 --- !u!212 &21261078
 SpriteRenderer:
   m_ObjectHideFlags: 1
