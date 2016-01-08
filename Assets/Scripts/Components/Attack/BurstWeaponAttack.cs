@@ -32,12 +32,17 @@ public class BurstWeaponAttack : WeaponAttack, IUpdateable
 		base.Attack();
 
 		var time = Entity.GetComponent<TimeComponent>();
+
+		if (burstCounter == 0)
+			Entity.SendMessage(EntityMessages.OnStartAttacking);
+
 		burstCounter++;
 
 		if (burstCounter >= BurstAmount)
 		{
 			burstCounter = 0;
 			nextAttackTime = time.Time + 1f / GetAttackSpeed();
+			Entity.SendMessage(EntityMessages.OnStopAttacking);
 		}
 		else
 			nextAttackTime = time.Time + BurstInterval;

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[Serializable, EntityRequires(typeof(TimeComponent))]
+[Serializable, EntityRequires(typeof(TimeComponent), typeof(DamagerBase))]
 public class WeaponAttack : AttackBase, IStartable
 {
 	[EntityRequires(typeof(DamagerBase), typeof(AttackBase))]
@@ -60,10 +60,9 @@ public class WeaponAttack : AttackBase, IStartable
 		if (weapon != null)
 		{
 			var modifiers = weapon.GetComponents<AttackSpeedModifier>();
+
 			for (int i = 0; i < modifiers.Count; i++)
-			{
 				attackSpeed *= modifiers[i].Modifier;
-			}
 		}
 
 		return attackSpeed;

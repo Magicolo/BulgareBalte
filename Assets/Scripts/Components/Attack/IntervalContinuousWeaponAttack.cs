@@ -32,6 +32,7 @@ public class IntervalContinuousWeaponAttack : WeaponAttack, IUpdateable
 	private void HandleAttack()
 	{
 		Attack();
+
 		if (!startedAttacking)
 			Entity.SendMessage(EntityMessages.OnStartAttacking);
 	}

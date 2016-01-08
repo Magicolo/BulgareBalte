@@ -16,7 +16,7 @@ MonoBehaviour:
   FadeInEase: 1
   FadeOut: 0.1
   FadeOutEase: 2
-  VolumeScale: 1
+  VolumeScale: 0.2
   PitchScaleMode: 0
   PitchScale: 1
   RandomVolume: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
   RTPCs: []
   Options: []
   Clip: {fileID: 8300000, guid: d954e0476f3dfae46800654c0d9dad6a, type: 3}
-  Output: {fileID: 0}
+  Output: {fileID: 24355846, guid: b36eaf37da5779a408b9a1e958272298, type: 2}
   PlayRangeStart: 0
   PlayRangeEnd: 1
   MaxInstances: 5

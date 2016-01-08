@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 
 [Serializable, ComponentCategory("General")]
-public class RecycleOnMessage : ComponentBase, ILateUpdateable
+public class RecycleOnMessage : ComponentBase, ILateUpdateable, IMessageable
 {
 	[EnumFlags(typeof(EntityMessages))]
 	public ByteFlag RecycleMessages;
@@ -24,33 +24,8 @@ public class RecycleOnMessage : ComponentBase, ILateUpdateable
 			PrefabPoolManager.Recycle(Entity);
 	}
 
-	protected virtual void OnDamaged()
+	public void OnMessage(EntityMessages message)
 	{
-		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDamaged];
-	}
-
-	protected virtual void OnDamage()
-	{
-		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDamage];
-	}
-
-	protected virtual void OnDie()
-	{
-		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDie];
-	}
-
-	protected virtual void OnTriggerEnter2D()
-	{
-		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnTriggerEnter2D];
-	}
-
-	protected virtual void OnTriggerStay2D()
-	{
-		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnTriggerStay2D];
-	}
-
-	protected virtual void OnTriggerExit2D()
-	{
-		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnTriggerExit2D];
+		shouldRecycle |= RecycleMessages[(byte)message];
 	}
 }

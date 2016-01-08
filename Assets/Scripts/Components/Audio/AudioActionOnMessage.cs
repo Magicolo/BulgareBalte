@@ -6,7 +6,7 @@ using System.Linq;
 using Pseudo;
 
 [Serializable, ComponentCategory("Audio"), EntityRequires(typeof(TimeComponent))]
-public class AudioActionOnMessage : ComponentBase, IStartable
+public class AudioActionOnMessage : ComponentBase, IStartable, IMessageable
 {
 	[Serializable]
 	public class AudioAction
@@ -50,26 +50,6 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 	public void Start()
 	{
 		activeActions.AddRange(Actions);
-	}
-
-	void TryExecuteAction(EntityMessages message)
-	{
-		var time = Entity.GetComponent<TimeComponent>();
-
-		for (int i = 0; i < activeActions.Count; i++)
-		{
-			var action = activeActions[i];
-
-			if (action.LastExecutionTime + action.ExecutionDelay < time.Time && action.Messages[(byte)message])
-			{
-				ExecuteAction(action);
-
-				action.LastExecutionTime = time.Time;
-
-				if (action.ExecuteOnce)
-					activeActions.RemoveAt(i--);
-			}
-		}
 	}
 
 	void ExecuteAction(AudioAction action)
@@ -181,6 +161,26 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 		return items;
 	}
 
+	public void OnMessage(EntityMessages message)
+	{
+		var time = Entity.GetComponent<TimeComponent>();
+
+		for (int i = 0; i < activeActions.Count; i++)
+		{
+			var action = activeActions[i];
+
+			if (action.LastExecutionTime + action.ExecutionDelay < time.Time && action.Messages[(byte)message])
+			{
+				ExecuteAction(action);
+
+				action.LastExecutionTime = time.Time;
+
+				if (action.ExecuteOnce)
+					activeActions.RemoveAt(i--);
+			}
+		}
+	}
+
 	public override void OnRecycle()
 	{
 		base.OnRecycle();
@@ -189,23 +189,4 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 		activeActions.Clear();
 		idActiveitems.Clear();
 	}
-
-	void OnDamage() { TryExecuteAction(EntityMessages.OnDamage); }
-	void OnDamaged() { TryExecuteAction(EntityMessages.OnDamaged); }
-	void OnDie() { TryExecuteAction(EntityMessages.OnDie); }
-	void Spawn() { TryExecuteAction(EntityMessages.Spawn); }
-	void Spawned() { TryExecuteAction(EntityMessages.Spawned); }
-	void OnCollisionEnter2D() { TryExecuteAction(EntityMessages.OnCollisionEnter2D); }
-	void OnCollisionStay2D() { TryExecuteAction(EntityMessages.OnCollisionStay2D); }
-	void OnCollisionExit2D() { TryExecuteAction(EntityMessages.OnCollisionExit2D); }
-	void OnTriggerEnter2D() { TryExecuteAction(EntityMessages.OnTriggerEnter2D); }
-	void OnTriggerStay2D() { TryExecuteAction(EntityMessages.OnTriggerStay2D); }
-	void OnTriggerExit2D() { TryExecuteAction(EntityMessages.OnTriggerExit2D); }
-	void OnStartAttacking() { TryExecuteAction(EntityMessages.OnStartAttacking); }
-	void OnStopAttacking() { TryExecuteAction(EntityMessages.OnStopAttacking); }
-	void OnStateEnter() { TryExecuteAction(EntityMessages.OnStateEnter); }
-	void OnStateExit() { TryExecuteAction(EntityMessages.OnStateExit); }
-	void OnShowEvent() { TryExecuteAction(EntityMessages.OnShowEvent); }
-	void OnEquip() { TryExecuteAction(EntityMessages.OnEquip); }
-	void OnUnequip() { TryExecuteAction(EntityMessages.OnUnequip); }
 }
