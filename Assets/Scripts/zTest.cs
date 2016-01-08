@@ -9,22 +9,14 @@ using Pseudo.Internal.Input;
 
 public class zTest : PMonoBehaviour
 {
-	public PEntity Entity;
-	public PEntity Entity2;
+	public SpriteRenderer Renderer;
 
 	[Button]
 	public bool test;
 	void Test()
 	{
-		StartCoroutine(RecycleAfterDelay(PrefabPoolManager.Create(Entity), 2f));
-		StartCoroutine(RecycleAfterDelay(PrefabPoolManager.Create(Entity2), 2f));
-	}
+		Renderer.sortingLayerName = "Boba Fett";
 
-	IEnumerator RecycleAfterDelay(object toRecycle, float delay)
-	{
-		for (float counter = 0; counter < delay; counter += Time.deltaTime)
-			yield return null;
-
-		PrefabPoolManager.Recycle(toRecycle);
+		PDebug.Log(Renderer.sortingLayerName);
 	}
 }

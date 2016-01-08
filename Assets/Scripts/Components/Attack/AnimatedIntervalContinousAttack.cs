@@ -63,7 +63,9 @@ public class AnimatedIntervalContinousAttack : WeaponAttack, IUpdateable, IStart
 
 	private void startAttacking()
 	{
-		nextStopTime = nextAttackTime + ContinuousDuration.GetRandom();
+		var time = Entity.GetComponent<TimeComponent>();
+		nextStopTime = time.Time + ContinuousDuration.GetRandom();
+		//nextStopTime = nextAttackTime + ContinuousDuration.GetRandom();
 		currentState = State.Attack;
 		Entity.SendMessage(EntityMessages.OnStartAttacking);
 	}
