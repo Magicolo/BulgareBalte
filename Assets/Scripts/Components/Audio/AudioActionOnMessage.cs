@@ -82,6 +82,9 @@ public class AudioActionOnMessage : ComponentBase, IStartable, IMessageable
 
 	void Play(AudioAction action)
 	{
+		if (action.Settings == null)
+			return;
+
 		var items = GetItems(action.Settings.Id);
 		AudioItem item = null;
 
@@ -106,6 +109,9 @@ public class AudioActionOnMessage : ComponentBase, IStartable, IMessageable
 
 	void Pause(AudioAction action)
 	{
+		if (action.Settings == null)
+			return;
+
 		var items = GetItems(action.Settings.Id);
 
 		for (int i = 0; i < items.Count; i++)
@@ -114,6 +120,9 @@ public class AudioActionOnMessage : ComponentBase, IStartable, IMessageable
 
 	void Resume(AudioAction action)
 	{
+		if (action.Settings == null)
+			return;
+
 		var items = GetItems(action.Settings.Id);
 
 		for (int i = 0; i < items.Count; i++)
@@ -122,6 +131,9 @@ public class AudioActionOnMessage : ComponentBase, IStartable, IMessageable
 
 	void Stop(AudioAction action)
 	{
+		if (action.Settings == null)
+			return;
+
 		var items = GetItems(action.Settings.Id);
 
 		for (int i = 0; i < items.Count; i++)
