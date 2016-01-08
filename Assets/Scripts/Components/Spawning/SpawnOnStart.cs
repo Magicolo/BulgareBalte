@@ -5,12 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class SpawnOnStart : PComponent
+[Serializable, ComponentCategory("Spawner")]
+public class SpawnOnStart : ComponentBase, IStartable
 {
-	protected override void Start()
+	public void Start()
 	{
-		base.Start();
-
 		Entity.SendMessage(EntityMessages.Spawn);
 	}
 }

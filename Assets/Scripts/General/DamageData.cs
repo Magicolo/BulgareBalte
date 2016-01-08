@@ -10,28 +10,26 @@ public enum DamageTypes
 {
 	Laser = 1 << 0,
 	Plasma = 1 << 1,
-	Fire = 1 << 2
+	Fire = 1 << 2,
+	Physical = 1 << 3,
+	None = 1 << 4
 }
 
 [Serializable]
 public struct DamageData
 {
 	public float Damage;
-	[SerializeField, PropertyField(typeof(EnumFlagsAttribute), typeof(EntityGroups))]
-	ByteFlag sources;
-	public ByteFlag<EntityGroups> Sources
-	{
-		get { return sources; }
-		set { sources = value; }
-	}
+
+	[EntityGroups]
+	public ByteFlag Sources;
 	[EnumFlags]
 	public DamageTypes Types;
 
-	public DamageData(float damage, ByteFlag<EntityGroups> source = default(ByteFlag<EntityGroups>), DamageTypes type = 0)
+	public DamageData(float damage, ByteFlag sources = default(ByteFlag), DamageTypes types = 0)
 	{
 		Damage = damage;
-		sources = source;
-		Types = type;
+		Sources = sources;
+		Types = types;
 	}
 
 	public override string ToString()

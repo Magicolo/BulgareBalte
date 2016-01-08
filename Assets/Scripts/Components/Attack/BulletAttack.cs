@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class BulletAttack : AttackBase
 {
 	[EntityRequires(CanBeNull = false)]
@@ -12,9 +13,11 @@ public class BulletAttack : AttackBase
 
 	public override void Attack()
 	{
+		var damager = Entity.GetComponent<DamagerBase>();
 		var bullet = PrefabPoolManager.Create(Bullet);
-		bullet.GetComponent<BulletDamager>().SetDamageData(Damager.GetDamageData());
-		bullet.CachedTransform.position = CachedTransform.position;
-		bullet.CachedTransform.eulerAngles = CachedTransform.eulerAngles;
+		bullet.GetComponent<BulletDamager>().SetDamageData(damager.GetDamageData());
+		bullet.CachedTransform.position = Entity.Transform.position;
+		bullet.CachedTransform.eulerAngles = Entity.Transform.eulerAngles;
+		Entity.SendMessage(EntityMessages.OnStartAttacking);
 	}
 }

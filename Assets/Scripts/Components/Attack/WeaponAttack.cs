@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
-public class WeaponAttack : AttackBase
+[Serializable, EntityRequires(typeof(TimeComponent), typeof(DamagerBase))]
+public class WeaponAttack : AttackBase, IStartable
 {
 	[EntityRequires(typeof(DamagerBase), typeof(AttackBase))]
 	public PEntity StartWeapon;
@@ -14,14 +14,11 @@ public class WeaponAttack : AttackBase
 	public float AttackSpeed = 1f;
 
 	protected PEntity weapon;
-	protected float lastAttackTime;
+	public float lastAttackTime { get; protected set; }
 
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
-
-	protected WeaponAttack()
+	public virtual void Start()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
+		EquipWeapon(StartWeapon);
 	}
 
 	public void EquipWeapon(PEntity weaponPrefab)
@@ -32,18 +29,28 @@ public class WeaponAttack : AttackBase
 			return;
 
 		weapon = PrefabPoolManager.Create(weaponPrefab);
-		weapon.CachedTransform.parent = WeaponRoot;
-		weapon.CachedTransform.localPosition = Vector3.zero;
-		weapon.CachedTransform.localRotation = Quaternion.identity;
+		weapon.Transform.parent = WeaponRoot;
+		weapon.Transform.localPosition = Vector3.zero;
+		weapon.Transform.localRotation = Quaternion.identity;
 
-		TimeComponent time;
-		if (weapon.TryGetComponent(out time))
-			time.Channel = CachedTime.Channel;
+		var time = Entity.GetComponent<TimeComponent>();
+		TimeComponent weaponTime;
+
+		if (weapon.TryGetComponent(out weaponTime))
+			weaponTime.Channel = time.Channel;
+
+		weapon.SendMessage(EntityMessages.OnEquip);
+		Entity.SendMessage(EntityMessages.OnEquip, weapon);
 	}
 
 	public void UnequipWeapon()
 	{
-		PrefabPoolManager.Recycle(ref weapon);
+		if (weapon != null)
+		{
+			weapon.SendMessage(EntityMessages.OnUnequip);
+			Entity.SendMessage(EntityMessages.OnUnequip, weapon);
+			PrefabPoolManager.Recycle(ref weapon);
+		}
 	}
 
 	public float GetAttackSpeed()
@@ -53,10 +60,9 @@ public class WeaponAttack : AttackBase
 		if (weapon != null)
 		{
 			var modifiers = weapon.GetComponents<AttackSpeedModifier>();
+
 			for (int i = 0; i < modifiers.Count; i++)
-			{
 				attackSpeed *= modifiers[i].Modifier;
-			}
 		}
 
 		return attackSpeed;
@@ -64,22 +70,19 @@ public class WeaponAttack : AttackBase
 
 	public override void Attack()
 	{
-		weapon.GetComponent<DamagerBase>().SetDamageData(Damager.GetDamageData());
+		if (weapon == null)
+			return;
+
+		var time = Entity.GetComponent<TimeComponent>();
+		var damager = Entity.GetComponent<DamagerBase>();
+
+		weapon.GetComponent<DamagerBase>().SetDamageData(damager.GetDamageData());
 		weapon.GetComponent<AttackBase>().Attack();
-		lastAttackTime = CachedTime.Time;
+		lastAttackTime = time.Time;
 	}
 
-	public override void OnCreate()
+	protected void OnDie()
 	{
-		base.OnCreate();
-
-		EquipWeapon(StartWeapon);
-	}
-
-	public override void OnRecycle()
-	{
-		base.OnRecycle();
-
 		UnequipWeapon();
 	}
 }

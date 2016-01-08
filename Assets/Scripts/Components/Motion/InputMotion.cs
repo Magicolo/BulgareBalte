@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class InputMotion : MotionBase
 {
 	public InputManager.Players Input;
@@ -20,12 +21,14 @@ public class InputMotion : MotionBase
 
 	protected virtual void UpdateInput()
 	{
-		inputMotion.x = InputManager.Instance.GetAxis(Input, "MoveX");
-		inputMotion.y = InputManager.Instance.GetAxis(Input, "MoveY");
+		var screenPosition = Camera.main.WorldToScreenPoint(Entity.Transform.position);
+
+		inputMotion.x = InputManager.Instance.GetAxis(Input, "MoveX", screenPosition);
+		inputMotion.y = InputManager.Instance.GetAxis(Input, "MoveY", screenPosition);
 		inputMotion = inputMotion.ClampMagnitude(0f, 1f);
 
-		inputRotation.x = InputManager.Instance.GetAxis(Input, "RotateX");
-		inputRotation.y = InputManager.Instance.GetAxis(Input, "RotateY");
+		inputRotation.x = InputManager.Instance.GetAxis(Input, "RotateX", screenPosition);
+		inputRotation.y = InputManager.Instance.GetAxis(Input, "RotateY", screenPosition);
 		inputRotation = inputRotation.ClampMagnitude(0f, 1f);
 	}
 

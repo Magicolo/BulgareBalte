@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[Serializable]
 public class BulletDamager : ModifierDamager
 {
 	[DoNotInitialize]
@@ -24,12 +24,12 @@ public class BulletDamager : ModifierDamager
 		var entity = collision.GetEntity();
 		var damageable = entity == null ? null : entity.GetComponent<Damageable>();
 
+		if (HitEffect != null)
+			ParticleManager.Instance.Create(HitEffect, Entity.Transform.position);
+
 		if (damageable != null)
 			Damage(damageable);
 		else
-			Entity.SendMessage(EntityMessages.OnCollide, collision);
-
-		if (HitEffect != null)
-			ParticleManager.Instance.Create(HitEffect, CachedTransform.position);
+			Entity.SendMessage(EntityMessages.OnDie);
 	}
 }

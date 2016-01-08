@@ -34,7 +34,7 @@ public class WaveManager : Singleton<WaveManager>
 	}
 
 	Queue<Wave> queuedWaves = new Queue<Wave>();
-	IEntityGroup enemyGroup;
+	IEntityGroup enemyGroup = EntityManager.GetEntityGroup(EntityGroups.Enemy);
 	float nextWaveCounter;
 	bool waveIsInProgress;
 
@@ -42,7 +42,6 @@ public class WaveManager : Singleton<WaveManager>
 	{
 		base.Awake();
 
-		enemyGroup = EntityManager.GetEntityGroup(EntityGroups.Enemy);
 		ResetWaves();
 	}
 
@@ -53,7 +52,7 @@ public class WaveManager : Singleton<WaveManager>
 
 	protected virtual void UpdateWaves()
 	{
-		WaveIsInProgress = CurrentWave != null && !CurrentWave.IsCompleted || enemyGroup.Entities.Count > 0;
+		WaveIsInProgress = CurrentWave != null && (!CurrentWave.IsCompleted || enemyGroup.Entities.Count > 0);
 
 		if (waveIsInProgress)
 			return;

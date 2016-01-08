@@ -8,9 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403558}
-  - 114: {fileID: 11402018}
-  - 114: {fileID: 11439104}
-  - 114: {fileID: 11462538}
+  - 114: {fileID: 11432254}
   m_Layer: 0
   m_Name: LazyWinstonSpawner
   m_TagString: Untagged
@@ -59,7 +57,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 403558}
   m_RootOrder: 0
---- !u!114 &11402018
+--- !u!114 &11432254
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -67,40 +65,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 117274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  group:
-    flag1: 0
-    flag2: 0
-    flag3: 1
-    flag4: 0
---- !u!114 &11439104
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c594370c56d09e943aa4b82ba6ef8fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Interval: 13
-  ToSpawn: {fileID: 11490964, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
---- !u!114 &11462538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ecddb927fb58541ac82f545ff3c10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channel: 4
-  timeScale: 1
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 1
+    Path: ToSpawn
+    Reference: {fileID: 11434216, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
+  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":1.0,\"ToSpawn\":{\"instanceID\":0}}\r\n"
+  isDeserialized: 0
 --- !u!212 &21217142
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -122,13 +104,15 @@ SpriteRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300024, guid: ab5939957ee16104287799be2a0e7157, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -143,6 +127,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: channel
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: groups.f1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

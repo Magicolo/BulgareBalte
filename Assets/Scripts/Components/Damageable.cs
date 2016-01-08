@@ -5,9 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class Damageable : PComponent
+[Serializable, ComponentCategory("Attack")]
+public class Damageable : ComponentBase
 {
-	[EnumFlags(typeof(EntityGroups))]
+	[EntityGroups]
 	public ByteFlag BySources = ByteFlag.Everything;
 	[EnumFlags]
 	public DamageTypes ByTypes = (DamageTypes)int.MaxValue;

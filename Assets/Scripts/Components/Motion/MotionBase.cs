@@ -5,38 +5,36 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent), typeof(Rigidbody2D))]
-public abstract class MotionBase : PComponent
+[ComponentCategory("Motion"), EntityRequires(typeof(TimeComponent))]
+public abstract class MotionBase : ComponentBase, IStartable, IFixedUpdateable
 {
 	public float MoveSpeed = 10f;
 	public float RotateSpeed = 3f;
 
-	List<MotionModifier> modifiers = new List<MotionModifier>();
+	IList<MotionModifier> modifiers = new List<MotionModifier>();
 
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
+	protected Rigidbody2D rigidbody;
 
-	readonly CachedValue<Rigidbody2D> cachedRigidbody;
-	public Rigidbody2D CachedRigidbody { get { return cachedRigidbody; } }
-
-	protected MotionBase()
+	public void Start()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
-		cachedRigidbody = new CachedValue<Rigidbody2D>(GetComponent<Rigidbody2D>);
+		modifiers = Entity.GetComponents<MotionModifier>();
+		rigidbody = Entity.GameObject.GetComponent<Rigidbody2D>();
 	}
 
-	protected virtual void FixedUpdate()
+	public virtual void FixedUpdate()
 	{
 		UpdateMotion();
 	}
 
 	protected virtual void UpdateMotion()
 	{
+		var time = Entity.GetComponent<TimeComponent>();
+
 		if (ShouldMove())
-			CachedRigidbody.AddForce(GetDirection() * GetMoveSpeed() * CachedTime.FixedDeltaTime, ForceMode2D.Impulse);
+			rigidbody.AddForce(GetDirection() * GetMoveSpeed() * time.FixedDeltaTime * rigidbody.mass, ForceMode2D.Impulse);
 
 		if (ShouldRotate())
-			CachedRigidbody.RotateTowards(GetAngle(), GetRotateSpeed() * CachedTime.FixedDeltaTime);
+			rigidbody.RotateTowards(GetAngle(), GetRotateSpeed() * time.FixedDeltaTime);
 	}
 
 	protected virtual float GetMoveSpeed()
@@ -62,6 +60,7 @@ public abstract class MotionBase : PComponent
 	protected virtual Vector2 GetDirection()
 	{
 		Vector2 direction = Vector2.zero;
+
 		for (int i = 0; i < modifiers.Count; i++)
 			direction = direction.Mult(modifiers[i].GetDirectionModifier());
 
@@ -72,17 +71,11 @@ public abstract class MotionBase : PComponent
 	protected virtual float GetAngle()
 	{
 		float angle = 0f;
+
 		for (int i = 0; i < modifiers.Count; i++)
 			angle += modifiers[i].GetAngleModifier();
 
 		return angle;
-	}
-
-	public override void OnCreate()
-	{
-		base.OnCreate();
-
-		modifiers = Entity.GetComponents<MotionModifier>();
 	}
 
 	protected abstract bool ShouldMove();

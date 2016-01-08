@@ -6,9 +6,10 @@ using System.Linq;
 using Pseudo;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(CanvasGroup))]
-public class HealthBarUI : PComponent
+[Serializable, ComponentCategory("UI")]
+public class HealthBarUI : ComponentBase, IUpdateable
 {
+	public CanvasGroup CanvasGroup;
 	public Slider HealthSlider;
 	public Slider DamageSlider;
 	public float ActiveAlpha = 1f;
@@ -28,15 +29,12 @@ public class HealthBarUI : PComponent
 	float targetDamageValue;
 	float delayCounter;
 
-	readonly CachedValue<CanvasGroup> cachedCanvasGroup;
-	public CanvasGroup CachedCanvasGroup { get { return cachedCanvasGroup.Value; } }
-
-	public HealthBarUI()
+	public float UpdateRate
 	{
-		cachedCanvasGroup = new CachedValue<CanvasGroup>(GetComponent<CanvasGroup>);
+		get { return 0f; }
 	}
 
-	void Update()
+	public void Update()
 	{
 		if (playerGroup.Entities.Count > PlayerIndex)
 		{
@@ -68,7 +66,7 @@ public class HealthBarUI : PComponent
 		if (Mathf.Abs(DamageSlider.value - currentDamageValue) > 0.0001f)
 			DamageSlider.value = currentDamageValue;
 
-		if (Mathf.Abs(CachedCanvasGroup.alpha - currentAlpha) > 0.0001f)
-			CachedCanvasGroup.alpha = currentAlpha;
+		if (Mathf.Abs(CanvasGroup.alpha - currentAlpha) > 0.0001f)
+			CanvasGroup.alpha = currentAlpha;
 	}
 }

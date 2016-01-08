@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9567c2e3a7f3a4a40a3fc87bc3316745, type: 3}
+  m_Name: ContainerAngry
+  m_EditorClassIdentifier: 
+  Loop: 0
+  FadeIn: 0
+  FadeInEase: 1
+  FadeOut: 0
+  FadeOutEase: 2
+  VolumeScale: 0.5
+  PitchScaleMode: 0
+  PitchScale: 1
+  RandomVolume: 0
+  RandomPitch: 0
+  RTPCs: []
+  Options: []
+  Sources:
+  - Settings: {fileID: 11400000, guid: 0c5bc6359bf1da045bfe9a72559bc3f6, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: 04a26464548e95b48bb2acb173df01bd, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: f08ee429b639dc94da13dcd4cc3531c1, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: de6287e67ab04814aa389fc8f70bd8c5, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: e2f731d29422c7d48a578b43d71299aa, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: 5fc00371128f7574985808b155bb334b, type: 2}
+    Options: []
+  Weights:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1

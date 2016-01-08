@@ -5,7 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public abstract class SpawnerBase : PComponent
+[ComponentCategory("Spawner")]
+public abstract class SpawnerBase : ComponentBase
 {
+	public abstract bool IsDone { get; }
+
 	public abstract void Spawn();
 }

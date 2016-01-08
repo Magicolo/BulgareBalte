@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9567c2e3a7f3a4a40a3fc87bc3316745, type: 3}
+  m_Name: ContainerBoo
+  m_EditorClassIdentifier: 
+  Loop: 0
+  FadeIn: 0
+  FadeInEase: 1
+  FadeOut: 0
+  FadeOutEase: 2
+  VolumeScale: 0.5
+  PitchScaleMode: 0
+  PitchScale: 1
+  RandomVolume: 0
+  RandomPitch: 0
+  RTPCs: []
+  Options: []
+  Sources:
+  - Settings: {fileID: 11400000, guid: 3d07efb2904be764c83e68f879e99c51, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: 01377b81be0a7fd4f8636783ac8d2e20, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: b6f90ee61084b2c4997163ea9b3bf586, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: 60dbe861b0eb508439a3666124a1559d, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: f0c4b98ceb9be784d943798f1154b356, type: 2}
+    Options: []
+  - Settings: {fileID: 11400000, guid: c87c953df0506f447aecda52cd247afd, type: 2}
+    Options: []
+  Weights:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1

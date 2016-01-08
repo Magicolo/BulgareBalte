@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using Pseudo;
+using System;
 
-public class RandomSpriteOnStart : PComponent
+[Serializable]
+public class RandomSpriteOnStart : ComponentBase, IStartable
 {
-
 	public SpriteRenderer SpriteRenderer;
 	public Sprite[] Sprites;
 
-	protected override void Start()
+	public void Start()
 	{
 		SpriteRenderer.sprite = Sprites.GetRandom();
-		this.Destroy();
+		Entity.RemoveComponent(this);
 	}
-
 }

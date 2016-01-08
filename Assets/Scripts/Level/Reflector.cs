@@ -5,7 +5,5 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class Reflector : PComponent
-{
-
-}
+[Serializable]
+public class Reflector : ComponentBase { }

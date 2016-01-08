@@ -9,28 +9,36 @@ public class SeekerMotion : MotionBase
 {
 	public PEntity Target;
 	public float Threshold = 0.5f;
+	public float RotationThreshold = 0.5f;
 	public float StopDistance = 1f;
+
+	public bool LookingAtTarget { get { return (Target != null) && Math.Abs(GetAngle() - Entity.Transform.rotation.eulerAngles.z) < RotationThreshold; } }
 
 	protected override Vector2 GetDirection()
 	{
 		Vector2 direction = base.GetDirection();
 
-		if (Vector2.Distance(CachedTransform.position, Target.CachedTransform.position) > StopDistance)
-			direction += CachedTransform.right.ToVector2();
+		if (IsInStopDistance())
+			direction += Entity.Transform.right.ToVector2();
 		else
-			direction -= CachedTransform.right.ToVector2();
+			direction -= Entity.Transform.right.ToVector2();
 
 		return direction;
 	}
 
+	protected bool IsInStopDistance()
+	{
+		return Vector2.Distance(Entity.Transform.position, Target.CachedTransform.position) > StopDistance;
+	}
+
 	protected override float GetAngle()
 	{
-		return base.GetAngle() + (Target.CachedTransform.position - CachedTransform.position).ToVector2().Angle();
+		return base.GetAngle() + (Target.CachedTransform.position - Entity.Transform.position).ToVector2().Angle();
 	}
 
 	protected override bool ShouldMove()
 	{
-		return Target != null && Mathf.Abs(Vector2.Distance(CachedTransform.position, Target.CachedTransform.position) - StopDistance) > Threshold;
+		return Target != null && Mathf.Abs(Vector2.Distance(Entity.Transform.position, Target.CachedTransform.position) - StopDistance) > Threshold;
 	}
 
 	protected override bool ShouldRotate()

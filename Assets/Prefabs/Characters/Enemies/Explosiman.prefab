@@ -8,16 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463290}
-  - 114: {fileID: 11472070}
-  - 114: {fileID: 11447166}
-  - 114: {fileID: 11412276}
-  - 114: {fileID: 11428890}
-  - 114: {fileID: 11421030}
-  - 114: {fileID: 11477964}
-  - 114: {fileID: 11490428}
-  - 114: {fileID: 11477544}
-  - 114: {fileID: 11464242}
+  - 114: {fileID: 11462294}
   - 50: {fileID: 5043582}
+  - 95: {fileID: 9514534}
   m_Layer: 0
   m_Name: Explosiman
   m_TagString: Untagged
@@ -64,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0299999993, y: 0, z: 0}
+  m_LocalPosition: {x: 0.03, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 463290}
@@ -76,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 14.161034, y: 8.916164, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463992}
@@ -89,7 +82,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142884}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -102,6 +95,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127906}
+  m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 10
   m_AngularDrag: 10
@@ -118,13 +112,31 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189850}
   m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .209999993
---- !u!114 &11412276
+  m_Radius: 0.21
+--- !u!95 &9514534
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127906}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f597c93ef70d054a9e663a0b95ee68c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11462294
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -132,153 +144,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 127906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fef5ecefc2ccbc49989a21879ebd945, type: 3}
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BySources:
-    flag1: 18446744073709551613
-    flag2: 18446744073709551615
-    flag3: 18446744073709551615
-    flag4: 18446744073709551615
-  ByTypes: 2147483647
---- !u!114 &11421030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924c740f6ca6b2446a99b5ecb2ec7458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Renderer: {fileID: 21207536}
-  FadeSpeed: 5
-  Normal: {r: 1, g: 1, b: 1, a: 1}
-  Damaged: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &11428890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ecddb927fb58541ac82f545ff3c10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channel: 4
-  timeScale: 1
---- !u!114 &11447166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4298213cf83f57499f1979ff93807a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 1
---- !u!114 &11464242
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a7f6fbb9067ae4d91c155f81fc7d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recycleMessages:
-    flag1: 8
-    flag2: 0
-    flag3: 0
-    flag4: 0
---- !u!114 &11472070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c87817082d43f6409e8f5dc5fadd5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  group:
-    flag1: 2
-    flag2: 0
-    flag3: 0
-    flag4: 0
---- !u!114 &11477544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce8bbac0ca66f64a8e4cbb03c39648b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Group:
-    groups:
-      flag1: 1
-      flag2: 0
-      flag3: 0
-      flag4: 0
-    match: 0
-  Radius: 1
-  Explosion: {fileID: 11492754, guid: f69e5c329056e174c83de9ba4c5587cc, type: 2}
---- !u!114 &11477964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0afe27600831a7240b78e0958ff9c448, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 15
-  RotateSpeed: 3
-  Target: {fileID: 0}
-  Threshold: .5
-  StopDistance: 0
-  CheckForTargetInterval: 1
-  TargetGroup:
-    groups:
-      flag1: 1
-      flag2: 0
-      flag3: 0
-      flag4: 0
-    match: 0
---- !u!114 &11490428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1feed492f109d804496039ba3a914eec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeedModifier: 1
-  RotateSpeedModifier: 1
-  Amplitude:
-    min: 1
-    max: 100
-  Frequency:
-    min: 1
-    max: 5
-  Offset:
-    min: 0
-    max: 1000
+  groups:
+    f1: 2
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references:
+  - Index: 3
+    Path: Renderer
+    Reference: {fileID: 21207536}
+  - Index: 5
+    Path: Animator
+    Reference: {fileID: 9514534}
+  - Index: 7
+    Path: Animator
+    Reference: {fileID: 9514534}
+  - Index: 8
+    Path: Animator
+    Reference: {fileID: 0}
+  - Index: 8
+    Path: DeadPrefab
+    Reference: {fileID: 185442, guid: f69e5c329056e174c83de9ba4c5587cc, type: 2}
+  - Index: 9
+    Path: Actions.0.Settings
+    Reference: {fileID: 11400000, guid: 1a951f53c76d7d342b95542e5e4f0020, type: 2}
+  - Index: 9
+    Path: Actions.1.Settings
+    Reference: {fileID: 11400000, guid: c252c8d7a50591441a7b65d2ece3b541, type: 2}
+  data: "12\r\nStatus\r\n{\"active\":true,\"Health\":2.0,\"died\":false}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":15,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483639}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":15.0,\"RotateSpeed\":5.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.0,\"RotationThreshold\":0.5,\"StopDistance\":0.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nGroupProximityDetonator\r\n{\"active\":true,\"Group\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0},\"Radius\":1.0,\"Animator\":{\"instanceID\":0},\"AnimationName\":\"Explose\",\"TriggerName\":\"Explose\"}\r\nSinusMotionModifier\r\n{\"active\":true,\"MoveSpeedModifier\":1.0,\"RotateSpeedModifier\":1.0,\"Amplitude\":{\"min\":25.0,\"max\":75.0},\"Frequency\":{\"min\":1.0,\"max\":5.0},\"Offset\":{\"min\":0.0,\"max\":1000.0}}\r\nAnimateOnStart\r\n{\"active\":true,\"Animator\":{\"instanceID\":0},\"TriggerName\":\"Spawn\",\"DisactivateMotionWhileAnimating\":true,\"DisactivateAttacksWhileAnimating\":true,\"DisactivateDamagersWhileAnimating\":true,\"AnimationName\":\"Spawn\"}\r\nAnimateOnDie\r\n{\"active\":true,\"Animator\":{\"instanceID\":0},\"AnimationName\":\"\",\"TriggerName\":\"\",\"DeadPrefab\":{\"instanceID\":0}}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":2,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.25,\"Settings\":{\"instanceID\":0}},{\"Messages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\nRecycleOnMessage\r\n{\"active\":true,\"RecycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\nBroadcastToSpectatorOnMessage\r\n{\"active\":true,\"Messages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ShowEventType\":2}\r\n"
+  isDeserialized: 1
 --- !u!212 &21207536
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -300,13 +201,15 @@ SpriteRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1629478359
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: afe893087733110438d98b5d9f096332, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -314,6 +217,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: references.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: group
       value: 2
@@ -373,6 +280,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: BySources.flag1
       value: 4294967293
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: groups.f1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: data
+      value: "7\r\nStatus\r\n{\"active\":true,\"Health\":100.0}\r\nDamageable\r\n{\"active\":true,\"BySources\":{\"f1\":3,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"ByTypes\":2147483647}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nColorizer\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"FadeSpeed\":5.0,\"Normal\":{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0},\"Damaged\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}\r\nGroupSeekerMotion\r\n{\"active\":true,\"MoveSpeed\":10.0,\"RotateSpeed\":3.0,\"Target\":{\"instanceID\":0},\"Threshold\":0.5,\"StopDistance\":1.0,\"CheckForTargetInterval\":1.0,\"TargetGroup\":{\"groups\":{\"f1\":1,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"match\":0}}\r\nSourceDamager\r\n{\"active\":true,\"DamageAmount\":1.0}\r\nRecycleOnMessage\r\n{\"active\":true,\"recycleMessages\":{\"f1\":8,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0}}\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: -1629478359
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

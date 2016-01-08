@@ -5,29 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
-public class LifeTime : PComponent
+[Serializable, ComponentCategory("General"), EntityRequires(typeof(TimeComponent))]
+public class LifeTime : ComponentBase, IUpdateable
 {
 	public float Duration = 5f;
 
 	float counter;
+	public float Progress { get { return counter / Duration; } }
 
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
+	public float UpdateRate { get { return 0f; } }
 
-	public LifeTime()
+	public virtual void Update()
 	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
-	}
-
-	protected virtual void Update()
-	{
-		UpdateLife();
-	}
-
-	protected virtual void UpdateLife()
-	{
-		counter += CachedTime.DeltaTime;
+		counter += Entity.GetComponent<TimeComponent>().DeltaTime;
 
 		if (counter >= Duration)
 			Entity.SendMessage(EntityMessages.OnDie);

@@ -5,16 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
+[Serializable]
 public class ForwardMotion : MotionBase
 {
 	protected override Vector2 GetDirection()
 	{
-		return base.GetDirection() + CachedTransform.right.ToVector2();
+		return base.GetDirection() + Entity.Transform.right.ToVector2();
 	}
 
 	protected override float GetAngle()
 	{
-		return base.GetAngle() + CachedTransform.eulerAngles.z;
+		return base.GetAngle() + Entity.Transform.eulerAngles.z;
 	}
 
 	protected override bool ShouldMove()

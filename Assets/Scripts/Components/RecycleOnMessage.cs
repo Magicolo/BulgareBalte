@@ -5,43 +5,27 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-public class RecycleOnMessage : PComponent
+[Serializable, ComponentCategory("General")]
+public class RecycleOnMessage : ComponentBase, ILateUpdateable, IMessageable
 {
-	public ByteFlag<EntityMessages> RecycleMessages
+	[EnumFlags(typeof(EntityMessages))]
+	public ByteFlag RecycleMessages;
+
+	bool shouldRecycle;
+
+	public float LateUpdateRate
 	{
-		get { return recycleMessages; }
-		set { recycleMessages = value; }
+		get { return 0f; }
 	}
 
-	[SerializeField, EnumFlags(typeof(EntityMessages))]
-	ByteFlag recycleMessages;
-
-	public void Recycle()
+	public void LateUpdate()
 	{
-		PrefabPoolManager.Recycle(Entity);
+		if (shouldRecycle)
+			PrefabPoolManager.Recycle(Entity);
 	}
 
-	protected virtual void OnDamaged()
+	public void OnMessage(EntityMessages message)
 	{
-		if (recycleMessages[(byte)EntityMessages.OnDamaged])
-			Recycle();
-	}
-
-	protected virtual void OnDamage()
-	{
-		if (recycleMessages[(byte)EntityMessages.OnDamage])
-			Recycle();
-	}
-
-	protected virtual void OnDie()
-	{
-		if (recycleMessages[(byte)EntityMessages.OnDie])
-			Recycle();
-	}
-
-	protected virtual void OnCollide()
-	{
-		if (recycleMessages[(byte)EntityMessages.OnCollide])
-			Recycle();
+		shouldRecycle |= RecycleMessages[(byte)message];
 	}
 }

@@ -5,20 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Pseudo;
 
-[RequireComponent(typeof(TimeComponent))]
+[Serializable, EntityRequires(typeof(TimeComponent))]
 public class LaserDamager : DamagerBase
 {
 	public float DamageModifier = 1f;
 
 	protected DamageData damage;
-
-	readonly CachedValue<TimeComponent> cachedTime;
-	public TimeComponent CachedTime { get { return cachedTime; } }
-
-	public LaserDamager()
-	{
-		cachedTime = new CachedValue<TimeComponent>(GetComponent<TimeComponent>);
-	}
 
 	public override DamageData GetDamageData()
 	{
@@ -27,7 +19,9 @@ public class LaserDamager : DamagerBase
 
 	public override void SetDamageData(DamageData damage)
 	{
-		damage.Damage *= DamageModifier * CachedTime.DeltaTime;
+		var time = Entity.GetComponent<TimeComponent>();
+
+		damage.Damage *= DamageModifier * time.DeltaTime;
 		damage.Types |= DamageTypes.Laser;
 		this.damage = damage;
 	}
