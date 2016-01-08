@@ -42217,7 +42217,7 @@ MonoBehaviour:
   - Index: 1
     Path: ToSpawn
     Reference: {fileID: 11434216, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":60.0,\"ToSpawn\":{\"instanceID\":0}}\r\n"
+  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nIntervalSpawner\r\n{\"active\":true,\"Interval\":10.0,\"ToSpawn\":{\"instanceID\":0}}\r\n"
   isDeserialized: 0
 --- !u!4 &912718680
 Transform:
@@ -60478,48 +60478,6 @@ MonoBehaviour:
   ParentTransform: {fileID: 865879766}
   DestroyGameobject: 1
   angle: 0
---- !u!1001 &1278087800
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 422378, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd5521584c1b5554aa0d09d8cd4369bb, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1278335838
 GameObject:
   m_ObjectHideFlags: 0

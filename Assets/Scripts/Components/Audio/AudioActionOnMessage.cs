@@ -206,4 +206,6 @@ public class AudioActionOnMessage : ComponentBase, IStartable
 	void OnStateEnter() { TryExecuteAction(EntityMessages.OnStateEnter); }
 	void OnStateExit() { TryExecuteAction(EntityMessages.OnStateExit); }
 	void OnShowEvent() { TryExecuteAction(EntityMessages.OnShowEvent); }
+	void OnEquip() { TryExecuteAction(EntityMessages.OnEquip); }
+	void OnUnequip() { TryExecuteAction(EntityMessages.OnUnequip); }
 }

@@ -9,22 +9,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b53ae96fa75304eb58aa398c00bbc3, type: 3}
-  m_Name: Die
+  m_Name: Level1
   m_EditorClassIdentifier: 
-  Loop: 0
+  Loop: 1
   FadeIn: 0
   FadeInEase: 1
-  FadeOut: 0.1
+  FadeOut: 0
   FadeOutEase: 2
-  VolumeScale: 0.4
+  VolumeScale: 0.2
   PitchScaleMode: 0
   PitchScale: 1
   RandomVolume: 0
-  RandomPitch: 0.1
+  RandomPitch: 0
   RTPCs: []
   Options: []
-  Clip: {fileID: 8300000, guid: e91e4e8ca20a31848bb59035a5508696, type: 3}
+  Clip: {fileID: 8300000, guid: 9af6d74452044f24cb7ef91f4ebf32b4, type: 3}
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1
-  MaxInstances: 5
+  MaxInstances: 0

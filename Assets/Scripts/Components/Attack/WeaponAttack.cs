@@ -38,11 +38,19 @@ public class WeaponAttack : AttackBase, IStartable
 
 		if (weapon.TryGetComponent(out weaponTime))
 			weaponTime.Channel = time.Channel;
+
+		weapon.SendMessage(EntityMessages.OnEquip);
+		Entity.SendMessage(EntityMessages.OnEquip, weapon);
 	}
 
 	public void UnequipWeapon()
 	{
-		PrefabPoolManager.Recycle(ref weapon);
+		if (weapon != null)
+		{
+			weapon.SendMessage(EntityMessages.OnUnequip);
+			Entity.SendMessage(EntityMessages.OnUnequip, weapon);
+			PrefabPoolManager.Recycle(ref weapon);
+		}
 	}
 
 	public float GetAttackSpeed()
@@ -63,6 +71,9 @@ public class WeaponAttack : AttackBase, IStartable
 
 	public override void Attack()
 	{
+		if (weapon == null)
+			return;
+
 		var time = Entity.GetComponent<TimeComponent>();
 		var damager = Entity.GetComponent<DamagerBase>();
 
@@ -71,10 +82,8 @@ public class WeaponAttack : AttackBase, IStartable
 		lastAttackTime = time.Time;
 	}
 
-	public override void OnRecycle()
+	protected void OnDie()
 	{
-		base.OnRecycle();
-
 		UnequipWeapon();
 	}
 }

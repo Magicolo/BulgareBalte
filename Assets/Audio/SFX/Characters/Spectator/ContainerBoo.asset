@@ -36,8 +36,6 @@ MonoBehaviour:
     Options: []
   - Settings: {fileID: 11400000, guid: c87c953df0506f447aecda52cd247afd, type: 2}
     Options: []
-  - Settings: {fileID: 0}
-    Options: []
   Weights:
   - 1
   - 1
@@ -45,4 +43,3 @@ MonoBehaviour:
   - 1
   - 1
   - 1
-  - 750

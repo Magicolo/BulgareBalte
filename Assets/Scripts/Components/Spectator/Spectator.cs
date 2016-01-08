@@ -51,7 +51,9 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 			else if (random < likesToBanana + likesToCough)
 			{
 				Animator.SetTrigger("IdleCough");
-				AudioManager.Instance.CreateItem(CoughSound, Entity.Transform.position).Play();
+
+				if (PRandom.Range(0f, 1f) < 0.0125f)
+					AudioManager.Instance.CreateItem(CoughSound, Entity.Transform.position).Play();
 			}
 		}
 	}
@@ -95,8 +97,6 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 			case ShowEventType.BigEnemisSpawns:
 				HappyAnimation(1f);
 				break;
-			default:
-				break;
 		}
 	}
 
@@ -107,17 +107,23 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 		if (random < likesToWave)
 		{
 			animate("Wave");
-			AudioManager.Instance.CreateItem(CheerSound, Entity.Transform.position).Play();
+
+			if (PRandom.Range(0f, 1f) < 0.015f)
+				AudioManager.Instance.CreateItem(CheerSound, Entity.Transform.position).Play();
 		}
 		else if (random < likesToWave + likesToFirst1)
 		{
 			animate("First1");
-			AudioManager.Instance.CreateItem(CheerSound, Entity.Transform.position).Play();
+
+			if (PRandom.Range(0f, 1f) < 0.015f)
+				AudioManager.Instance.CreateItem(CheerSound, Entity.Transform.position).Play();
 		}
 		else if (random < likesToWave + likesToFirst1 + likesToClap)
 		{
 			animate("Clap");
-			AudioManager.Instance.CreateItem(ClapSound, Entity.Transform.position).Play();
+
+			if (PRandom.Range(0f, 1f) < 0.015f)
+				AudioManager.Instance.CreateItem(ClapSound, Entity.Transform.position).Play();
 		}
 	}
 
@@ -128,12 +134,16 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 		if (random < likesToBoo)
 		{
 			animate("Booouu");
-			AudioManager.Instance.CreateItem(BooSound, Entity.Transform.position).Play();
+
+			if (PRandom.Range(0f, 1f) < 0.015f)
+				AudioManager.Instance.CreateItem(BooSound, Entity.Transform.position).Play();
 		}
 		else if (random < likesToBoo + likesToFirst2)
 		{
 			animate("First2");
-			AudioManager.Instance.CreateItem(AngrySound, Entity.Transform.position).Play();
+
+			if (PRandom.Range(0f, 1f) < 0.015f)
+				AudioManager.Instance.CreateItem(AngrySound, Entity.Transform.position).Play();
 		}
 	}
 

@@ -8,9 +8,11 @@ public class OnDieBroadcastToSpectator : ComponentBase
 {
 	public Spectator.ShowEventType ShowEventType;
 
+	IEntityGroup SpectatorGroup = EntityManager.GetEntityGroup(EntityGroups.Spectator);
+
 	public void OnDie()
 	{
-		EntityManager.GetEntityGroup(EntityGroups.Spectator).BroadcastMessage(EntityMessages.OnShowEvent, ShowEventType);
+		SpectatorGroup.BroadcastMessage(EntityMessages.OnShowEvent, ShowEventType);
 	}
 }
 
