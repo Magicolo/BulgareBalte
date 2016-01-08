@@ -279,58 +279,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
---- !u!1 &1116102120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 143698, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-  m_PrefabInternal: {fileID: 2012742847}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1116102122}
-  - 114: {fileID: 1116102121}
-  m_Layer: 0
-  m_Name: StartGameOnStart
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1116102121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11466608, guid: 350fae2de2abe9a45ba285cd3da2ff7c,
-    type: 2}
-  m_PrefabInternal: {fileID: 2012742847}
-  m_GameObject: {fileID: 1116102120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groups:
-    f1: 0
-    f2: 0
-    f3: 0
-    f4: 0
-    f5: 0
-    f6: 0
-    f7: 0
-    f8: 0
-  references: []
-  data: "1\r\nStartGameOnStart\r\n{\"active\":true}\r\n"
-  isDeserialized: 0
---- !u!4 &1116102122
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-  m_PrefabInternal: {fileID: 2012742847}
-  m_GameObject: {fileID: 1116102120}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
 --- !u!1 &1543120233
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +311,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -2, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543120235
 MonoBehaviour:
@@ -397,13 +345,67 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.96
-  m_Text: The game is load ya tois tit points ...
+  m_Text: "Welcome my friend, take your laser piou gun. \r\n\r\nAs you remember, you
+    have to entertain Sir Paul Patrick, The well washed. The stadium is full and fired
+    up; the last guy didn't last long. \n\nIf you succeed we might not all die or
+    live..."
 --- !u!222 &1543120236
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1543120233}
+--- !u!1 &1854257795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1854257797}
+  - 114: {fileID: 1854257796}
+  m_Layer: 0
+  m_Name: StartGameOnStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1854257796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854257795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869701b383d02c745b2315064e48050d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groups:
+    f1: 0
+    f2: 0
+    f3: 0
+    f4: 0
+    f5: 0
+    f6: 0
+    f7: 0
+    f8: 0
+  references: []
+  data: "0\r\n"
+  isDeserialized: 0
+--- !u!4 &1854257797
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854257795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &2005744883
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,45 +494,3 @@ Transform:
   - {fileID: 1059784304}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1001 &2012742847
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 439302, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 350fae2de2abe9a45ba285cd3da2ff7c, type: 2}
-  m_IsPrefabParent: 0

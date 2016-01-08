@@ -1,13 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using Pseudo;
+using System;
 
 [System.Serializable, ComponentCategory("Game")]
-public class StartGameOnStart : ComponentBase, IStartable
+public class StartGameOnStart : IMessageable
 {
-	public void Start()
+	public void OnMessage(EntityMessages message)
 	{
 		GameManager.Instance.StartGame();
+	}
+
+	public void Start()
+	{
+
 	}
 }
 
