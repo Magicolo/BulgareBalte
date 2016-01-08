@@ -4,9 +4,9 @@ using Pseudo;
 using System;
 
 [Serializable, ComponentCategory("Camera")]
-public class CameraComponent : ComponentBase, IUpdateable
+public class CameraComponent : ComponentBase, IFixedUpdateable
 {
-	public float UpdateRate { get { return 0; } }
+	public float FixedUpdateRate { get { return 0; } }
 
 	public Camera Camera;
 	[Space]
@@ -15,7 +15,7 @@ public class CameraComponent : ComponentBase, IUpdateable
 
 	public float lerpAmount = 3;
 
-	public void Update()
+	public void FixedUpdate()
 	{
 		var targets = EntityManager.GetEntityGroup(Fellow).Entities;
 
