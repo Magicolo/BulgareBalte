@@ -7608,67 +7608,67 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22499560, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22423736, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22423736, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467452, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22460454, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22419628, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22400826, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22400826, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447524, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447524, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22402582, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11417596, guid: 2b77bff79393bea48bf15ba91e0938ac, type: 2}
       propertyPath: references.Array.data[2].Path
@@ -10798,22 +10798,17 @@ MonoBehaviour:
   Nodes:
   - Delay: 0
     Spawners:
-    - {fileID: 1633903371}
-  - Delay: 1
-    Spawners:
-    - {fileID: 907728405}
-  - Delay: 5
-    Spawners:
     - {fileID: 375979617}
-  - Delay: 2
-    Spawners:
     - {fileID: 514325967}
-  - Delay: 17
+  - Delay: 8
     Spawners:
     - {fileID: 375979617}
-  - Delay: 27
+    - {fileID: 514325967}
+  - Delay: 15
     Spawners:
     - {fileID: 375979617}
+    - {fileID: 1633903371}
+    - {fileID: 907728405}
 --- !u!4 &200655644
 Transform:
   m_ObjectHideFlags: 0
@@ -18384,7 +18379,7 @@ MonoBehaviour:
   - Index: 2
     Path: Actions.0.Settings
     Reference: {fileID: 11400000, guid: b75a9013db7e4da48b6af1eb5f069d1a, type: 2}
-  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[2,2,2,2,3,3,3,3,4,4,4,5,5,6,6],\"Interval\":[0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225,0.20000000298023225],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
+  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[2,2,2,2,3,3,3,3,4,4,4,5,5,6,6],\"Interval\":[1.0,1.0,1.0,1.0,1.0,0.800000011920929,0.800000011920929,0.800000011920929,0.800000011920929,0.800000011920929,0.6000000238418579,0.6000000238418579,0.6000000238418579,0.6000000238418579,0.6000000238418579],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
   isDeserialized: 0
 --- !u!1 &379724745
 GameObject:
@@ -22734,7 +22729,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Nodes:
   - Delay: 0
-    Spawners: []
+    Spawners:
+    - {fileID: 1633903371}
+    - {fileID: 907728405}
+  - Delay: 5
+    Spawners:
+    - {fileID: 1633903371}
+    - {fileID: 907728405}
+  - Delay: 9
+    Spawners:
+    - {fileID: 1633903371}
+    - {fileID: 907728405}
+  - Delay: 12
+    Spawners:
+    - {fileID: 1633903371}
+    - {fileID: 907728405}
 --- !u!4 &465742141
 Transform:
   m_ObjectHideFlags: 0
@@ -24951,7 +24960,7 @@ MonoBehaviour:
   - Index: 2
     Path: Actions.0.Settings
     Reference: {fileID: 11400000, guid: b75a9013db7e4da48b6af1eb5f069d1a, type: 2}
-  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[1,2,2,3,4],\"Interval\":[3.0,3.0,5.0,5.0,5.0],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
+  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[1,1,2,2,3,3,4,4,5,5],\"Interval\":[4.0,4.0,4.0,3.0,3.0,3.0,2.0,2.0,2.0,1.5],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
   isDeserialized: 0
 --- !u!4 &514325968
 Transform:
@@ -35166,22 +35175,20 @@ MonoBehaviour:
   Nodes:
   - Delay: 0
     Spawners:
-    - {fileID: 1633903371}
-  - Delay: 1
-    Spawners:
-    - {fileID: 907728405}
-  - Delay: 5
-    Spawners:
-    - {fileID: 375979617}
-  - Delay: 2
-    Spawners:
     - {fileID: 514325967}
-  - Delay: 17
+    - {fileID: 514325967}
+    - {fileID: 514325967}
+  - Delay: 4
     Spawners:
     - {fileID: 375979617}
-  - Delay: 27
-    Spawners:
     - {fileID: 375979617}
+    - {fileID: 375979617}
+  - Delay: 8
+    Spawners:
+    - {fileID: 1633903371}
+    - {fileID: 907728405}
+    - {fileID: 375979617}
+    - {fileID: 514325967}
 --- !u!4 &718879760
 Transform:
   m_ObjectHideFlags: 0
@@ -43206,7 +43213,7 @@ MonoBehaviour:
   - Index: 2
     Path: Actions.0.Settings
     Reference: {fileID: 11400000, guid: b75a9013db7e4da48b6af1eb5f069d1a, type: 2}
-  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[5,5,10,10,15,15],\"Interval\":[2.0,2.0,2.0,1.5,1.5,1.0],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
+  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[3,4,5,6,7,8,9,10,11,12,13,14,15,15,15],\"Interval\":[2.0,2.0,2.0,1.5,1.5,1.5,1.25,1.25,1.25,1.0,1.0,1.0,0.75,0.75,0.75],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
   isDeserialized: 0
 --- !u!1 &908491755
 GameObject:
@@ -79772,7 +79779,7 @@ MonoBehaviour:
   - Index: 2
     Path: Actions.0.Settings
     Reference: {fileID: 11400000, guid: b75a9013db7e4da48b6af1eb5f069d1a, type: 2}
-  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[5,5,10,10,15,15],\"Interval\":[2.0,2.0,2.0,1.5,1.5,1.0],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
+  data: "3\r\nBurstLeveledSpawner\r\n{\"active\":true,\"ToSpawn\":{\"instanceID\":0},\"CurrentLevel\":-1,\"NbSpawned\":[3,4,5,6,7,8,9,10,11,12,13,14,15,15,15],\"Interval\":[2.0,2.0,2.0,1.5,1.5,1.5,1.25,1.25,1.25,1.0,1.0,1.0,0.75,0.75,0.75],\"spawn\":false}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":4,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":0,\"f2\":0,\"f3\":2,\"f4\":0,\"f5\":0,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
   isDeserialized: 0
 --- !u!1 &1634792430
 GameObject:

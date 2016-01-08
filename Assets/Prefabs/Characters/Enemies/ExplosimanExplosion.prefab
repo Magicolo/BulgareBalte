@@ -88,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageZone: {fileID: 11420272}
   Damage:
-    Damage: 5
+    Damage: 7.5
     Sources:
       f1: 2
       f2: 0
@@ -1637,7 +1637,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Damage.Damage
-      value: 5
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Damage.Source

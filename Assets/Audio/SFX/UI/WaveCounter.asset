@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b53ae96fa75304eb58aa398c00bbc3, type: 3}
-  m_Name: Wave_Counter
+  m_Name: WaveCounter
   m_EditorClassIdentifier: 
   Loop: 0
   FadeIn: 0
   FadeInEase: 1
   FadeOut: 0.1
   FadeOutEase: 2
-  VolumeScale: 0.4
+  VolumeScale: 0.2
   PitchScaleMode: 0
   PitchScale: 1
   RandomVolume: 0
