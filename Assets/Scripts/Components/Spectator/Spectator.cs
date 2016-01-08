@@ -17,6 +17,12 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 	public MinMax ChanceToFirst2;
 	public MinMax ChanceToWave;
 
+	public AudioSettingsBase ClapSound;
+	public AudioSettingsBase AngrySound;
+	public AudioSettingsBase CheerSound;
+	public AudioSettingsBase CoughSound;
+	public AudioSettingsBase BooSound;
+
 	float likesToClap;
 	float likesToBanana;
 	float likesToCough;
@@ -30,7 +36,7 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 	float nextIdleTime;
 	float idleTimeBetween = 1;
 
-	public float UpdateRate { get { return 0; } }
+	public float UpdateRate { get { return 0.25f; } }
 
 	public void Update()
 	{
@@ -43,7 +49,10 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 			if (random < likesToBanana)
 				Animator.SetTrigger("IdleBanana");
 			else if (random < likesToBanana + likesToCough)
+			{
 				Animator.SetTrigger("IdleCough");
+				AudioManager.Instance.CreateItem(CoughSound, Entity.Transform.position).Play();
+			}
 		}
 	}
 
@@ -96,11 +105,20 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 		float random = PRandom.Range(0f, 1f) * factor;
 
 		if (random < likesToWave)
+		{
 			animate("Wave");
+			AudioManager.Instance.CreateItem(CheerSound, Entity.Transform.position).Play();
+		}
 		else if (random < likesToWave + likesToFirst1)
+		{
 			animate("First1");
+			AudioManager.Instance.CreateItem(CheerSound, Entity.Transform.position).Play();
+		}
 		else if (random < likesToWave + likesToFirst1 + likesToClap)
+		{
 			animate("Clap");
+			AudioManager.Instance.CreateItem(ClapSound, Entity.Transform.position).Play();
+		}
 	}
 
 	void UnHappyAnimation(float factor)
@@ -108,9 +126,15 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 		float random = PRandom.Range(0f, 1f) * factor;
 
 		if (random < likesToBoo)
+		{
 			animate("Booouu");
+			AudioManager.Instance.CreateItem(BooSound, Entity.Transform.position).Play();
+		}
 		else if (random < likesToBoo + likesToFirst2)
+		{
 			animate("First2");
+			AudioManager.Instance.CreateItem(AngrySound, Entity.Transform.position).Play();
+		}
 	}
 
 	private void animate(string trigger)
