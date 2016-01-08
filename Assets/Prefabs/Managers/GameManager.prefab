@@ -41,6 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelNames:
   - Level1
+  - Level2
   WinDelay: 3
   LoseDelay: 3
   WinSound: {fileID: 11400000, guid: 96f46b64313b3fe47adc82a2bc10abeb, type: 2}
@@ -54,7 +55,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: LevelNames.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: LevelNames.Array.data[0]
@@ -73,6 +74,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: LoseDelay
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: LevelNames.Array.data[1]
+      value: Level2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
