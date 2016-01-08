@@ -39,17 +39,17 @@ public class RecycleOnMessage : ComponentBase, ILateUpdateable
 		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnDie];
 	}
 
-	protected virtual void OnTriggerEnter2D(Collider2D collision)
+	protected virtual void OnTriggerEnter2D()
 	{
 		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnTriggerEnter2D];
 	}
 
-	protected virtual void OnTriggerStay2D(Collider2D collision)
+	protected virtual void OnTriggerStay2D()
 	{
 		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnTriggerStay2D];
 	}
 
-	protected virtual void OnTriggerExit2D(Collider2D collision)
+	protected virtual void OnTriggerExit2D()
 	{
 		shouldRecycle |= RecycleMessages[(byte)EntityMessages.OnTriggerExit2D];
 	}

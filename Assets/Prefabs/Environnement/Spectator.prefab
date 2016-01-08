@@ -97,8 +97,23 @@ MonoBehaviour:
     f6: 0
     f7: 0
     f8: 0
-  references: []
-  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":0,\"timeScale\":1.0}\r\nSpectator\r\n{\"active\":true,\"ChanceToClap\":{\"min\":0.009999999776482582,\"max\":0.009999999776482582},\"ChanceToBanana\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ChanceToCough\":{\"min\":0.019999999552965165,\"max\":0.05000000074505806},\"ChanceToBoo\":{\"min\":0.5,\"max\":0.699999988079071},\"ChanceToFirst1\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ChanceToFirst2\":{\"min\":0.10000000149011612,\"max\":0.20000000298023225},\"ChanceToWave\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165}}\r\n"
+  references:
+  - Index: 1
+    Path: ClapSound
+    Reference: {fileID: 11400000, guid: 417f709d8862e1547bec65eacb0632e5, type: 2}
+  - Index: 1
+    Path: AngrySound
+    Reference: {fileID: 11400000, guid: 159ea43fd60b67e489102ce6ffb10afe, type: 2}
+  - Index: 1
+    Path: CheerSound
+    Reference: {fileID: 11400000, guid: 25d5b0cbfcc640847bbb9a37499d6b9a, type: 2}
+  - Index: 1
+    Path: CoughSound
+    Reference: {fileID: 11400000, guid: b992506ad54a4f7429fad742bc158777, type: 2}
+  - Index: 1
+    Path: BooSound
+    Reference: {fileID: 11400000, guid: 613c58a092afd0d41acc4e6d6b749319, type: 2}
+  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":0,\"timeScale\":1.0}\r\nSpectator\r\n{\"active\":true,\"ChanceToClap\":{\"min\":0.009999999776482582,\"max\":0.009999999776482582},\"ChanceToBanana\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ChanceToCough\":{\"min\":0.0010000000474974514,\"max\":0.0020000000949949028},\"ChanceToBoo\":{\"min\":0.5,\"max\":0.699999988079071},\"ChanceToFirst1\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ChanceToFirst2\":{\"min\":0.10000000149011612,\"max\":0.20000000298023225},\"ChanceToWave\":{\"min\":0.009999999776482582,\"max\":0.019999999552965165},\"ClapSound\":{\"instanceID\":0},\"AngrySound\":{\"instanceID\":0},\"CheerSound\":{\"instanceID\":0},\"CoughSound\":{\"instanceID\":0},\"BooSound\":{\"instanceID\":0}}\r\n"
   isDeserialized: 0
 --- !u!114 &11496024
 MonoBehaviour:

@@ -9,21 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b53ae96fa75304eb58aa398c00bbc3, type: 3}
-  m_Name: Hover_Loop
+  m_Name: Angry_5
   m_EditorClassIdentifier: 
-  Loop: 1
+  Loop: 0
   FadeIn: 0
   FadeInEase: 1
   FadeOut: 0.1
   FadeOutEase: 2
-  VolumeScale: 1
+  VolumeScale: 0.1
   PitchScaleMode: 0
-  PitchScale: 1
+  PitchScale: 1.25
   RandomVolume: 0
-  RandomPitch: 0.1
+  RandomPitch: 0.25
   RTPCs: []
   Options: []
-  Clip: {fileID: 8300000, guid: 4a8b3b8df3d527c42995763a1bff018b, type: 3}
+  Clip: {fileID: 8300000, guid: a67fd99facf922a459e2745a085aa86e, type: 3}
   Output: {fileID: 0}
   PlayRangeStart: 0
   PlayRangeEnd: 1
