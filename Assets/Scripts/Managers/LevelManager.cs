@@ -32,7 +32,6 @@ public class LevelManager : Singleton<LevelManager>
 			GameManager.Instance.LevelFailure();
 	}
 
-
 	public void OnWavesCompleted()
 	{
 		GameManager.Instance.LevelSuccess();

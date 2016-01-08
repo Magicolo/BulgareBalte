@@ -27,7 +27,7 @@ public class CircleGroupSeekerMotion : GroupSeekerMotion
 
 	protected override bool ShouldMove()
 	{
-		return true;
+		return Target != null;
 	}
 }
 
