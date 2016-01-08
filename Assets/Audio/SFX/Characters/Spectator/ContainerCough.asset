@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9567c2e3a7f3a4a40a3fc87bc3316745, type: 3}
-  m_Name: CoughRandom
+  m_Name: ContainerCough
   m_EditorClassIdentifier: 
   Loop: 0
   FadeIn: 0
   FadeInEase: 1
   FadeOut: 0
   FadeOutEase: 2
-  VolumeScale: 0.35
+  VolumeScale: 0.2
   PitchScaleMode: 0
   PitchScale: 1
   RandomVolume: 0
@@ -44,6 +44,8 @@ MonoBehaviour:
     Options: []
   - Settings: {fileID: 11400000, guid: 63a421f3cf35b0143a8dcbed393de881, type: 2}
     Options: []
+  - Settings: {fileID: 0}
+    Options: []
   Weights:
   - 1
   - 1
@@ -55,3 +57,4 @@ MonoBehaviour:
   - 1
   - 1
   - 1
+  - 500
