@@ -964,7 +964,10 @@ MonoBehaviour:
   - Index: 0
     Path: CounterSound
     Reference: {fileID: 11400000, guid: 67ca1d655ed2fec46af529941a66f4b5, type: 2}
-  data: "1\r\nWaveCounterUI\r\n{\"active\":true,\"Text\":{\"instanceID\":0},\"CounterSound\":{\"instanceID\":0}}\r\n"
+  - Index: 0
+    Path: NextWaveSound
+    Reference: {fileID: 11400000, guid: 83cb0854cb0a9eb41992050aa6c2c3bc, type: 2}
+  data: "1\r\nWaveCounterUI\r\n{\"active\":true,\"Text\":{\"instanceID\":0},\"CounterSound\":{\"instanceID\":0},\"NextWaveSound\":{\"instanceID\":0}}\r\n"
   isDeserialized: 0
 --- !u!114 &11418062
 MonoBehaviour:
