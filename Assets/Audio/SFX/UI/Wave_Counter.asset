@@ -9,21 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b53ae96fa75304eb58aa398c00bbc3, type: 3}
-  m_Name: Shoot_Lazer
+  m_Name: Wave_Counter
   m_EditorClassIdentifier: 
   Loop: 0
   FadeIn: 0
   FadeInEase: 1
-  FadeOut: 0
+  FadeOut: 0.1
   FadeOutEase: 2
-  VolumeScale: 0.3
+  VolumeScale: 0.4
   PitchScaleMode: 0
-  PitchScale: 1.25
+  PitchScale: 1
   RandomVolume: 0
-  RandomPitch: 0.1
+  RandomPitch: 0
   RTPCs: []
   Options: []
-  Clip: {fileID: 8300000, guid: b9ab0e26ee79cfe49a36b898a361c926, type: 3}
+  Clip: {fileID: 8300000, guid: 9089c24c68b69684c98c3e07f5050a12, type: 3}
   Output: {fileID: 24355846, guid: b36eaf37da5779a408b9a1e958272298, type: 2}
   PlayRangeStart: 0
   PlayRangeEnd: 1

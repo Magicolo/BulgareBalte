@@ -31,7 +31,17 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 	float likesToFirst2;
 	float likesToWave;
 
-	public enum ShowEventType { PlayerDie, SmallEnemisDie, AverageEnemisDie, BigEnemisDie, BigEnemisSpawns }
+	public enum ShowEventType
+	{
+		PlayerDie,
+		SmallEnemisDie,
+		AverageEnemisDie,
+		BigEnemisDie,
+		BigEnemisSpawns,
+		Win,
+		Lose,
+		PlayerDamaged
+	}
 
 	float nextIdleTime;
 	float idleTimeBetween = 1;
@@ -85,17 +95,26 @@ public class Spectator : ComponentBase, IUpdateable, IStartable
 			case ShowEventType.PlayerDie:
 				UnHappyAnimation(1f);
 				break;
+			case ShowEventType.PlayerDamaged:
+				UnHappyAnimation(1000f);
+				break;
 			case ShowEventType.SmallEnemisDie:
-				HappyAnimation(50);
+				HappyAnimation(50f);
 				break;
 			case ShowEventType.AverageEnemisDie:
-				HappyAnimation(7);
+				HappyAnimation(7f);
 				break;
 			case ShowEventType.BigEnemisDie:
 				HappyAnimation(1f);
 				break;
 			case ShowEventType.BigEnemisSpawns:
 				HappyAnimation(1f);
+				break;
+			case ShowEventType.Win:
+				HappyAnimation(0.25f);
+				break;
+			case ShowEventType.Lose:
+				UnHappyAnimation(0.25f);
 				break;
 		}
 	}

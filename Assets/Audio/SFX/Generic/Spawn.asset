@@ -24,7 +24,7 @@ MonoBehaviour:
   RTPCs: []
   Options: []
   Clip: {fileID: 8300000, guid: e0803b251bd47d94684979bc5b904bbb, type: 3}
-  Output: {fileID: 0}
+  Output: {fileID: 24355846, guid: b36eaf37da5779a408b9a1e958272298, type: 2}
   PlayRangeStart: 0
   PlayRangeEnd: 1
   MaxInstances: 5

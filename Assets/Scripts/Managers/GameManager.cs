@@ -13,13 +13,15 @@ public class GameManager : Singleton<GameManager>
 	public GameStates CurrentState { get; private set; }
 
 	public string[] LevelNames;
-	int currentSceneIndex = -1;
-
 	public float WinDelay = 3f;
 	public float LoseDelay = 2.97f;
+	public AudioSettingsBase WinSound;
+	public AudioSettingsBase LoseSound;
 
+	int currentSceneIndex = -1;
 	AsyncOperation loadingTask;
 	float counter;
+	IEntityGroup spectatorGroup = EntityManager.GetEntityGroup(EntityGroups.Spectator);
 
 	public string CurrentSceneName { get { return LevelNames[currentSceneIndex]; } }
 
@@ -93,10 +95,14 @@ public class GameManager : Singleton<GameManager>
 			case GameStates.Loading:
 				break;
 			case GameStates.Winning:
+				spectatorGroup.BroadcastMessage(EntityMessages.OnShowEvent, Spectator.ShowEventType.Win);
 				counter = WinDelay;
+				AudioManager.Instance.CreateItem(WinSound).Play();
 				break;
 			case GameStates.Losing:
+				spectatorGroup.BroadcastMessage(EntityMessages.OnShowEvent, Spectator.ShowEventType.Lose);
 				counter = LoseDelay;
+				AudioManager.Instance.CreateItem(LoseSound).Play();
 				break;
 		}
 	}
