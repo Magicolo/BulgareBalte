@@ -18,12 +18,17 @@ public class SeekerMotion : MotionBase
 	{
 		Vector2 direction = base.GetDirection();
 
-		if (Vector2.Distance(Entity.Transform.position, Target.CachedTransform.position) > StopDistance)
+		if (IsInStopDistance())
 			direction += Entity.Transform.right.ToVector2();
 		else
 			direction -= Entity.Transform.right.ToVector2();
 
 		return direction;
+	}
+
+	protected bool IsInStopDistance()
+	{
+		return Vector2.Distance(Entity.Transform.position, Target.CachedTransform.position) > StopDistance;
 	}
 
 	protected override float GetAngle()

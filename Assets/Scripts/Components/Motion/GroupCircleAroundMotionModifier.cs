@@ -13,15 +13,6 @@ public class GroupCircleAroundMotionModifier : MotionModifier
 
 	protected float nextPlayerCheckTime;
 
-	/*public override Vector2 GetDirectionMultiplier()
-	{
-		UpdateTarget();
-		if (target == null)
-			return Vector2.zero;
-		else
-			return Vector2.one;
-
-	}*/
 
 	protected virtual void UpdateTarget()
 	{
