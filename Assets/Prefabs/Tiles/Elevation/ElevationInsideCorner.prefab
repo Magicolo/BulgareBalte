@@ -78,8 +78,11 @@ MonoBehaviour:
     f6: 0
     f7: 0
     f8: 0
-  references: []
-  data: "0\r\n"
+  references:
+  - Index: 1
+    Path: Renderer
+    Reference: {fileID: 21259234}
+  data: "2\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":0,\"timeScale\":1.0}\r\nOscillateColorComponent\r\n{\"active\":true,\"Renderer\":{\"instanceID\":0},\"Frequency\":1.2000000476837159,\"Amplitude\":0.2199999988079071,\"Center\":0.33000001311302187,\"Channels\":8}\r\n"
   isDeserialized: 0
 --- !u!212 &21259234
 SpriteRenderer:
