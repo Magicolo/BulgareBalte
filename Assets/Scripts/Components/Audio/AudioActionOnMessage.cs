@@ -175,6 +175,9 @@ public class AudioActionOnMessage : ComponentBase, IStartable, IMessageable
 
 	public void OnMessage(EntityMessages message)
 	{
+		if (Entity == null)
+			return;
+
 		var time = Entity.GetComponent<TimeComponent>();
 
 		for (int i = 0; i < activeActions.Count; i++)

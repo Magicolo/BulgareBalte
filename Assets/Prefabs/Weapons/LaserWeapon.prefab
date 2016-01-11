@@ -101,7 +101,6 @@ MonoBehaviour:
     Path: Actions.2.Settings
     Reference: {fileID: 11400000, guid: 2d0cc6d71db36314191184d1da738ab8, type: 2}
   data: "5\r\nLaserAttack\r\n{\"active\":true,\"ActiveColor\":{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0},\"InactiveColor\":{\"r\":0.5,\"g\":0.250980406999588,\"b\":0.0,\"a\":0.25},\"Particles\":{\"instanceID\":0},\"Raycaster\":{\"instanceID\":0},\"LineRenderer\":{\"instanceID\":0}}\r\nLaserDamager\r\n{\"active\":true,\"DamageModifier\":1.0}\r\nAttackSpeedModifier\r\n{\"active\":true,\"Modifier\":1000.0}\r\nPseudo.TimeComponent\r\n{\"active\":true,\"channel\":2,\"timeScale\":1.0}\r\nAudioActionOnMessage\r\n{\"active\":true,\"Actions\":[{\"Messages\":{\"f1\":16,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":4096,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}},{\"Messages\":{\"f1\":16,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":4096,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":0,\"Spatialization\":1,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}},{\"Messages\":{\"f1\":32,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":8192,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":3,\"Spatialization\":0,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}},{\"Messages\":{\"f1\":32,\"f2\":0,\"f3\":0,\"f4\":0,\"f5\":262144,\"f6\":0,\"f7\":0,\"f8\":0},\"Action\":6,\"Spatialization\":0,\"ExecuteOnce\":false,\"ExecutionDelay\":0.0,\"Settings\":{\"instanceID\":0}}]}\r\n"
-  isDeserialized: 0
 --- !u!114 &11472382
 MonoBehaviour:
   m_ObjectHideFlags: 1

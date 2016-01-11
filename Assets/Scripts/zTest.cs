@@ -20,30 +20,32 @@ public class zTest : PMonoBehaviour
 	public bool test;
 	void Test()
 	{
-		GetGroupDict(typeof(SeekerMotion));
-		GetGroupDict(typeof(SinusMotionModifier));
-		GetGroupDict(typeof(InputMotion));
-		GetGroupDict(typeof(LifeTime));
-		GetGroupDict(typeof(MotionBase));
-		GetGroup<SeekerMotion>();
-		GetGroup<SinusMotionModifier>();
-		GetGroup<InputMotion>();
-		GetGroup<LifeTime>();
-		GetGroup<MotionBase>();
+		SceneManager.LoadSceneAsync("zTest 1");
 
-		foreach (var type in TypeExtensions.GetAssignableTypes(typeof(IComponent)))
-			GetGroupDict(type);
+		//GetGroupDict(typeof(SeekerMotion));
+		//GetGroupDict(typeof(SinusMotionModifier));
+		//GetGroupDict(typeof(InputMotion));
+		//GetGroupDict(typeof(LifeTime));
+		//GetGroupDict(typeof(MotionBase));
+		//GetGroup<SeekerMotion>();
+		//GetGroup<SinusMotionModifier>();
+		//GetGroup<InputMotion>();
+		//GetGroup<LifeTime>();
+		//GetGroup<MotionBase>();
 
-		var method = GetType().GetMethod("GetGroup", ReflectionExtensions.AllFlags);
-		foreach (var type in TypeExtensions.GetAssignableTypes(typeof(IComponent)))
-		{
-			var generic = method.MakeGenericMethod(type);
-			generic.Invoke(this, null);
-		}
+		//foreach (var type in TypeExtensions.GetAssignableTypes(typeof(IComponent)))
+		//	GetGroupDict(type);
 
-		PDebug.LogTest("Dictionary", () => GetGroupDict(typeof(BurstWeaponAttack)), iterations);
-		PDebug.LogTest("Array", () => GetGroup<BurstWeaponAttack>(), iterations);
-		PDebug.Log(groupDict.Count, groups.Length);
+		//var method = GetType().GetMethod("GetGroup", ReflectionExtensions.AllFlags);
+		//foreach (var type in TypeExtensions.GetAssignableTypes(typeof(IComponent)))
+		//{
+		//	var generic = method.MakeGenericMethod(type);
+		//	generic.Invoke(this, null);
+		//}
+
+		//PDebug.LogTest("Dictionary", () => GetGroupDict(typeof(BurstWeaponAttack)), iterations);
+		//PDebug.LogTest("Array", () => GetGroup<BurstWeaponAttack>(), iterations);
+		//PDebug.Log(groupDict.Count, groups.Length);
 	}
 
 	ComponentGroup GetGroupDict(Type type)

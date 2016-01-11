@@ -9,6 +9,7 @@ public class LevelManager : Singleton<LevelManager>
 {
 	public AudioSettingsBase Music;
 
+	int frameCount;
 	IEntityGroup playerGroup = EntityManager.GetEntityGroup(EntityGroups.Player);
 
 	protected override void Start()
@@ -28,8 +29,10 @@ public class LevelManager : Singleton<LevelManager>
 
 	void Update()
 	{
-		if (playerGroup.Entities.Count == 0 && GameManager.Instance.CurrentState == GameManager.GameStates.Playing)
+		if (frameCount > 5 && playerGroup.Entities.Count == 0 && GameManager.Instance.CurrentState == GameManager.GameStates.Playing)
 			GameManager.Instance.LevelFailure();
+
+		frameCount++;
 	}
 
 	public void OnWavesCompleted()

@@ -109,7 +109,6 @@ public class GameManager : Singleton<GameManager>
 
 	void LoadNextLevel()
 	{
-		SwitchState(GameStates.Loading);
 		currentSceneIndex++;
 
 		if (LevelNames.Length > currentSceneIndex)
@@ -120,12 +119,12 @@ public class GameManager : Singleton<GameManager>
 
 	void ReloadCurrentLevel()
 	{
-		SwitchState(GameStates.Loading);
 		SwitchLevel(CurrentSceneName);
 	}
 
 	void SwitchLevel(string levelName)
 	{
+		SwitchState(GameStates.Loading);
 		loadingTask = SceneManager.LoadSceneAsync(levelName);
 	}
 
